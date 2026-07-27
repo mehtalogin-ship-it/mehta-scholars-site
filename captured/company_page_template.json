@@ -1,0 +1,25 @@
+{
+  "note": "Company detail pages are CLIENT-RENDERED (content not in warmup JSON; must capture via browser during rebuild). Slugs are mismatched from content because pages were duplicated (/copy-of-<x> often shows a different company). Map by rendered content, not slug.",
+  "url_pattern": "https://www.mehtascholars.com/copy-of-<slug>",
+  "template_fields": [
+    "founder_name_year",
+    "company",
+    "category_and_stage",
+    "linkedin_url",
+    "website_url",
+    "bio",
+    "founder_photo"
+  ],
+  "example": {
+    "url": "/copy-of-peer",
+    "founder": "Vamsi Gadiraju '15",
+    "company": "SuperOrder",
+    "category_stage": "AI and Smart Tech, Series A",
+    "links": [
+      "Linkedin",
+      "Website"
+    ],
+    "bio": "Vamsi Gadiraju is the Co-Founder and CTO of Superorder, a platform that streamlines the restaurant tech stack by unifying operations, reputation management, and delivery workflows\u2014helping restaurants save time, consolidate vendors, and reduce costs. A Columbia University graduate, Gadiraju co-founded Superorder straight out of college."
+  },
+  "layout": "Full-width green section w/ topographic line pattern; centered white rounded card: left=founder headshot portrait, right=name/year (green) + company (green) + category,stage (gray) + bio + two outlined-green pill buttons (Linkedin, Website)."
+}

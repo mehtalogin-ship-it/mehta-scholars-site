@@ -1,0 +1,22 @@
+# Old Wix URL  →  New page                              Status
+# ------------------------------------------------------------------
+/                       /index.html                      200
+/about                  /about.html                      301
+/our-companies          /alumni-companies.html           301
+/works                  /alumni-companies.html           301
+/aiandsmarttech         /alumni-companies.html#ai        301
+/healthtechandlifesciences  /alumni-companies.html#health 301
+/fintech                /alumni-companies.html#fintech    301
+/about-3                /our-investments.html            301
+/team-3                 /committee-list.html             301
+/blog                   /updates.html                    301
+
+# Individual company pages: old Wix slugs were duplicated/mismatched
+# (e.g. /copy-of-peer actually showed SuperOrder), so they can't be
+# 1:1 remapped. Send them to the Alumni Companies hub. New per-company
+# pages live at /companies/<company-name>.html and are linked from there.
+/copy-of-*              /alumni-companies.html           301
+
+# Dropped Wix app pages (Bookings / Members / Subscriptions form)
+/book-now               /index.html                      301
+/account/*              /index.html                      301

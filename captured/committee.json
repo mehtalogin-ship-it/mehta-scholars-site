@@ -1,0 +1,457 @@
+{
+  "sections": {
+    "Venture Investment Committee": "Our Venture Investment Committee are our final decision makers who review alumni founded companies for investment.",
+    "Venture Advisory Committee": "Our Venture Advisory Committee are professional venture capitalists who utilize their experience in various industries in order to support our Mehta Scholars in conducting due diligence on companies and reviewing their reports for official submission.",
+    "Entrepreneurship Advisory Committee": "Our Entrepreneurship Advisory Committee are an expert group of founders and venture capitalists who support our founders through developing and solidifying their companies."
+  },
+  "members": [
+    {
+      "name": "Satish Dharmaraj",
+      "org": "Redpoint Ventures",
+      "committee": "Venture Investment Committee",
+      "bio": "Satish Dharmaraj is a Managing Director at Redpoint Ventures, specializing in the technology sector. Dharmaraj zeroes in on cloud infrastructure, SaaS, fintech, healthcare, and consumer-facing applications, and in PaaS, or platform as a service, as evidenced by investments in Attio.",
+      "linkedin": "https://www.linkedin.com/in/satishdharmaraj",
+      "company_url": "https://www.redpoint.com/"
+    },
+    {
+      "name": "Will Jarvis '97",
+      "org": "Jarvis Family Investments",
+      "committee": "Venture Investment Committee",
+      "bio": "Will Jarvis is an Investment Director at Jarvis Family Investments, looking for companies with outsized return or heavily de-risked with limited downside potential that have validated business models led by entrepreneurs with operational experience and a proven track record.",
+      "linkedin": "https://www.linkedin.com/in/williamjarvis/",
+      "company_url": "https://www.jarvisinvestments.com/about.html"
+    },
+    {
+      "name": "DJ Patil",
+      "org": "GreatPoint Ventures",
+      "committee": "Venture Investment Committee",
+      "bio": "DJ Patil is a Partner at GreatPoint Ventures, specializing in healthcare, enterprise technologies, and national security. More specifically, Patil focuses on data-driven infrastructure for large-scale companies, operational infrastructure, platforms and observability, and defense and intelligence software.",
+      "linkedin": "https://www.linkedin.com/in/dpatil/",
+      "company_url": "https://www.greatpointvc.com/"
+    },
+    {
+      "name": "Surbhi Sarna '03",
+      "org": "Collate",
+      "committee": "Venture Investment Committee",
+      "bio": "Surbhi Sarna is the Founder of Collate, a healthcare data and analytics company focused on helping life sciences organizations structure, interpret, and act on complex biomedical and clinical data. Her background spans biomedical engineering, healthcare entrepreneurship, and life sciences innovation, positioning her as a highly experienced founder in healthcare technology and translational medicine.",
+      "linkedin": "https://www.linkedin.com/in/surbhi-sarna/",
+      "company_url": "https://collate.com/"
+    },
+    {
+      "name": "Eugene Zhang",
+      "org": "TSVC",
+      "committee": "Venture Investment Committee",
+      "bio": "Eugene Zhang is a Founding Partner at TSVC, specializing in emerging technology, fintech, and enterprise SaaS. Zhang believes in hardware and physical applications of AI,  equity transactions, and enterprise automation for marketing and engagement.",
+      "linkedin": "https://www.linkedin.com/in/eugenezhang/",
+      "company_url": "https://www.tsvcap.com/"
+    },
+    {
+      "name": "Sreyas Misra '14",
+      "org": "General Cataylst & Greenoaks",
+      "committee": "Venture Investment Committee",
+      "bio": "Sreyas Misra is an investment partner at Greenoaks, valuing novel technologies that solve customer pain points in current industries. Within the firm, Misra focuses on applied AI companies, more specifically AI infrastructure and tooling. Examples of his past investments include Windsurf, an AI coding agent.",
+      "linkedin": "https://www.linkedin.com/in/sreyas-misra-311239123",
+      "company_url": "https://greenoaks.com/"
+    },
+    {
+      "name": "Anupam Awasthi",
+      "org": "Catalyst Business Partners",
+      "committee": "Venture Advisory Committee",
+      "bio": "Anupam Awasthi is a Co-Founder and CEO of Catalyst Business Partners, a consulting firm that specializes in cybersecurity solutions for businesses. Awasthi focuses on technology and digital transformation, especially in Africa and West Asia.",
+      "linkedin": "https://www.linkedin.com/in/anupam-awasthi-72879135/",
+      "company_url": "https://www.catalyst-us.com/"
+    },
+    {
+      "name": "Rajesh Swaminithan",
+      "org": "Khosla Ventures",
+      "committee": "Venture Advisory Committee",
+      "bio": "Rajesh Swaminathan is a Partner at Khosla Ventures, specializing in industrial decarbonization, energy infrastructure, and critical minerals. Swaminathan zeroes in on places where materials science can deliver both emissions reductions and cost competitiveness, as well as  base load power technologies that go beyond intermittent renewables and  the intersection of AI and mining.",
+      "linkedin": "https://www.linkedin.com/in/rajeshswaminathan",
+      "company_url": "https://www.khoslaventures.com/"
+    },
+    {
+      "name": "Ajay Chopra",
+      "org": "Trinity Ventures",
+      "committee": "Venture Advisory Committee",
+      "bio": "Ajay Chopra is a General Partner at Trinity Ventures, specializing in consumer applications, digital advertising, and enterprise business software. Chopra gravitates toward digital health and fintech tools that reduce friction in everyday life, programmatic and data-driven ad tech,  AI-powered commerce, and customer experience tools.",
+      "linkedin": "https://www.linkedin.com/in/ajaychopra/",
+      "company_url": "https://www.trinityventures.com/"
+    },
+    {
+      "name": "Jia Xu",
+      "org": "J. West Investments",
+      "committee": "Venture Advisory Committee",
+      "bio": "Jia Xu is a Real Estate Developer and Investor at J. West Investments Inc., a real estate investment and development firm focused on acquiring, developing, and managing property assets. Xu focuses on investment strategy, deal sourcing, and overseeing development projects across residential and commercial real estate.",
+      "linkedin": "https://www.linkedin.com/in/jia-xu-431426/",
+      "company_url": ""
+    },
+    {
+      "name": "Vijay Reddy",
+      "org": "Mayfield Fund",
+      "committee": "Venture Advisory Committee",
+      "bio": "Vijay Reddy is a Partner at Mayfield Fund, specializing exclusively in AI. At the infrastructure layer, he focuses on purpose-built AI hardware and compute platforms; in AI middleware and MLOps, he zeroes in on tooling that helps enterprises operationalize machine learning; in the application-layer,  Reddy focuses on domain-specific AI applications.",
+      "linkedin": "https://www.linkedin.com/in/vijayreddy/",
+      "company_url": "https://www.mayfield.com/"
+    },
+    {
+      "name": "Ding Zhou",
+      "org": "Coupang",
+      "committee": "Venture Advisory Committee",
+      "bio": "Ding Zhou is the Vice President of Engineering at Coupazng, a software development company focusing on retail services and entertainment. Zhou operates in the logistics, retail, and entertainment realms. Zhou focuses on advertisement, aiming to help advertisers reach audiences on the internet.",
+      "linkedin": "https://www.linkedin.com/in/dingzhou/",
+      "company_url": "https://www.coupang.com/"
+    },
+    {
+      "name": "Amit Mukherjee '06",
+      "org": "Coatue Management",
+      "committee": "Venture Advisory Committee",
+      "bio": "Amit Mukherjee is an operating partner at Coatue Management, an investment management firm with investment spanning both private and public markets. Their investments focus on technology and life sciences, with some investments in Chinese companies. Within Coatue, Mukherjee focuses on financial technology and software companies. Some of his past investments include BharatPe, Block Renovation, Aquabyte, Reachify, and Noonlight.",
+      "linkedin": "https://www.linkedin.com/in/amitmukherjee/",
+      "company_url": "https://www.coatue.com/"
+    },
+    {
+      "name": "Ashok Krishnamurti",
+      "org": "GreatPoint Ventures",
+      "committee": "Venture Advisory Committee",
+      "bio": "Ashok Krishnamurti is a Managing Partner at GreatPoint Ventures. Krishnamurti focuses on Enterprise IT, and the intersection of CS and life sciences, both of which help professionals build and deploy faster. On the Enterprise IT side, he concentrates in core infrastructure for modern software systems, reflected in GreatPoint's Coalesce investment. As for the intersection of CS and Biology, Krishnamurti focuses on computational biology platforms, Arbor BioTechnologies being a good example.",
+      "linkedin": "https://www.linkedin.com/in/ashok-krishnamurthi-a783063",
+      "company_url": "https://www.greatpointvc.com/"
+    },
+    {
+      "name": "John Kwon",
+      "org": "Samsung Ventures",
+      "committee": "Venture Advisory Committee",
+      "bio": "John Kwon is a Managing Director at Samsung Ventures, specializing in AI energy solutions and data center infrastructure. Within clean energy for AI, he focuses on fuel-flexible, off-grid power generation that can meet the always-on demands of modern data centers, with Mainspring Energy (linear generators running on various fuels) as a key bet. On grid-scale energy storage, Kwon backs battery storage systems that underpin the broader energy transition, with Powin (grid-scale BESS integrator) as a notable investment. His cleantech thesis extends to alternative fuels and carbon utilization, with Raven SR (waste-to-hydrogen conversion) and CarbonCure Technologies (COâ mineralization in concrete) rounding out the portfolio. All companies sit at the intersection of decarbonization and the infrastructure demands of the AI era.",
+      "linkedin": "https://www.linkedin.com/in/jkwon1105/",
+      "company_url": "https://www.samsungventures.com/"
+    },
+    {
+      "name": "Nayan Mehta '04",
+      "org": "Pulsar Ventures",
+      "committee": "Venture Advisory Committee",
+      "bio": "Nayan Mehta is a Principal at Pulsar Ventures, specializing in early-stage investments across renewable energy, AI, and biotechnology. Within these sectors, he focuses on technologies that advance sustainable solutions and secure long-term human progress, backing companies at the intersection of innovation and global impact. Mehtaâs work centers on building strategic partnerships and supporting ventures that not only generate returns but also contribute meaningfully to environmental and societal resilience.",
+      "linkedin": "https://www.linkedin.com/in/nayan-mehta-9b70691/",
+      "company_url": "https://pulsarventures.co/"
+    },
+    {
+      "name": "Alex Rabodzey",
+      "org": "Suvretta Capital Management",
+      "committee": "Venture Advisory Committee",
+      "bio": "Alex Rabodzey is a Managing Director at Suvretta Capital Management, specializing in public and private investments across healthcare and technology. Within life sciences, he focuses on high-growth biopharma and therapeutics companies advancing novel treatments,  with Moderna (mRNA platform) and other late-stage innovators as representative bets. On the technology side, Rabodzey backs category-defining platforms in fintech and enterprise software that demonstrate durable growth and market leadership. His investment approach centers on identifying inflection points in scaling businesses, all sitting at the intersection of scientific innovation and long-term value creation.",
+      "linkedin": "https://www.linkedin.com/in/rabodzey/",
+      "company_url": "https://www.suvretta.com/"
+    },
+    {
+      "name": "Amol Patel",
+      "org": "Stealth AI",
+      "committee": "Venture Advisory Committee",
+      "bio": "Amol Patel is currently working on a Stealth AI startup. Before his startup, Patel worked as SVP of Product and Design at Lending Club. At Lending Club, he led product development across digital lending and consumer financial platforms at scale. His experience spans product leadership, design systems, and fintech product execution, positioning him as a seasoned operator in building and scaling consumer and financial technology products.",
+      "linkedin": "https://www.linkedin.com/in/amolbpatel/",
+      "company_url": "https://www.linkedin.com/company/stealthaistartup/"
+    },
+    {
+      "name": "Alex Rampell",
+      "org": "Andreessen Horowitz",
+      "committee": "Venture Advisory Committee",
+      "bio": "Alex Rampell is a General Partner and head of A16Z's Apps practice. Rampell specializes in fintech, marketplaces, and financial infrastructure for internet businesses. On the financial infrastructure side, Rampell focuses on platforms that enable merchants or software companies to accept and manage payments globally, Payrails being an example of the type of startup he backs. On the fintech side, Rampell believes in data-driven underwriting and digital credit products, Affirm being an example. As for marketplaces, Rampell backs tools that help marketplaces grow revenue, liquidity, or transactions, like OfferUp.",
+      "linkedin": "https://www.linkedin.com/in/arampell/",
+      "company_url": "https://a16z.com/"
+    },
+    {
+      "name": "Venktesh Shukla",
+      "org": "Monta Vista Capital",
+      "committee": "Venture Advisory Committee",
+      "bio": "Venktesh Shukla is the Founder & Managing Partner at Monta Vista Capital, specializing in early-stage B2B enterprise technology. Within enterprise infrastructure, he focuses on cloud networking, security, and data platforms that underpin modern software systems, with Aviatrix (cloud networking), Cequence Security (API security), and DuploCloud (DevOps automation) as key bets. On vertical SaaS and industrial transformation, Shukla backs companies digitizing legacy industries through AI and software, with Tekion (cloud-native automotive platform), Motorq (connected vehicle data), and SafeAI (autonomous heavy equipment) as notable investments. His thesis centers on applying AI, cloud, and data infrastructure to transform traditional industries, all sitting at the intersection of enterprise software and real-world digital transformation.",
+      "linkedin": "https://www.linkedin.com/in/vnshukla/",
+      "company_url": "https://www.montavistacapital.com/"
+    },
+    {
+      "name": "Anis Uzzaman",
+      "org": "Pegasus Tech Ventures",
+      "committee": "Venture Advisory Committee",
+      "bio": "Anis Uzzaman is the Founder and CEO of Pegasus Tech Ventures, a venture capital firm that invests in a wide range of technology companies from all over the world. Their investment span areas including AI, healthcare, materials\\/chemicals, Cleantech, and many more. Within Pegasus Tech Ventures, Anis Uzzaman focuses on emerging technology companies and also takes interest in companies in Japan. Some of his past investments include LINK-US, HiJoJo Partners, NIHON AGRI, Manpuku Holdings, Aillis, Openrec, Mujin, MedHyve, StradVision, and Blue Frog Robotics.",
+      "linkedin": "https://www.linkedin.com/in/anisuzzaman",
+      "company_url": "https://www.pegasustechventures.com/"
+    },
+    {
+      "name": "Huican Zhu",
+      "org": "Amino Capital",
+      "committee": "Venture Advisory Committee",
+      "bio": "Huican Zhu is a Co-founder and Managing Partner at Amino Capital, specializing in seed-stage venture investing with a strong focus on data-driven technology companies and early internet infrastructure. Within enterprise software and applied AI, he focuses on scalable SaaS and platform businesses that leverage machine learning and network effects â with Zoom (video communications platform) as a representative early-stage investment. On the global innovation front, Zhu backs founders building high-growth technology companies across the U.S. and Asia, often at the intersection of technical depth and cross-border market expansion. His thesis centers on identifying breakout data-native companies at the seed stage and supporting them through global scale.",
+      "linkedin": "https://www.linkedin.com/in/huican-zhu-7064222/",
+      "company_url": "https://www.aminocapital.com/"
+    },
+    {
+      "name": "Laurence Kao '89",
+      "org": "Novare Ventures & OPESVP",
+      "committee": "Venture Advisory Committee",
+      "bio": "Laurence Kao is a Partner at Novare Ventures and OPES Venture Partners, specializing in cross-border venture investing across fintech, enterprise software, and digital infrastructure. Within fintech infrastructure, he focuses on companies building payment rails, financial connectivity, and cross-border transaction systems that improve capital movement between Asia and North American markets. In enterprise software, Kao backs SaaS and platform businesses that digitize operational workflows for globally distributed businesses, particularly in sectors where regulatory complexity and fragmentation create opportunities for software-led efficiency gains. His investment focus also extends to early-stage companies building foundational internet infrastructure and business-to-business platforms that enable scalable international commerce. His thesis centers on backing globally oriented, infrastructure-heavy software companies that sit at the intersection of financial systems modernization and cross-border enterprise digitization.",
+      "linkedin": "https://www.linkedin.com/in/laurence-kao-a9767b1/",
+      "company_url": "https://www.opesvp.com/"
+    },
+    {
+      "name": "Christopher Chang",
+      "org": "Consonant Ventures",
+      "committee": "Venture Advisory Committee",
+      "bio": "Christopher Chang is a co-founder at Consonant Ventures, an early-stage venture capital firm with offices in New York and San Francisco. Consonant backs founders at the earliest stages, pre-seed and seed. Chang studied at Columbia University. On the portfolio side, Consonant has shown interest in AI-enabled service businesses, with investments including Phoebe, a company building AI-powered scheduling infrastructure for home healthcare agencies. The firm raised a fund in 2025, signaling active deployment.",
+      "linkedin": "https://www.linkedin.com/in/christopherycchang/",
+      "company_url": "https://www.consonant.vc/"
+    },
+    {
+      "name": "Sonia Huang '10",
+      "org": "Sequoia Ventures",
+      "committee": "Venture Advisory Committee",
+      "bio": "Sonia Huang is a Partner at Sequoia Capital, specializing in artificial intelligence and enterprise software investments. Within AI infrastructure, she focuses on foundational model ecosystems, including the tooling, platforms, and systems that enable training, deploying, and scaling large-scale machine learning models across industries â with Sequoia-backed companies such as OpenAI (frontier foundation models) and Snowflake (data infrastructure platform) reflecting the firmâs exposure to core data and model infrastructure layers. In applied AI and enterprise software, she focuses on companies embedding intelligence into business workflows, with Sequoia investments like Notion (AI-enabled productivity and collaboration software) illustrating the shift toward AI-native productivity systems. Her investment scope also includes developer platforms and infrastructure tools that support the broader AI stack, where durable data advantages and technical depth create long-term defensibility. Her thesis centers on backing category-defining AI-native companies that evolve from infrastructure to deeply embedded enterprise systems as artificial intelligence becomes a foundational layer of modern software.",
+      "linkedin": "https://www.linkedin.com/in/sonyaruihuang/",
+      "company_url": "https://www.sequoiacap.com/"
+    },
+    {
+      "name": "Ilya Sukhar '03",
+      "org": "Matrix Partners",
+      "committee": "Venture Advisory Committee",
+      "bio": "Ilya Sukhar is a Partner at Matrix Partners, specializing in early-stage venture investing in developer tools, infrastructure software, and applied AI systems. Within developer infrastructure, he focuses on companies building APIs, cloud platforms, and foundational tooling that improve how engineers build, deploy, and scale software. In data infrastructure and workflow automation, Matrix has backed companies such as Fivetran (data pipeline automation platform) and Parabola (no-code data workflow automation), reflecting its emphasis on systems that move, structure, and operationalize data at scale. In applied AI and infrastructure software, the firm has also invested in companies like Sieve (AI\\/video infrastructure tooling) and Mashgin (computer visionâbased automation systems), illustrating its focus on technically deep, infrastructure-heavy companies at the application layer. His investment focus centers on backing developer-native and infrastructure-first companies with strong technical moats that become core building blocks of modern software systems.",
+      "linkedin": "https://www.linkedin.com/in/ilyasukhar/",
+      "company_url": "https://www.matrixpartners.com/"
+    },
+    {
+      "name": "Neil Shah '08",
+      "org": "Greenoaks Capital Partners",
+      "committee": "Venture Advisory Committee",
+      "bio": "Neil Shah is a Partner at Greenoaks Capital Partners, specializing in growth-stage investments across enterprise software, fintech, and consumer internet platforms. Greenoaks focuses on backing a concentrated number of category-defining companies with strong product-market fit and long-term global scaling potential. Within enterprise software and data infrastructure, Greenoaks has backed companies such as Figma (design collaboration platform) and Databricks (data and AI infrastructure platform). In fintech and financial infrastructure, its portfolio includes Stripe (payments infrastructure) and Brex (business financial platform). In consumer internet, the firm has also invested in companies like Discord (community platform) and Robinhood (financial services platform). His thesis centers on identifying a small number of exceptional companies with durable network effects and compounding growth potential across software, fintech, and internet ecosystems.",
+      "linkedin": "https://www.linkedin.com/in/shahneilp",
+      "company_url": "https://greenoaks.com/"
+    },
+    {
+      "name": "Gautam Krishnamurti '11",
+      "org": "GreatPoint Ventures",
+      "committee": "Venture Advisory Committee",
+      "bio": "Gautam Krishnamurti is a General Partner at GreatPoint Ventures. Krishnamurti focuses on in vesting in companies that solve difficult machine learning problems across different industries such as enterprise, biotech, fintech, and commerce infrastructure, that increase operational efficiency by democratizing access to machine learning talent. Some examples of Krishnamurti's niche within these sectors can be explained by investments in companies like Diffuse Bio, BeyondCore (acquired by SalesForce in 2018), Even Financial (acquired by MoneyLion in 2021), and Nixtla.",
+      "linkedin": "https://www.linkedin.com/in/gautam-krishnamurthi/",
+      "company_url": "https://www.greatpointvc.com/"
+    },
+    {
+      "name": "Rishi Bhatia '11",
+      "org": "Mousse Partners",
+      "committee": "Venture Advisory Committee",
+      "bio": "Rishi Bhatia is a Director at Mousse Partners, the New York based investment office of the Wertheimer family, the sole owners of Chanel, which manages an estimated $25 billion across private equity, venture capital, real estate, and public markets. Mousse Partners takes a long term orientation and invests across consumer, technology, and healthcare, partnering with select external managers as well as investing directly alongside high quality management teams and entrepreneurs. Bhatia's path to Mousse ran through traditional finance: he started as an analyst at Barclays Investment Bank, moved into private equity at Audax Group, and then served as a Vice President at Fremont Group before joining Mousse in 2022. He holds a BS in Business Administration from Georgetown University's McDonough School of Business and also studied Finance and International Political Economy at the London School of Economics.",
+      "linkedin": "https://www.linkedin.com/in/rishi-bhatia-54369b49/",
+      "company_url": "https://www.moussepartners.com/"
+    },
+    {
+      "name": "David Chang",
+      "org": "MindWorks Venture Capital",
+      "committee": "Venture Advisory Committee",
+      "bio": "David Chang is a Managing Partner at MindWorks Venture Capital. Chang's areas of expertise lie in AI, logistics, commerce, robotics, and fintech. Chang likes companies that use AI as an enabler and a cost-cutter, and he likes companies that use robotics to improve manufacturing and in warehouses. On the logistics side, Chang focuses on delivery and return system reshaping, especially redefining post-purchasing experiences for the consumer. For commerce, Chang believes in developing \"commerce 3.0,\" where the entire shopping experience is tailored to the individual. Chang invests in fintech companies that democratize access to financial products, mainly peer-to-peer lending for SMEs and digital wallets and cross-border payments for consumers.",
+      "linkedin": "https://www.linkedin.com/in/david-chang-2453442a",
+      "company_url": "https://www.mindworks.vc/"
+    },
+    {
+      "name": "Lori Berenberg",
+      "org": "Bloomberg Beta",
+      "committee": "Venture Advisory Committee",
+      "bio": "Lori Berenberg is a Principal at Bloomberg Beta, a corporate venture capital firm affiliated with Bloomberg. Bloomberg Beta focuses on investing in companies in machine intelligence, and holds investments in firms focusing on logistics, defense, and AI agents. Within Bloomberg Beta, Berenberg focuses on machine intelligence companies, with past investments in Bluefish, Trayd, Ajax, Twill, Vallor, ShopARI, TabTabTab, Vers, Standard Practice, Fleetline, and Prox.",
+      "linkedin": "https://www.linkedin.com/in/loriberenberg/",
+      "company_url": "https://www.bloombergbeta.com/"
+    },
+    {
+      "name": "Namrata Anand '10",
+      "org": "Diffuse Bio",
+      "committee": "Entrepreneurship Advisory Committee",
+      "bio": "Namrata Anand is the founder of Diffuse Bio, a biotechnology company specializing in generative AI for protein design. Their mission is to create AI systems that engineer novel, useful proteins with exceptional precision. Anand holds a PhD in bioengineering from Stanford, where she focused on computational protein design, and is also a Harvard alumna.",
+      "linkedin": "https://www.linkedin.com/in/namrata-a-427807188/",
+      "company_url": "https://www.diffuse.bio/"
+    },
+    {
+      "name": "Johnny Wang '19",
+      "org": "Hinoki Security",
+      "committee": "Entrepreneurship Advisory Committee",
+      "bio": "Johnny Wang is the Co-Founder of Hinoki Security, a Y Combinator–backed cybersecurity startup building a unified platform for continuous vulnerability scanning and patching. Wang studied Computer Science at Columbia before working in security at several companies, including Google, and previously co-founded Crosswire (2021), an enterprise access-management startup that helped security engineers manage access at scale. He also advises Jericho Security, a company building AI cybersecurity training for employees — giving him the hands-on advising experience of a strong entrepreneurial advisor.",
+      "linkedin": "https://www.linkedin.com/in/johnnyyw/",
+      "company_url": "https://hinoki.security/"
+    },
+    {
+      "name": "Aumesh Mishra '16",
+      "org": "Tivara",
+      "committee": "Entrepreneurship Advisory Committee",
+      "bio": "Aumesh Misra is a Co-Founder at Tivara, an AI company that automates insurance approval(prior authorization) for healthcare clinics, helping doctors deliver care to patients faster. Misra is an alumn of Washington University at St. Louis, and has gained tremendous experience in software engineering and data science through his work in Google and Compound.",
+      "linkedin": "https://www.linkedin.com/in/aumesh-misra/",
+      "company_url": "https://www.tivara.com/"
+    },
+    {
+      "name": "Rohan Chopra '10",
+      "org": "Convey",
+      "committee": "Entrepreneurship Advisory Committee",
+      "bio": "Rohan Chopra is the CEO and Co-Founder of Convey, a platform that enables anyoneâtechnical or non-technicalâto train AI to perform complex tasks. He was among the first 20 employees at DoorDash and previously worked as a software engineer at LinkedIn, giving him ample startup and industry experience needed to be an entrepreneurial advisor. Chopra holds a B.S. in Computer Science from Stanford University.",
+      "linkedin": "https://www.linkedin.com/in/rohanbchopra/",
+      "company_url": "https://convey.dev/"
+    },
+    {
+      "name": "Alexis Gauba '17",
+      "org": "Dawn AI",
+      "committee": "Entrepreneurship Advisory Committee",
+      "bio": "Alexis Gauba is the Co-Founder of Dawn, a company that provides product analytics exclusively for AI products, allowing companies to make better marketing and product decisions. Gauba is a UC Berkeley alumni and has completed research in the blockchain space, making her a vital resource as a marketing advisor.",
+      "linkedin": "https://www.linkedin.com/in/alexisgauba/",
+      "company_url": "https://www.raindrop.ai/"
+    },
+    {
+      "name": "Barrett Glasauer '09",
+      "org": "Rejigg",
+      "committee": "Entrepreneurship Advisory Committee",
+      "bio": "Barrett Glasauer is the Co-Founder and CEO of Rejigg, which connects quality small business owners with vetted buyers, minimizing fees, eliminating brokers, and streamlining the acquisition process. Barrett is a graduate of UC Berkeley, and has previous experience at Palantir, Doordash, and WanderJaunt, where he was co-founder and CTO. Glasauerâs extensive experience in the commerce field at WanderJaunt and Rejigg makes him an ideal candidate for an entrepreneurial advisor.",
+      "linkedin": "https://www.linkedin.com/in/barrettg/",
+      "company_url": "https://www.rejigg.com/"
+    },
+    {
+      "name": "Ravi Kapur '92",
+      "org": "DiyaTV",
+      "committee": "Entrepreneurship Advisory Committee",
+      "bio": "Ravi Kapur is the Founder and CEO of DiyaTV, the first ever South Asian broadcast TV network with localized content for the South Asian audience. Their mission is to serve the Indian community after seeing such little representation on news sources. Before DiyaTV, Kapur worked as an anchor, producer, and reporter at other big networks, giving him the industry experience needed to serve as an advisor for all things brand image for startups.",
+      "linkedin": "https://www.instagram.com/ravikapurtv/",
+      "company_url": "https://www.diyatv.com/"
+    },
+    {
+      "name": "Andrew Luo '13",
+      "org": "OneSchema",
+      "committee": "Entrepreneurship Advisory Committee",
+      "bio": "Andrew Luo is the Co-Founder and CEO of OneSchema, a company dedicated to customer data migration and integration optimization using AI. OneSchema works to automate and simplify data onboarding to improve workflows. Luo is also a Stanford alumnus and listed as one of Forbes' 2022 30 under 30. Luoâs AI integrations give him credibility as an entrepreneurial advisor in the AI sector.",
+      "linkedin": "http://linkedin.com/in/andrewjluo",
+      "company_url": "http://oneschema.co/"
+    },
+    {
+      "name": "Ritu Bhatnagar ‘93",
+      "org": "SLAC National Accelerator Laboratory",
+      "committee": "Venture Advisory Committee",
+      "bio": "Ritu Bhatnagar is a Senior Laboratory Counsel, representing Stanford University and SLAC National Accelerator Laboratory, a U.S. Department of Energy National Laboratory managed and operated by Stanford. She works on the legal team, providing advice and assistance to help compliance with applicable laws, regulations, contract terms, grants, policies, and procedures, making her an expert in the legal side of operations.",
+      "linkedin": "https://www.linkedin.com/in/ritb/",
+      "company_url": "https://www6.slac.stanford.edu/"
+    },
+    {
+      "name": "Andrew Jin '15",
+      "org": "Commure & Athelas",
+      "committee": "Venture Advisory Committee",
+      "bio": "Andrew Jin is a Vice President of Engineering at Commure after a merge with Athelas in 2023. Commure is a healthcare technology company building AI-native software to modernize clinical and administrative workflows across healthcare systems. Jin focuses on scaling enterprise deployments and driving product execution in complex healthcare environments. Prior to Commure, his experience spans roles across healthcare and technology companies, where he worked on building and operationalizing software for large-scale, regulated systems. His work in enterprise healthcare infrastructure positions him as a strong operator with domain expertise in healthcare technology and scaling applied software products.",
+      "linkedin": "https://www.linkedin.com/in/andrewcjin/",
+      "company_url": "https://www.commure.com/"
+    },
+    {
+      "name": "Wei-han Lien",
+      "org": "Tenstorrent",
+      "committee": "Venture Advisory Committee",
+      "bio": "Wei-han Lien is the Chief Architect at Tenstorrent Inc., a semiconductor company building next-generation AI and high-performance computing hardware and chip architectures. Lien focuses on designing scalable compute architectures for advanced AI workloads, helping drive Tenstorrentâs efforts in developing efficient, programmable silicon for machine learning and inference at scale. Prior to Tenstorrent, Lien held senior engineering and architecture roles in the semiconductor and hardware industry, where he worked on GPU and high-performance system design. His deep technical background in chip architecture and AI compute systems positions him as a highly technical operator with strong expertise in hardware-software co-design for modern AI infrastructure.",
+      "linkedin": "https://www.linkedin.com/in/wlien/",
+      "company_url": "https://tenstorrent.com/"
+    },
+    {
+      "name": "Prakash Linga",
+      "org": "HashiCorp",
+      "committee": "Venture Advisory Committee",
+      "bio": "Prakash Linga is a Vice President of Product Management at HashiCorp, following its acquisition of BluBracket, where Linga was the Co-Founder and CEO. BluBracket was a code security company focused on securing source code and developer workflows across modern software teams. Linga focuses on application security, developer-first security tooling, and building enterprise-grade systems that integrate directly into engineering workflows. Prior to founding BluBracket, he held engineering and technical leadership roles at infrastructure companies including VMware, where he worked on large-scale systems and enterprise software. His background in building developer infrastructure and security products positions him as a strong technical founder with deep expertise in secure software development at scale.",
+      "linkedin": "https://www.linkedin.com/in/prakashlinga/",
+      "company_url": "https://www.hashicorp.com/"
+    },
+    {
+      "name": "Wei Liu",
+      "org": "DisplayTen",
+      "committee": "Venture Advisory Committee",
+      "bio": "Wei Liu is a CEO at DisplayTen (DTEN), a communications startup that allows collaboration across Zoom and Microsoft teams. Liu focuses on product strategy, enterprise adoption, and integrating hardware and software to create seamless remote communication experiences. Under his leadership, DTEN has developed all-in-one collaboration systems widely used in education and enterprise environments to enable immersive virtual meetings. Liuâs experience building and scaling a hardware-enabled SaaS company positions him as a strong operator in enterprise collaboration technology and hybrid work infrastructure.",
+      "linkedin": "https://www.linkedin.com/in/wliu0532/",
+      "company_url": "https://dten.com/"
+    },
+    {
+      "name": "Alan Malek '05",
+      "org": "DeepMind",
+      "committee": "Venture Advisory Committee",
+      "bio": "Alan Malek is a Research Scientist at DeepMind in the United Kingdom. Malek focuses on developing and improving foundational models and algorithms that support cutting-edge artificial intelligence capabilities. His work sits within a highly technical research environment dedicated to scaling and refining modern AI systems across a range of applications. This background positions him as a deep technical contributor with expertise in AI research and model development at one of the leading organizations in the field.",
+      "linkedin": "https://www.linkedin.com/in/ajmalek/",
+      "company_url": "https://deepmind.google/"
+    },
+    {
+      "name": "Rajeev Raman",
+      "org": "Recurly",
+      "committee": "Venture Advisory Committee",
+      "bio": "Rajeev Raman is a Strategic Advisor at Recurly, after serving as the Founder and CEO of Redfast, which Recurly acquired in May of 2025. Raman's successful entrepreneurship history is not limited to Redfast, with 1 Mainstream, another one of his startups, acquired in 2015 by Cisco Systems. Raman's entrepreneurial expertise makes him a valuable advisor",
+      "linkedin": "https://www.linkedin.com/in/rajeevraman/",
+      "company_url": "https://www.recurly.com/"
+    },
+    {
+      "name": "Glenn Reddy '15",
+      "org": "Symphony Technology Group",
+      "committee": "Venture Advisory Committee",
+      "bio": "Glenn Reddy is an Investor at Symphony Technology Group (STG), specializing in private equity investments across enterprise software, data, and technology-enabled services. STG focuses on acquiring and scaling mature software businesses, particularly those with strong recurring revenue models, stable cash flows, and opportunities for operational transformation. Symphony Technology Group has backed companies such as McAfee (cybersecurity software platform), Trellix (enterprise security software company formed from FireEye acquisition), Riverbed Technology (IT performance monitoring and networking software), and RSA Security (identity and access management solutions), reflecting its focus on enterprise software consolidation, cybersecurity, and infrastructure software platforms. Reddy's investment focus aligns with STGâs broader strategy of taking control positions in established software businesses and driving operational improvement, product repositioning, and long-term value creation in enterprise technology markets.",
+      "linkedin": "https://www.linkedin.com/in/glennwreddy/",
+      "company_url": "https://stg.com/"
+    },
+    {
+      "name": "Rohan Shah '10",
+      "org": "Extend",
+      "committee": "Venture Advisory Committee",
+      "bio": "Rohan Shah is the Founder of Extend, a fintech infrastructure company building virtual card and spend management APIs that enable businesses to issue cards and control payments programmatically. Shah focuses on product strategy, payments infrastructure, and scaling developer-first financial tools for modern enterprise workflows. At Extend, he has worked on enabling companies to embed flexible expense and payment controls directly into their software systems, positioning the company within the broader shift toward programmable financial infrastructure. His experience building in fintech infrastructure and developer tooling makes him a strong operator in payments automation and embedded finance systems.",
+      "linkedin": "https://www.linkedin.com/in/rohanshah8",
+      "company_url": "https://www.paywithextend.com/"
+    },
+    {
+      "name": "Steven Tam",
+      "org": "Lowenstein Sandler",
+      "committee": "Venture Advisory Committee",
+      "bio": "Steven Tam is a Partner at Lowenstein Sandler. Tam specializes in Intellectual Property Law and serves as a Patent Attorney. Tam's legal expertise solidifies him as a credible advisor in the legal world.",
+      "linkedin": "https://www.linkedin.com/in/steven-tam-bb3ab4/",
+      "company_url": "https://www.lowenstein.com/"
+    },
+    {
+      "name": "Sean Turner '06",
+      "org": "Swiftly",
+      "committee": "Venture Advisory Committee",
+      "bio": "Sean Turner is the Co-Founder and CTO of Swiftly, a retail technology company that helps consumer packaged goods (CPG) brands and retailers leverage data-driven marketing and loyalty solutions. Turner focuses on building the companyâs technical infrastructure, data platforms, and analytics systems that enable personalized consumer engagement at scale. Prior to co-founding Swiftly, he worked in engineering roles spanning data systems and software development, with a focus on building scalable platforms for high-volume retail and commerce applications. His experience in data infrastructure and consumer technology positions him as a strong technical founder with expertise in retail analytics and platform engineering.",
+      "linkedin": "https://www.linkedin.com/in/seturner/",
+      "company_url": "https://www.swiftly.com/"
+    },
+    {
+      "name": "Kevin Xu",
+      "org": "IGG",
+      "committee": "Venture Advisory Committee",
+      "bio": "Kevin Xu is the Chief Operating Officer at IGG Singapore, the global operations arm of IGG Inc., a mobile game development and publishing company known for large-scale multiplayer and strategy games. Xu focuses on global operations, product execution, and scaling live-service gaming products across international markets. His work centers on optimizing game performance, user acquisition, and long-term player engagement across diverse geographies. Prior to his current role, he has held leadership positions within the gaming and digital entertainment industry, contributing to the operational scaling of consumer internet products. His experience positions him as a strong operator in global gaming infrastructure, live operations, and international consumer product scaling.",
+      "linkedin": "https://www.linkedin.com/in/kevin-xu-3526a13/",
+      "company_url": "https://www.igg.com/"
+    },
+    {
+      "name": "Nemo Yang '19",
+      "org": "Cortex",
+      "committee": "Venture Advisory Committee",
+      "bio": "Nemo Yang is the Founder and CEO of Cortex, an AI desktop application that automates document-to-software data entry — it reads contracts, spreadsheets, and PDFs and then enters the data directly into tools like QuickBooks, Salesforce, and Encompass, no API integration required. Cortex targets document-heavy workflows across accounting, legal, and mortgage/lending, and runs locally for privacy with SOC 2 Type II–certified security. Before founding Cortex, Yang was a software engineer at Microsoft (Azure ML) and a product manager at ByteDance.",
+      "linkedin": "https://www.linkedin.com/in/nemoy/",
+      "company_url": "https://withcortex.ai/"
+    },
+    {
+      "name": "Mylene Yao",
+      "org": "Univfy",
+      "committee": "Venture Advisory Committee",
+      "bio": "Mylene Yao is the Co-Founder, CEO, and Director of Univfy Inc., a healthcare technology company that uses predictive analytics and AI to improve IVF outcomes and help patients and clinics make more informed fertility treatment decisions. Yao focuses on clinical data science, product development, and scaling evidence-based tools that support reproductive medicine. Prior to founding Univfy, she trained and worked in academic medicine and reproductive health, contributing to research in fertility and assisted reproductive technologies. Her combined background in clinical science, healthcare innovation, and data-driven decision-making positions her as a strong operator and domain expert in womenâs health and fertility technology.",
+      "linkedin": "https://www.linkedin.com/in/mylene-yao-m-d-049a2915/",
+      "company_url": "https://www.univfy.com/"
+    },
+    {
+      "name": "Sean Doherty '09",
+      "org": "Awary",
+      "committee": "Entrepreneurship Advisory Committee",
+      "bio": "Sean Doherty is the Co-Founder and CEO of Awary, a cybersecurity company that turns digital safety into a shared opportunity, showcasing his mastery of the field. By rewarding smarter online behavior, Awary helps financial institutions actively engage consumers in preventing fraud. Doherty is a seasoned entrepreneur, having previously founded Wurl (acquired for $430M) and Skyline Wireless, making him a perfect candidate for an entrepreneurial advisor.",
+      "linkedin": "https://www.linkedin.com/in/seandohertyjr/",
+      "company_url": "https://www.awary.com/"
+    },
+    {
+      "name": "Rahul Madduluri '12",
+      "org": "Doppel",
+      "committee": "Entrepreneurship Advisory Committee",
+      "bio": "Rahul Madduluri is the Founder and CTO of Doppel, a cybersecurity company focusing on defense from social engineering attacks using AI. Doppel's mission is to rapidly detect and disrupt cybercrime. Madduluri is also an alumnus from USC and was a Software Engineer at Uber, providing him the vital industry and startup experience necessary to be an entrepreneurial advisor.",
+      "linkedin": "https://www.linkedin.com/in/rahulmadduluri/",
+      "company_url": "https://www.doppel.com/"
+    },
+    {
+      "name": "R Wang",
+      "org": "Constellation Research",
+      "committee": "Venture Advisory Committee",
+      "bio": "R Wang is the Principal Analyst, Founder, and Chairman at Constellation Research, a technology research and advisory firm focused on digital transformation, enterprise software, and emerging enterprise technologies. Wang zeroes in on enterprise applications, cloud computing, AI adoption in business workflows, and the strategic impact of disruptive technologies on large organizations. He is widely known for advising executives at Fortune 500 companies on navigating digital disruption and technology strategy at scale. Wang also founded Constellation Research in 2010, building it into an influential analyst firm serving enterprise leaders and technology vendors. His experience leading a global research and advisory organization gives him deep credibility as a strategic advisor to enterprise and technology companies.",
+      "linkedin": "https://www.linkedin.com/in/rwang0/",
+      "company_url": "https://www.constellationr.com/"
+    }
+  ]
+}

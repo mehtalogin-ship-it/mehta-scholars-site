@@ -1,0 +1,4 @@
+# Static site — no build step. Netlify/Cloudflare Pages serve the repo root.
+[build]
+  publish = "."
+  command = ""

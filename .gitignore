@@ -1,0 +1,6 @@
+.DS_Store
+scratchpad/
+_tilecheck/
+_tilecheck.html
+*.pyc
+__pycache__/
