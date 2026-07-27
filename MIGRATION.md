@@ -111,6 +111,39 @@ parsing the Wix Pro Gallery items (title + description + image `mediaUrl`) from 
   Entrepreneurship), R Wang (Constellation Research, Venture Advisory) — with live bios, LinkedIns,
   photos, and company links (awary.com, doppel.com, constellationr.com). **Company links now 50/56.**
 
+### Update (Jul 2026, pass 8): full roster from master scoreboard (43 → 105 companies)
+Rebuilt the whole Alumni Companies dataset from the owner's master spreadsheet
+(`Mehta Scholar Scoreboard 2025.26.xlsx`, 107 rows). New pipeline: `captured/companies.json`
+is the single source; the generator renders the alumni grid + per-founder detail pages from it.
+- **105 companies** (32 real logo tiles carried over + **73 colorful auto-generated placeholder
+  tiles** — per-company color + topographic SVG overlay + company name; real-logo fetch still TODO).
+- **9 sector filters** (AI · Health & Bio · Fintech · Security · Enterprise/SaaS · Commerce/Consumer ·
+  Energy/Climate · Media/Gaming · Hardware/Deep-Tech), one primary sector each, default "All".
+- **4 stage groups**, Acquired/IPO'd FIRST (**13 exits**: DoorDash IPO, Windsurf, Commure, Glow,
+  Pincites→Filevine, Flipturn→Einride, Torch→OpenAI, Aquarium→Notion, Atlantic Money, Mida→Sanas,
+  Coterie, Adaptiv). Then Pre-Seed / Seed / Series A & Later.
+- **Repeat founders share ONE page** (8 of them: Jason Lin=Sidenote+Mida, Dawson Chen=Letterbook+Martin,
+  Johnny Wang=Hinoki+Crosswire, etc.); both company tiles link to the shared founder bio page.
+- **Detail pages** show founder · title · company · founded · city · sector · stage · funding ·
+  investors (from the sheet) as fact cards.
+- **Descriptions:** 82 companies have full researched/known descriptions; **23 have factual
+  sheet-derived stubs** (flagged `bio_stub` in companies.json) — these need deeper research.
+- **Footer** now shows BOTH MehtaScholars@harker.org + harkermehtascholars@gmail.com + 500 Saratoga Ave.
+- **Updated spreadsheet** written to `~/Downloads/Mehta Scholar Scoreboard 2025.26 - UPDATED.xlsx`
+  (added Website Sector / Stage Group / Description columns, 105 rows).
+- **Git:** repo initialized + committed locally (255 files) with `netlify.toml` + README. NOT pushed
+  (no `gh`/credentials on this machine — see handoff).
+
+**OPEN ITEMS (continuing autonomous work / owner):**
+1. **Deeper research for 23 stub companies** (Inventive, Quant, Designlab, Pamastay, Louiza Labs,
+   Altitude IQ, Upward, Backbone, LD Talent, Hailcube, Agora, Kos.ai, aPriori, Danger Devices,
+   Shopsense, FarmX, Hawala, Agence, Pokedata, Sound of Molecules, Potluck Labs, Lume, 3× Stealth).
+2. **Real company-logo tiles** — currently colorful name-tiles; fetch/composite actual logos.
+3. **2 empty sheet rows** (Hannah Bollar, "Tanuj") — no company; need info to add.
+4. **Push to GitHub** — needs `gh` installed + auth (or a remote): `gh repo create mehta-scholars-site
+   --private --source=. --push` from the site dir.
+5. Some slugs still reflect sheet spellings (e.g., stealth-chuang); fine, cleaned the worst ones.
+
 ### Update (Jul 2026, pass 7): Alumni Companies tab rebuilt (company tiles)
 Full redesign of `alumni-companies.html` per owner spec:
 - **Removed** the "Meet the Founders" bio gallery (redundant — tiles link to founder bios).
