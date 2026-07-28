@@ -4,7 +4,9 @@ _tilecheck/
 _tilecheck.html
 *.pyc
 __pycache__/
-
-# generated previews
-_*.png
-_*montage*.png
+# root-level temp previews only (NOT assets/tiles/_texture.png)
+/_texture_preview.png
+/_texture_test_tile.png
+/_logo_montage.png
+/_full_montage.png
+/_test_*.png
