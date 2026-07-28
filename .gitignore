@@ -4,3 +4,7 @@ _tilecheck/
 _tilecheck.html
 *.pyc
 __pycache__/
+
+# generated previews
+_*.png
+_*montage*.png

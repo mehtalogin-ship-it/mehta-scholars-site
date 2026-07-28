@@ -41,12 +41,13 @@
   "investors": "Wing VC is the Lead, Tokyo Black, and some Meta excecutive angels",
   "slug": "inventive",
   "tile": "",
-  "color": "#3a7a5f",
+  "color": "#2f8f8f",
   "bio": "Inventive, founded by Kavita Shah '07, is a Enterprise SaaS company.",
   "linkedin": "",
   "website": "",
   "page": "inventive",
-  "bio_stub": true
+  "bio_stub": true,
+  "brandcolor": true
  },
  {
   "name": "Deeya Viradia",
@@ -91,11 +92,12 @@
   "investors": "Greycroft(lead), Alumni Ventures, Revolution's Rise of the Rest Seed Fund, Liquid2 Ventures",
   "slug": "glow",
   "tile": "",
-  "color": "#3a5fb0",
+  "color": "#008281",
   "bio": "Glow, founded by Amira Valliani, was a podcast-monetization and subscription platform for creators. It was acquired in 2021.",
   "linkedin": "",
   "website": "",
-  "page": "glow"
+  "page": "glow",
+  "brandcolor": true
  },
  {
   "name": "Harish Venkatesan",
@@ -236,7 +238,7 @@
   "invest": "6200000",
   "investors": "unavailable",
   "slug": "hinoki",
-  "tile": "",
+  "tile": "assets/tiles/hinoki.png",
   "color": "#7a4fb0",
   "bio": "Hinoki, co-founded by Johnny Wang, is a Y Combinator–backed cybersecurity startup offering continuous vulnerability scanning and patching in one platform.",
   "linkedin": "https://www.linkedin.com/in/johnnyyw/",
@@ -458,11 +460,12 @@
   "investors": "",
   "slug": "diya-tv",
   "tile": "",
-  "color": "#8f2f6d",
+  "color": "#5f3a7a",
   "bio": "Diya TV, founded by Ravi Kapur, is America's first South Asian broadcast television network, reaching 85M+ viewers with news and cultural programming.",
   "linkedin": "",
   "website": "https://www.diyatv.com/",
-  "page": "diya-tv"
+  "page": "diya-tv",
+  "brandcolor": true
  },
  {
   "name": "Adrik Mcllroy",
@@ -628,11 +631,12 @@
   "investors": "",
   "slug": "letterbook",
   "tile": "",
-  "color": "#8f2f6d",
+  "color": "#4c6971",
   "bio": "Letterbook (YC S23), co-founded by Dawson Chen, built AI tooling for customer support.",
   "linkedin": "https://www.linkedin.com/in/dawson-chen-martin/",
   "website": "https://trymartin.com/",
-  "page": "dawson-chen"
+  "page": "dawson-chen",
+  "brandcolor": true
  },
  {
   "name": "Varun Sivaram",
@@ -821,12 +825,13 @@
   "invest": "",
   "investors": "",
   "slug": "delve",
-  "tile": "",
-  "color": "#4a4f8f",
+  "tile": "assets/tiles/delve.png",
+  "color": "#0c0c0c",
   "bio": "Delve, co-founded by Karun Kaushik, uses AI to automate security-compliance certifications such as SOC 2 and HIPAA for fast-growing companies.",
   "linkedin": "",
   "website": "",
-  "page": "delve"
+  "page": "delve",
+  "brandcolor": true
  },
  {
   "name": "Brandon Yang",
@@ -846,11 +851,12 @@
   "investors": "",
   "slug": "cartesia",
   "tile": "",
-  "color": "#2f6d3a",
+  "color": "#a04a2f",
   "bio": "Cartesia, co-founded by Brandon Yang, builds real-time generative voice and audio AI, including ultra-low-latency text-to-speech models for voice agents and applications.",
   "linkedin": "",
   "website": "",
-  "page": "cartesia"
+  "page": "cartesia",
+  "brandcolor": true
  },
  {
   "name": "Matthew Huang",
@@ -966,12 +972,13 @@
   "invest": "n/a",
   "investors": "Amano, Yuan, Belshe",
   "slug": "cortex",
-  "tile": "",
-  "color": "#b0863a",
+  "tile": "assets/tiles/cortex.png",
+  "color": "#000000",
   "bio": "Cortex, founded by Nemo Yang, is an AI desktop app that automates document-to-software data entry across accounting, legal, and mortgage/lending workflows — reading PDFs and entering the data into tools like QuickBooks and Salesforce.",
   "linkedin": "",
   "website": "",
-  "page": "cortex"
+  "page": "cortex",
+  "brandcolor": true
  },
  {
   "name": "Ravi Mishra",
@@ -1016,11 +1023,12 @@
   "investors": "Y Comb + others",
   "slug": "observee",
   "tile": "",
-  "color": "#2f6d3a",
+  "color": "#7a2f4f",
   "bio": "Observee, co-founded by Chris Hailey (YC), provides integration infrastructure for vertical-AI companies — a single API and marketplace of 1,000+ Model Context Protocol (MCP) integrations for AI agents.",
   "linkedin": "",
   "website": "",
-  "page": "observee"
+  "page": "observee",
+  "brandcolor": true
  },
  {
   "name": "Daanish Jamal",
@@ -1185,11 +1193,12 @@
   "investors": "",
   "slug": "parse",
   "tile": "",
-  "color": "#3a5fb0",
+  "color": "#6d8f2f",
   "bio": "Parse, co-founded by Ilya Sukhar (YC S11), was a mobile backend-as-a-service platform for developers. It was acquired by Facebook in 2013.",
   "linkedin": "",
   "website": "",
-  "page": "parse"
+  "page": "parse",
+  "brandcolor": true
  },
  {
   "name": "Anita Modi Gupta",
@@ -1401,13 +1410,14 @@
   "invest": "",
   "investors": "",
   "slug": "danger-devices",
-  "tile": "",
-  "color": "#b0863a",
+  "tile": "assets/tiles/danger-devices.png",
+  "color": "#1f2a1e",
   "bio": "Danger Devices, founded by Nick Sutardja '08, is a Semiconductor company.",
   "linkedin": "",
   "website": "",
   "page": "danger-devices",
-  "bio_stub": true
+  "bio_stub": true,
+  "brandcolor": true
  },
  {
   "name": "Bryan Quinn",
@@ -1456,7 +1466,8 @@
   "bio": "Gait (YC F24), founded by Kyle Li, builds AI-assisted software-development tooling.",
   "linkedin": "",
   "website": "",
-  "page": "gait"
+  "page": "gait",
+  "brandcolor": true
  },
  {
   "name": "Shivani Mitra",
@@ -1480,7 +1491,8 @@
   "bio": "Nous Research, co-founded by Shivani Mitra, is an open-source AI lab building openly available large language models (the Hermes series) and decentralized training infrastructure. It has raised ~$65M led by Paradigm.",
   "linkedin": "",
   "website": "",
-  "page": "nous-research"
+  "page": "nous-research",
+  "brandcolor": true
  },
  {
   "name": "Drew Goldstein",
@@ -1548,12 +1560,13 @@
   "invest": "$6,000,000; $21,000,000",
   "investors": "Greylock",
   "slug": "pine-ai",
-  "tile": "",
-  "color": "#7a2f4f",
+  "tile": "assets/tiles/pine-ai.png",
+  "color": "#066250",
   "bio": "Jonathan Shih is the Co-Founder and CTO of Pine, a Canadian mortgage underwriting company that enhances everything from helping the user find an appropriate property to issuing the mortgage for the property they selected. Pine has a referral partnership with fintech company WealthSimple and acquired another real estate company in Properly in 2023. Shih is a Berkeley Computer Engineering alumnus with a Master’s in Computer Science from UCLA. Prior to Pine, Shih was a Software Engineer for a multitude of companies, including Facebook, Shopagon, and Instabase.",
   "linkedin": "https://www.linkedin.com/in/jonathan-shih-8a007a56/",
   "website": "https://www.pine.ca/",
-  "page": "pine-ai"
+  "page": "pine-ai",
+  "brandcolor": true
  },
  {
   "name": "David Zhu",
@@ -2053,7 +2066,7 @@
   "invest": "",
   "investors": "Los Angeles",
   "slug": "loot-crate",
-  "tile": "",
+  "tile": "assets/tiles/loot-crate.png",
   "color": "#7a4fb0",
   "bio": "Loot Crate, co-founded by Christopher Davis, was a subscription-box service delivering curated pop-culture, gaming, and geek merchandise to fans.",
   "linkedin": "",
@@ -2246,7 +2259,7 @@
   "invest": "n/a",
   "investors": "n/a",
   "slug": "atlantic-money",
-  "tile": "",
+  "tile": "assets/tiles/atlantic-money.png",
   "color": "#7a2f4f",
   "bio": "Atlantic Money, co-founded by Neeraj Baid, offered low-flat-fee international money transfers. The company was acquired.",
   "linkedin": "",
@@ -2271,11 +2284,12 @@
   "investors": "",
   "slug": "doordash",
   "tile": "",
-  "color": "#6d8f2f",
+  "color": "#7a2f4f",
   "bio": "DoorDash is the largest food-delivery and local-commerce platform in the U.S., co-founded by Andy Fang. It went public on the NYSE in December 2020 and now spans restaurant, grocery, and retail delivery.",
   "linkedin": "",
   "website": "",
-  "page": "doordash"
+  "page": "doordash",
+  "brandcolor": true
  },
  {
   "name": "Andrew Jin",
@@ -2294,7 +2308,7 @@
   "invest": "",
   "investors": "",
   "slug": "commure",
-  "tile": "",
+  "tile": "assets/tiles/commure.png",
   "color": "#b0863a",
   "bio": "Commure, where Andrew Jin is a VP of Engineering, is an AI-native healthcare technology company (merged with Athelas) building clinical and revenue-cycle software for health systems.",
   "linkedin": "",
@@ -2319,11 +2333,12 @@
   "investors": "",
   "slug": "windsurf",
   "tile": "",
-  "color": "#a04a2f",
+  "color": "#2f6d3a",
   "bio": "Windsurf (formerly Codeium), co-founded by Varun Mohan, builds AI-powered developer tools and an agentic coding IDE. In 2025 its leadership and core technology were acquired amid a landmark deal involving Google and Cognition.",
   "linkedin": "",
   "website": "",
-  "page": "windsurf"
+  "page": "windsurf",
+  "brandcolor": true
  },
  {
   "name": "Manan Shah",
@@ -2343,11 +2358,12 @@
   "investors": "",
   "slug": "kumo-ai",
   "tile": "",
-  "color": "#5f3a7a",
+  "color": "#3a5fb0",
   "bio": "Kumo AI, where Manan Shah is a co-founder, builds predictive AI over relational enterprise data, letting teams make ML predictions directly on their databases.",
   "linkedin": "",
   "website": "",
-  "page": "manan-shah"
+  "page": "manan-shah",
+  "brandcolor": true
  },
  {
   "name": "Rohan Shah",
@@ -2366,12 +2382,13 @@
   "invest": "",
   "investors": "",
   "slug": "extend",
-  "tile": "",
-  "color": "#7a2f4f",
+  "tile": "assets/tiles/extend.png",
+  "color": "#2fbeaf",
   "bio": "Extend, founded by Rohan Shah, is a fintech infrastructure company offering virtual-card and spend-management APIs that let businesses issue and control payment cards.",
   "linkedin": "",
   "website": "",
-  "page": "extend"
+  "page": "extend",
+  "brandcolor": true
  },
  {
   "name": "Anuj Sharma",
@@ -2395,7 +2412,8 @@
   "bio": "Decrypt Biomedicine, founded by Anuj Sharma, is a biotech company advancing novel therapeutics.",
   "linkedin": "",
   "website": "",
-  "page": "decrypt-biomedicine"
+  "page": "decrypt-biomedicine",
+  "brandcolor": true
  },
  {
   "name": "Tanuj Thapliyal",
@@ -2415,11 +2433,12 @@
   "investors": "",
   "slug": "spot-ai",
   "tile": "",
-  "color": "#8f5f2f",
+  "color": "#2f5f8f",
   "bio": "Spot AI, co-founded by Tanuj Thapliyal, builds an AI-powered video intelligence platform that turns ordinary security cameras into tools for safety, operations, and real-time incident detection.",
   "linkedin": "",
   "website": "",
-  "page": "tanuj-thapliyal"
+  "page": "tanuj-thapliyal",
+  "brandcolor": true
  },
  {
   "name": "Denny Tsai",
@@ -2464,11 +2483,12 @@
   "investors": "",
   "slug": "muse-games",
   "tile": "",
-  "color": "#7a2f4f",
+  "color": "#8f2f6d",
   "bio": "Muse Games, co-founded by Howard Tsao, is an independent game studio known for titles such as Guns of Icarus.",
   "linkedin": "",
   "website": "",
-  "page": "muse-games"
+  "page": "muse-games",
+  "brandcolor": true
  },
  {
   "name": "Sean Turner",
@@ -2488,11 +2508,12 @@
   "investors": "",
   "slug": "swiftly",
   "tile": "",
-  "color": "#3a8f6d",
+  "color": "#1069e5",
   "bio": "Swiftly, co-founded by Sean Turner, is a retail-technology platform that helps brick-and-mortar retailers and CPG brands deliver personalized digital experiences and retail-media advertising.",
   "linkedin": "",
   "website": "",
-  "page": "swiftly"
+  "page": "swiftly",
+  "brandcolor": true
  },
  {
   "name": "Johnny Wang",
@@ -2511,7 +2532,7 @@
   "invest": "",
   "investors": "",
   "slug": "crosswire",
-  "tile": "",
+  "tile": "assets/tiles/crosswire.png",
   "color": "#4a4f8f",
   "bio": "Crosswire, co-founded by Johnny Wang, was an enterprise identity-security startup helping teams manage access at scale.",
   "linkedin": "https://www.linkedin.com/in/johnnyyw/",
