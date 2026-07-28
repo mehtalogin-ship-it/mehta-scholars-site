@@ -43,8 +43,8 @@
   "tile": "",
   "color": "#2f8f8f",
   "bio": "Kavita Shah is the Co-Founder and Head of Product of Inventive, which embeds a conversational AI analyst into SaaS products so users can explore and act on their data in natural language; the company launched with a $6.5M seed. Shah previously led the apps team at People.ai and began her career on YouTube/Google's monetization team. She holds a B.A. in international relations from Stanford and an MBA from MIT Sloan.",
-  "linkedin": "",
-  "website": "",
+  "linkedin": "https://www.linkedin.com/in/kavitashah2/",
+  "website": "https://inventive.ai/",
   "page": "inventive",
   "brandcolor": true
  },
@@ -68,7 +68,7 @@
   "tile": "",
   "color": "#8f2f6d",
   "bio": "Deeya Viradia is the Co-Founder and CTO of Quant (quant²), a marketplace for quantum-inspired financial algorithms. An engineering-physics student at UC Berkeley, she founded Berkeley's first experimental quantum-computing club and has done research at UC Berkeley's Quantum Devices Group, SLAC, and a DoD quantum lab.",
-  "linkedin": "",
+  "linkedin": "https://www.linkedin.com/in/deeya-viradia/",
   "website": "",
   "page": "quant"
  },
@@ -92,7 +92,7 @@
   "tile": "",
   "color": "#008281",
   "bio": "Amira Valliani is the Founder and CEO of Glow, a podcast- and creator-monetization platform that was acquired by Libsyn in 2021. Before Glow, Valliani served in the Obama White House as a senior advisor and as a speechwriter to Secretary of State Hillary Clinton, and she now leads growth and policy work at the Solana Foundation. She holds an MBA from the Wharton School and an MPA from the Harvard Kennedy School.",
-  "linkedin": "",
+  "linkedin": "https://www.linkedin.com/in/amira-valliani-3622131/",
   "website": "",
   "page": "glow",
   "brandcolor": true
@@ -117,8 +117,8 @@
   "tile": "",
   "color": "#3a5fb0",
   "bio": "Harish Venkatesan is the Co-Founder and CEO of Designlab, an online education platform offering mentor-guided courses in UX/UI and product design. Before Designlab, Venkatesan worked at Venmo and Grubwithus and co-founded TickrTalk while at the University of Pennsylvania. He holds a B.S. in systems engineering from the University of Pennsylvania.",
-  "linkedin": "",
-  "website": "",
+  "linkedin": "https://www.linkedin.com/in/harishvenkatesan/",
+  "website": "https://designlab.com/",
   "page": "designlab"
  },
  {
@@ -141,7 +141,7 @@
   "tile": "",
   "color": "#b03a3a",
   "bio": "Ashwini Iyer is the Co-Founder and product lead of Pamastay, a healthcare payment-integrity and compliance platform that replaces ad-hoc, spreadsheet-driven investigations with AI-assisted, auditable workflows built for regulatory scrutiny. Iyer previously worked at Verkada and HireVue.",
-  "linkedin": "",
+  "linkedin": "https://www.linkedin.com/in/ashwinii/",
   "website": "",
   "page": "pamastay"
  },
@@ -165,7 +165,7 @@
   "tile": "",
   "color": "#6d8f2f",
   "bio": "Larissa Tyagi is the Founder and CEO of Louiza Labs (YC S25), whose physics-driven AI engine simulates human biology to train and test medical devices and robots without real patients or hard-to-access clinical data. Before Louiza, Tyagi was a software engineer at Apple. She holds dual degrees in computer information systems and business from Carnegie Mellon University.",
-  "linkedin": "",
+  "linkedin": "https://www.linkedin.com/in/larissatyagi100/",
   "website": "",
   "page": "louiza-labs"
  },
@@ -309,8 +309,8 @@
   "tile": "",
   "color": "#3a7a5f",
   "bio": "Katie Siegel is the Co-Founder and CEO of Flipturn, an EV fleet charging-management software company that was acquired by Einride in 2026. Siegel was previously a senior engineering manager at Samsara and worked at Dropbox, SingleStore, and the MIT Media Lab. She holds an engineering degree from the Massachusetts Institute of Technology.",
-  "linkedin": "",
-  "website": "",
+  "linkedin": "https://www.linkedin.com/in/katie-siegel-912a7758/",
+  "website": "https://www.getflipturn.com/",
   "page": "flipturn"
  },
  {
@@ -382,7 +382,7 @@
   "tile": "",
   "color": "#5f3a7a",
   "bio": "Arvind Ramgopal is the Founder and CTO of Upward, which helps real-estate and building operators collect, store, and use building-energy data to automate compliance and cut energy costs. Ramgopal previously worked at Palo Alto Networks, Lume Health, IBM iX, and MetricStream, and studied at New York University.",
-  "linkedin": "",
+  "linkedin": "https://www.linkedin.com/in/arvind-ramgopal-45b4307a/",
   "website": "",
   "page": "upward"
  },
@@ -406,7 +406,7 @@
   "tile": "",
   "color": "#5f3a7a",
   "bio": "Manan Shah is the Founder and CEO of Backbone. A Harker alumnus and Stanford graduate, Shah is also a founding engineer at Kumo AI, where he works on relational deep learning, and was a national finalist in the Siemens Competition.",
-  "linkedin": "",
+  "linkedin": "https://www.linkedin.com/in/mananshah99/",
   "website": "",
   "page": "manan-shah"
  },
@@ -551,8 +551,8 @@
   "tile": "",
   "color": "#2f8f8f",
   "bio": "Gobi Dasu is the Founder and CEO of LD Talent, a future-of-work platform that helps companies find and manage vetted, motivated remote developers, AI/ML experts, and designers, using financially-incentivized upskilling to match talent at competitive rates. He holds a B.S. and M.S. in computer science from Stanford and is a PhD candidate in human-computer interaction at Northwestern University.",
-  "linkedin": "",
-  "website": "",
+  "linkedin": "https://www.linkedin.com/in/gobidasu/",
+  "website": "https://www.ldtalentwork.com/",
   "page": "gobi-dasu"
  },
  {
@@ -575,7 +575,7 @@
   "tile": "",
   "color": "#7a4fb0",
   "bio": "Gobi Dasu is the Founder of Hailcube, a human-AI platform for upskilling and matching diverse global tech talent — the successor to his developer marketplace LD Talent. He holds a B.S. and M.S. in computer science from Stanford and is a PhD candidate in human-computer interaction at Northwestern University.",
-  "linkedin": "",
+  "linkedin": "https://www.linkedin.com/in/gobidasu/",
   "website": "",
   "page": "gobi-dasu"
  },
@@ -721,7 +721,7 @@
   "tile": "",
   "color": "#2f8f8f",
   "bio": "Alex Lan is the Co-Founder and CEO of Agora, an early-stage startup he launched as a young founder. A member of Harker's Class of 2023, Lan is currently studying at Yale University.",
-  "linkedin": "",
+  "linkedin": "https://www.linkedin.com/in/alexanderlan/",
   "website": "",
   "page": "agora"
  },
@@ -745,8 +745,8 @@
   "tile": "",
   "color": "#4a4f8f",
   "bio": "Rishabh Jain is the Co-Founder and CEO of Latent (Latent Health, YC W23), which builds medical language models that automate healthcare operations such as prior authorization to get patients their medications faster; the company has raised an $80M Series A at roughly a $600M valuation. A repeat founder, Jain previously spent over a decade in healthcare at Omada Health and Two Chairs.",
-  "linkedin": "",
-  "website": "",
+  "linkedin": "https://www.linkedin.com/in/rj254/",
+  "website": "https://latenthealth.com/",
   "page": "latent"
  },
  {
@@ -793,7 +793,7 @@
   "tile": "",
   "color": "#b0863a",
   "bio": "Rajiv Sacheti is a Co-Founder of Caddy (YC F25), a personal AI for everyday work that lives in your text messages — surfacing important items from your email, calendar, and apps and acting on them when you reply. Before Caddy, Sacheti spent four years at Loom, where he helped lead product and design for Loom's AI suite.",
-  "linkedin": "",
+  "linkedin": "https://www.linkedin.com/in/rajivsancheti/",
   "website": "",
   "page": "caddy"
  },
@@ -817,8 +817,8 @@
   "tile": "assets/tiles/delve.png",
   "color": "#0c0c0c",
   "bio": "Karun Kaushik is the Co-Founder and CEO of Delve, an AI platform that helps fast-growing companies achieve SOC 2 and HIPAA compliance in days rather than months. Kaushik started Delve with co-founder Selin Kocalar after they met as MIT freshmen; both are Forbes '30 Under 30' honorees. The company went through Y Combinator and has raised a Series A.",
-  "linkedin": "",
-  "website": "",
+  "linkedin": "https://www.linkedin.com/in/karun-kaushik/",
+  "website": "https://www.getdelve.com/",
   "page": "delve",
   "brandcolor": true
  },
@@ -843,7 +843,7 @@
   "color": "#a04a2f",
   "bio": "Cartesia, co-founded by Brandon Yang, builds real-time generative voice and audio AI, including ultra-low-latency text-to-speech models for voice agents and applications.",
   "linkedin": "",
-  "website": "",
+  "website": "https://cartesia.ai/",
   "page": "cartesia",
   "brandcolor": true
  },
@@ -964,7 +964,7 @@
   "color": "#000000",
   "bio": "Cortex, founded by Nemo Yang, is an AI desktop app that automates document-to-software data entry across accounting, legal, and mortgage/lending workflows — reading PDFs and entering the data into tools like QuickBooks and Salesforce.",
   "linkedin": "",
-  "website": "",
+  "website": "https://withcortex.ai/",
   "page": "cortex",
   "brandcolor": true
  },
@@ -1109,7 +1109,7 @@
   "tile": "",
   "color": "#3a5fb0",
   "bio": "Peter Gao is the Co-Founder and CEO of Aquarium Learning (YC 2020), which helped ML teams improve their models by finding and fixing the highest-impact errors in their training data; the company was acquired by Notion. Gao previously led perception and computer vision at Cruise and shipped ML infrastructure at Pinterest and Khan Academy. He holds a degree in electrical engineering and computer science from UC Berkeley.",
-  "linkedin": "",
+  "linkedin": "https://www.linkedin.com/in/pgaooo/",
   "website": "",
   "page": "aquarium-learning"
  },
@@ -1181,7 +1181,7 @@
   "tile": "",
   "color": "#6d8f2f",
   "bio": "Ilya Sukhar is the Co-Founder and CEO of Parse, a cloud platform that gave mobile developers a ready-made backend, which Facebook acquired in 2013. After the acquisition Sukhar led Facebook's developer-facing products and worked on Messenger, and he is now a General Partner at Matrix Partners. He holds bachelor's and master's degrees in computer science from Cornell University.",
-  "linkedin": "",
+  "linkedin": "https://www.linkedin.com/in/ilyasukhar/",
   "website": "",
   "page": "parse",
   "brandcolor": true
@@ -1230,7 +1230,7 @@
   "tile": "",
   "color": "#4a4f8f",
   "bio": "Tanuj Thapliyal is a Co-Founder of Kos.ai, a finance-AI venture. He is best known as the Co-Founder and CEO of Spot AI, the video-intelligence company; earlier he co-founded Mellow Research and was a hardware program engineer at Meraki. He holds an M.S. in electrical engineering from Stanford and an MBA from UCLA.",
-  "linkedin": "",
+  "linkedin": "https://www.linkedin.com/in/tanuj-thapliyal-39133b25a/",
   "website": "",
   "page": "tanuj-thapliyal"
  },
@@ -1398,8 +1398,8 @@
   "tile": "assets/tiles/danger-devices.png",
   "color": "#1f2a1e",
   "bio": "Nick Sutardja is the Co-Founder and CEO of Danger Devices, a fabless semiconductor startup that designs self-optimizing integrated circuits to boost the performance of wired and wireless communication devices. He co-founded the company with Marvell founders Weili Dai and Sehat Sutardja. He holds a Ph.D. in integrated circuits from UC Berkeley.",
-  "linkedin": "",
-  "website": "",
+  "linkedin": "https://www.linkedin.com/in/nick-sutardja-216b0549/",
+  "website": "https://www.dangerdevices.com/",
   "page": "danger-devices",
   "brandcolor": true
  },
@@ -1424,7 +1424,7 @@
   "color": "#3a8f6d",
   "bio": "Bryan Quinn is the Co-Founder and CEO of Shopsense AI, a retail-media and adtech platform that makes TV and video content shoppable, connecting content, consumer intent, and commerce across the open internet. Quinn spent over a decade at Amazon Publisher Services before co-founding Shopsense with Glenn Fishback. He holds an MBA from the University of Notre Dame's Mendoza College of Business.",
   "linkedin": "",
-  "website": "",
+  "website": "https://www.shopsense.ai/",
   "page": "shopsense"
  },
  {
@@ -1448,7 +1448,7 @@
   "color": "#7a4fb0",
   "bio": "Kyle Li is a Co-Founder of Gait (YC F24), an open-source collaboration layer and developer infrastructure for AI coding assistants that helps engineering teams review and understand AI-generated code together. Li previously worked at Stripe and Jane Street.",
   "linkedin": "",
-  "website": "",
+  "website": "https://getgait.com/",
   "page": "gait",
   "brandcolor": true
  },
@@ -1473,7 +1473,7 @@
   "color": "#3a8f6d",
   "bio": "Nous Research, co-founded by Shivani Mitra, is an open-source AI lab building openly available large language models (the Hermes series) and decentralized training infrastructure. It has raised ~$65M led by Paradigm.",
   "linkedin": "",
-  "website": "",
+  "website": "https://nousresearch.com/",
   "page": "nous-research",
   "brandcolor": true
  },
@@ -1930,7 +1930,7 @@
   "tile": "",
   "color": "#5f3a7a",
   "bio": "Omar Hamade is the Founder and CEO of Hawala, a fintech building financial infrastructure that connects the Middle East and North Africa to global markets — offering digital USD and EUR wallets, instant transfers to 200+ countries, and a forthcoming card and interest-free savings product; it raised a $3M round. Hamade previously worked in business development and finance at Genentech. He holds a B.S. from Santa Clara University, was a Schwarzman Scholar at Tsinghua University, and studied at Harvard Business School.",
-  "linkedin": "",
+  "linkedin": "https://www.linkedin.com/in/omarhamade/",
   "website": "",
   "page": "hawala"
  },
@@ -2051,7 +2051,7 @@
   "color": "#7a4fb0",
   "bio": "Loot Crate, co-founded by Christopher Davis, was a subscription-box service delivering curated pop-culture, gaming, and geek merchandise to fans.",
   "linkedin": "",
-  "website": "",
+  "website": "https://www.lootcrate.com/",
   "page": "loot-crate"
  },
  {
@@ -2195,7 +2195,7 @@
   "tile": "",
   "color": "#3a5fb0",
   "bio": "Ethan Agarwal is the Co-Founder and CEO of The Coterie, a fintech and wealth-management venture. Agarwal previously founded and led Aaptiv, an audio-fitness app that grew to more than one million paying members and roughly $100M in revenue before its assets were acquired, and earlier worked at McKinsey & Company, Citadel, and Lehman Brothers. He holds a B.A. in economics and political science from Johns Hopkins University and an MBA in finance from the Wharton School.",
-  "linkedin": "",
+  "linkedin": "https://www.linkedin.com/in/ethanagarwal/",
   "website": "",
   "page": "ethan-agarwal"
  },
@@ -2219,8 +2219,8 @@
   "tile": "",
   "color": "#3a5fb0",
   "bio": "Ethan Agarwal is the Founder and former CEO of Aaptiv, an audio-based fitness app that delivered trainer-led workouts and grew to over one million paying members across 20+ countries before its assets were acquired. Agarwal went on to found The Coterie, and earlier worked at McKinsey & Company, Citadel, and Lehman Brothers. He holds a B.A. in economics and political science from Johns Hopkins University and an MBA in finance from the Wharton School.",
-  "linkedin": "",
-  "website": "",
+  "linkedin": "https://www.linkedin.com/in/ethanagarwal/",
+  "website": "https://aaptiv.com/",
   "page": "ethan-agarwal"
  },
  {
@@ -2243,8 +2243,8 @@
   "tile": "assets/tiles/atlantic-money.png",
   "color": "#7a2f4f",
   "bio": "Neeraj Baid is the Co-Founder and CTO of Atlantic Money, a fintech offering fixed-flat-fee international money transfers, which was later acquired. Baid spent roughly four years at Robinhood as an iOS engineer and then product manager, where he helped launch crypto trading, before leaving pre-IPO to start Atlantic Money. He holds a B.S. in electrical engineering and computer science from UC Berkeley.",
-  "linkedin": "",
-  "website": "",
+  "linkedin": "https://www.linkedin.com/in/neerajbaid/",
+  "website": "https://atlanticmoney.com/",
   "page": "atlantic-money"
  },
  {
@@ -2268,7 +2268,7 @@
   "color": "#7a2f4f",
   "bio": "DoorDash is the largest food-delivery and local-commerce platform in the U.S., co-founded by Andy Fang. It went public on the NYSE in December 2020 and now spans restaurant, grocery, and retail delivery.",
   "linkedin": "",
-  "website": "",
+  "website": "https://www.doordash.com/",
   "page": "doordash",
   "brandcolor": true
  },
@@ -2293,7 +2293,7 @@
   "color": "#b0863a",
   "bio": "Andrew Jin is a Vice President of Engineering at Commure, an AI-native healthcare-technology company (formed after its 2023 merger with Athelas) building software to modernize clinical and administrative workflows across health systems. Jin focuses on scaling enterprise deployments and product execution in complex, regulated healthcare environments.",
   "linkedin": "",
-  "website": "",
+  "website": "https://www.commure.com/",
   "page": "commure"
  },
  {
@@ -2317,7 +2317,7 @@
   "color": "#2f6d3a",
   "bio": "Windsurf (formerly Codeium), co-founded by Varun Mohan, builds AI-powered developer tools and an agentic coding IDE. In 2025 its leadership and core technology were acquired amid a landmark deal involving Google and Cognition.",
   "linkedin": "",
-  "website": "",
+  "website": "https://windsurf.com/",
   "page": "windsurf",
   "brandcolor": true
  },
@@ -2341,7 +2341,7 @@
   "tile": "",
   "color": "#3a5fb0",
   "bio": "Manan Shah is a founding engineer at Kumo AI, which pioneers relational deep learning and graph neural networks so teams can make accurate predictions directly on their relational data without heavy feature engineering. Before Kumo, Shah was a machine-learning engineer at Snorkel AI. A Harker alumnus, he was a national finalist in the Siemens Competition for his research on modeling breast-cancer tumors.",
-  "linkedin": "",
+  "linkedin": "https://www.linkedin.com/in/mananshah99/",
   "website": "",
   "page": "manan-shah",
   "brandcolor": true
@@ -2366,7 +2366,7 @@
   "tile": "assets/tiles/extend.png",
   "color": "#2fbeaf",
   "bio": "Rohan Shah is the Founder of Extend, a platform that lets merchants offer extended warranties and protection plans online, powering programs for brands like Peloton, Oura, and iRobot; Extend has raised over $320M at a $1.6B valuation. Shah previously founded WITHIN and spent four years at BCG Digital Ventures building new businesses with Fortune 500 companies. He is a Stanford alumnus and Forbes '30 Under 30' honoree.",
-  "linkedin": "",
+  "linkedin": "https://www.linkedin.com/in/rohanshah8/",
   "website": "https://www.extend.com/",
   "page": "extend",
   "brandcolor": true
@@ -2391,7 +2391,7 @@
   "tile": "",
   "color": "#6d8f2f",
   "bio": "Anuj Sharma is the Co-Founder and CEO of Decrypt Biomedicine, a biotech developing small-molecule cancer therapeutics that target 'cryptic' binding sites on proteins to unlock hard-to-drug targets. He co-founded the company with Greg Bowman and has since also worked as a research engineer at Google DeepMind. He holds a B.A. and an M.S. from Columbia University.",
-  "linkedin": "",
+  "linkedin": "https://www.linkedin.com/in/anujsharma4529/",
   "website": "",
   "page": "decrypt-biomedicine",
   "brandcolor": true
@@ -2416,8 +2416,8 @@
   "tile": "",
   "color": "#2f5f8f",
   "bio": "Tanuj Thapliyal is the Co-Founder and CEO of Spot AI, whose video-intelligence platform turns ordinary security cameras into tools for safety, operations, and real-time incident detection. He founded Spot AI in 2018 with two Stanford friends, and previously co-founded Mellow Research and worked as a hardware program engineer at Meraki. He holds an M.S. in electrical engineering from Stanford and an MBA from UCLA.",
-  "linkedin": "",
-  "website": "",
+  "linkedin": "https://www.linkedin.com/in/tanuj-thapliyal-39133b25a/",
+  "website": "https://www.spot.ai/",
   "page": "tanuj-thapliyal",
   "brandcolor": true
  },
@@ -2442,7 +2442,7 @@
   "color": "#3a5fb0",
   "bio": "Denny Tsai is the Founder of Agence, a platform for building and deploying autonomous AI agents — with tool integrations, custom skills, knowledge bases, and multi-channel deployment from one system.",
   "linkedin": "",
-  "website": "",
+  "website": "https://agence.run/",
   "page": "agence"
  },
  {
@@ -2465,8 +2465,8 @@
   "tile": "",
   "color": "#8f2f6d",
   "bio": "Howard Tsao is the Founder and CEO of Muse Games, an independent game studio best known for the airship-combat series Guns of Icarus. He holds a B.A. in history and Asian studies from UC Berkeley and an MBA in marketing from NYU's Stern School of Business.",
-  "linkedin": "",
-  "website": "",
+  "linkedin": "https://www.linkedin.com/in/howard-tsao-a168452/",
+  "website": "https://musegames.com/",
   "page": "muse-games",
   "brandcolor": true
  },
