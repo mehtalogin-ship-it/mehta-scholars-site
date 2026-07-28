@@ -12,3 +12,4 @@ Larissa Tyagi, Varun Sivaram, Brandon Yang, Katie Siegel, Ethan Agarwal, Neeraj 
 
 ## Flags / failures (needs review)
 - Ashwini Iyer: LinkedIn photo is a wide stage/speaking shot (used as-is; may want a tighter headshot)
+- Gobi Dasu: LinkedIn /in/gobidasu/ returns 404 (dead) — REMOVED from site; no photo. Real handle unknown (try LD Talent).
