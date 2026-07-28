@@ -648,8 +648,8 @@
   "tile": "",
   "color": "#6d8f2f",
   "bio": "Emerald AI, founded by Varun Sivaram, makes AI data centers grid-flexible — orchestrating compute to reduce power draw during peak grid demand. It launched in 2025 with a $24.5M seed backed by Radical Ventures and NVIDIA.",
-  "linkedin": "",
-  "website": "",
+  "linkedin": "https://www.linkedin.com/in/varunsivaram/",
+  "website": "https://www.emeraldai.co/",
   "page": "emerald-ai"
  },
  {
@@ -842,7 +842,7 @@
   "tile": "",
   "color": "#a04a2f",
   "bio": "Cartesia, co-founded by Brandon Yang, builds real-time generative voice and audio AI, including ultra-low-latency text-to-speech models for voice agents and applications.",
-  "linkedin": "",
+  "linkedin": "https://www.linkedin.com/in/bcyang/",
   "website": "https://cartesia.ai/",
   "page": "cartesia",
   "brandcolor": true
@@ -963,7 +963,7 @@
   "tile": "assets/tiles/cortex.png",
   "color": "#000000",
   "bio": "Cortex, founded by Nemo Yang, is an AI desktop app that automates document-to-software data entry across accounting, legal, and mortgage/lending workflows — reading PDFs and entering the data into tools like QuickBooks and Salesforce.",
-  "linkedin": "",
+  "linkedin": "https://www.linkedin.com/in/nemoy/",
   "website": "https://withcortex.ai/",
   "page": "cortex",
   "brandcolor": true
@@ -989,7 +989,7 @@
   "color": "#2f6d3a",
   "bio": "Ravi Mishra is a Co-Founder of Potluck Labs, a research studio that explores, prototypes, and ships consumer apps.",
   "linkedin": "",
-  "website": "",
+  "website": "https://www.potluck.software/",
   "page": "potluck-labs"
  },
  {
@@ -1012,7 +1012,7 @@
   "tile": "",
   "color": "#7a2f4f",
   "bio": "Observee, co-founded by Chris Hailey (YC), provides integration infrastructure for vertical-AI companies — a single API and marketplace of 1,000+ Model Context Protocol (MCP) integrations for AI agents.",
-  "linkedin": "",
+  "linkedin": "https://www.linkedin.com/in/chrishailey8/",
   "website": "",
   "page": "observee",
   "brandcolor": true
@@ -1231,7 +1231,7 @@
   "color": "#4a4f8f",
   "bio": "Tanuj Thapliyal is a Co-Founder of Kos.ai, a finance-AI venture. He is best known as the Co-Founder and CEO of Spot AI, the video-intelligence company; earlier he co-founded Mellow Research and was a hardware program engineer at Meraki. He holds an M.S. in electrical engineering from Stanford and an MBA from UCLA.",
   "linkedin": "https://www.linkedin.com/in/tanuj-thapliyal-39133b25a/",
-  "website": "",
+  "website": "https://kos.ai/",
   "page": "tanuj-thapliyal"
  },
  {
@@ -1326,7 +1326,7 @@
   "tile": "",
   "color": "#3a8f6d",
   "bio": "Arnav Joshi is a Co-Founder of Blast, an AI-safety startup that helps enterprises deploy safe, reliable, and compliant LLM applications and agents. Joshi founded Blast in 2024 with Daniel Zamoshchin and previously worked on autonomous-driving research at NVIDIA and in macro at Bridgewater Associates. He holds a degree from Stanford University.",
-  "linkedin": "",
+  "linkedin": "https://www.linkedin.com/in/arnav-joshi-516516154/",
   "website": "",
   "page": "blast"
  },
@@ -1472,7 +1472,7 @@
   "tile": "",
   "color": "#3a8f6d",
   "bio": "Nous Research, co-founded by Shivani Mitra, is an open-source AI lab building openly available large language models (the Hermes series) and decentralized training infrastructure. It has raised ~$65M led by Paradigm.",
-  "linkedin": "",
+  "linkedin": "https://www.linkedin.com/in/shivani-mitra/",
   "website": "https://nousresearch.com/",
   "page": "nous-research",
   "brandcolor": true
@@ -1521,8 +1521,8 @@
   "tile": "",
   "color": "#5f3a7a",
   "bio": "Tushar Davé is the Chairman and CEO of FarmX, an agriculture-technology company whose platform combines soil sensors, weather data, crop analytics, and automation into an autonomous farming system used by growers in the US, India, and Japan. Davé was previously founding Chairman and CEO of Enlighted, which was acquired by Siemens.",
-  "linkedin": "",
-  "website": "",
+  "linkedin": "https://www.linkedin.com/in/tushar-dave-3775a3/",
+  "website": "https://www.farmx.ag/",
   "page": "farmx"
  },
  {
@@ -1571,7 +1571,7 @@
   "color": "#8f5f2f",
   "bio": "Percival (YC X25), co-founded by David Zhu, is an AI agent that automates data entry — turning inbound documents like purchase orders into structured records in business systems.",
   "linkedin": "https://www.linkedin.com/in/davidzhu10/",
-  "website": "",
+  "website": "https://percivaltech.com/",
   "page": "percival"
  },
  {
@@ -2147,7 +2147,7 @@
   "color": "#2f5f8f",
   "bio": "Kevin Kim is the Founder and CTO of Remy Security (YC S23), which uses AI to help security teams run design reviews quickly and thoroughly. He co-founded the company with Sten Sjöberg and was previously a software engineer at ExtraHop. He holds a degree in computer science from Rice University.",
   "linkedin": "",
-  "website": "",
+  "website": "https://remysec.com/",
   "page": "remy-securities"
  },
  {
@@ -2196,7 +2196,7 @@
   "color": "#3a5fb0",
   "bio": "Ethan Agarwal is the Co-Founder and CEO of The Coterie, a fintech and wealth-management venture. Agarwal previously founded and led Aaptiv, an audio-fitness app that grew to more than one million paying members and roughly $100M in revenue before its assets were acquired, and earlier worked at McKinsey & Company, Citadel, and Lehman Brothers. He holds a B.A. in economics and political science from Johns Hopkins University and an MBA in finance from the Wharton School.",
   "linkedin": "https://www.linkedin.com/in/ethanagarwal/",
-  "website": "",
+  "website": "https://thecoterie.co/",
   "page": "ethan-agarwal"
  },
  {
@@ -2267,7 +2267,7 @@
   "tile": "",
   "color": "#7a2f4f",
   "bio": "DoorDash is the largest food-delivery and local-commerce platform in the U.S., co-founded by Andy Fang. It went public on the NYSE in December 2020 and now spans restaurant, grocery, and retail delivery.",
-  "linkedin": "",
+  "linkedin": "https://www.linkedin.com/in/fangsterr/",
   "website": "https://www.doordash.com/",
   "page": "doordash",
   "brandcolor": true
@@ -2292,7 +2292,7 @@
   "tile": "assets/tiles/commure.png",
   "color": "#b0863a",
   "bio": "Andrew Jin is a Vice President of Engineering at Commure, an AI-native healthcare-technology company (formed after its 2023 merger with Athelas) building software to modernize clinical and administrative workflows across health systems. Jin focuses on scaling enterprise deployments and product execution in complex, regulated healthcare environments.",
-  "linkedin": "",
+  "linkedin": "https://www.linkedin.com/in/andrewcjin/",
   "website": "https://www.commure.com/",
   "page": "commure"
  },
@@ -2316,7 +2316,7 @@
   "tile": "",
   "color": "#2f6d3a",
   "bio": "Windsurf (formerly Codeium), co-founded by Varun Mohan, builds AI-powered developer tools and an agentic coding IDE. In 2025 its leadership and core technology were acquired amid a landmark deal involving Google and Cognition.",
-  "linkedin": "",
+  "linkedin": "https://www.linkedin.com/in/varunkmohan/",
   "website": "https://windsurf.com/",
   "page": "windsurf",
   "brandcolor": true
@@ -2342,7 +2342,7 @@
   "color": "#3a5fb0",
   "bio": "Manan Shah is a founding engineer at Kumo AI, which pioneers relational deep learning and graph neural networks so teams can make accurate predictions directly on their relational data without heavy feature engineering. Before Kumo, Shah was a machine-learning engineer at Snorkel AI. A Harker alumnus, he was a national finalist in the Siemens Competition for his research on modeling breast-cancer tumors.",
   "linkedin": "https://www.linkedin.com/in/mananshah99/",
-  "website": "",
+  "website": "https://kumo.ai/",
   "page": "manan-shah",
   "brandcolor": true
  },
@@ -2490,8 +2490,8 @@
   "tile": "",
   "color": "#1069e5",
   "bio": "Swiftly, co-founded by Sean Turner, is a retail-technology platform that helps brick-and-mortar retailers and CPG brands deliver personalized digital experiences and retail-media advertising.",
-  "linkedin": "",
-  "website": "",
+  "linkedin": "https://www.linkedin.com/in/seturner/",
+  "website": "https://www.swiftly.com/",
   "page": "swiftly",
   "brandcolor": true
  },
