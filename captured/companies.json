@@ -67,11 +67,10 @@
   "slug": "quant",
   "tile": "",
   "color": "#8f2f6d",
-  "bio": "Quant, founded by Deeya Viradia, is a Quantum Computing/Research company.",
+  "bio": "Deeya Viradia is the Co-Founder and CTO of Quant (quant²), a marketplace for quantum-inspired financial algorithms. An engineering-physics student at UC Berkeley, she founded Berkeley's first experimental quantum-computing club and has done research at UC Berkeley's Quantum Devices Group, SLAC, and a DoD quantum lab.",
   "linkedin": "",
   "website": "",
-  "page": "quant",
-  "bio_stub": true
+  "page": "quant"
  },
  {
   "name": "Amira Valliani",
@@ -333,11 +332,10 @@
   "slug": "altitude-iq",
   "tile": "",
   "color": "#4a4f8f",
-  "bio": "Altitude IQ, founded by Ketul Patel '10, is a AI company.",
+  "bio": "Ketul Patel is the Founder of Altitude IQ, an early-stage venture. He is a member of Harker's Class of 2010.",
   "linkedin": "",
   "website": "",
-  "page": "altitude-iq",
-  "bio_stub": true
+  "page": "altitude-iq"
  },
  {
   "name": "Suraj Pakala",
@@ -383,11 +381,10 @@
   "slug": "upward",
   "tile": "",
   "color": "#5f3a7a",
-  "bio": "Upward, founded by Arvind Ramgopal '13, is a AI company.",
+  "bio": "Arvind Ramgopal is the Founder and CTO of Upward, which helps real-estate and building operators collect, store, and use building-energy data to automate compliance and cut energy costs. Ramgopal previously worked at Palo Alto Networks, Lume Health, IBM iX, and MetricStream, and studied at New York University.",
   "linkedin": "",
   "website": "",
-  "page": "upward",
-  "bio_stub": true
+  "page": "upward"
  },
  {
   "name": "Manan Shah",
@@ -408,11 +405,10 @@
   "slug": "backbone",
   "tile": "",
   "color": "#5f3a7a",
-  "bio": "Backbone, founded by Manan Shah '17, is a AI company.",
+  "bio": "Manan Shah is the Founder and CEO of Backbone. A Harker alumnus and Stanford graduate, Shah is also a founding engineer at Kumo AI, where he works on relational deep learning, and was a national finalist in the Siemens Competition.",
   "linkedin": "",
   "website": "",
-  "page": "manan-shah",
-  "bio_stub": true
+  "page": "manan-shah"
  },
  {
   "name": "Senan Ebrahim",
@@ -554,11 +550,10 @@
   "slug": "ld-talent",
   "tile": "",
   "color": "#2f8f8f",
-  "bio": "LD Talent, founded by Gobi Dasu '12, is a Talent Marketplace company.",
+  "bio": "Gobi Dasu is the Founder and CEO of LD Talent, a future-of-work platform that helps companies find and manage vetted, motivated remote developers, AI/ML experts, and designers, using financially-incentivized upskilling to match talent at competitive rates. He holds a B.S. and M.S. in computer science from Stanford and is a PhD candidate in human-computer interaction at Northwestern University.",
   "linkedin": "",
   "website": "",
-  "page": "gobi-dasu",
-  "bio_stub": true
+  "page": "gobi-dasu"
  },
  {
   "name": "Gobi Dasu",
@@ -579,11 +574,10 @@
   "slug": "hailcube",
   "tile": "",
   "color": "#7a4fb0",
-  "bio": "Hailcube, founded by Gobi Dasu '12, is a Talent Marketplace company.",
+  "bio": "Gobi Dasu is the Founder of Hailcube, a human-AI platform for upskilling and matching diverse global tech talent — the successor to his developer marketplace LD Talent. He holds a B.S. and M.S. in computer science from Stanford and is a PhD candidate in human-computer interaction at Northwestern University.",
   "linkedin": "",
   "website": "",
-  "page": "gobi-dasu",
-  "bio_stub": true
+  "page": "gobi-dasu"
  },
  {
   "name": "Nikhil Reddy",
@@ -726,7 +720,7 @@
   "slug": "agora",
   "tile": "",
   "color": "#2f8f8f",
-  "bio": "Alex Lan is the Co-Founder and CEO of Agora, an early-stage startup-growth company he launched as a young founder in Silicon Valley. Lan is a member of Harker's Class of 2023.",
+  "bio": "Alex Lan is the Co-Founder and CEO of Agora, an early-stage startup he launched as a young founder. A member of Harker's Class of 2023, Lan is currently studying at Yale University.",
   "linkedin": "",
   "website": "",
   "page": "agora"
@@ -993,11 +987,10 @@
   "slug": "potluck-labs",
   "tile": "",
   "color": "#2f6d3a",
-  "bio": "Potluck Labs, founded by Ravi Mishra, is a Consumer Apps company.",
+  "bio": "Ravi Mishra is a Co-Founder of Potluck Labs, a research studio that explores, prototypes, and ships consumer apps.",
   "linkedin": "",
   "website": "",
-  "page": "potluck-labs",
-  "bio_stub": true
+  "page": "potluck-labs"
  },
  {
   "name": "Chris Hailey",
@@ -1163,11 +1156,10 @@
   "slug": "pokedata",
   "tile": "",
   "color": "#8f5f2f",
-  "bio": "Pokedata, founded by Ram Menon, is a Consumer company.",
+  "bio": "Ram Menon is a Co-Founder of Pokedata, an early-stage consumer data startup.",
   "linkedin": "",
   "website": "",
-  "page": "pokedata",
-  "bio_stub": true
+  "page": "pokedata"
  },
  {
   "name": "Ilya Sukhar",
@@ -1261,11 +1253,10 @@
   "slug": "apriori",
   "tile": "",
   "color": "#3a5fb0",
-  "bio": "aPriori, founded by Ray Song, is a AI Trading company.",
+  "bio": "Ray Song is a Founder and core contributor of aPriori, a trading-infrastructure layer that brings high-frequency-trading techniques on-chain — combining MEV-powered liquid staking with an AI-powered DEX aggregator on the Monad blockchain. Built by former Jump Trading and Coinbase quants and engineers, aPriori has raised roughly $30M.",
   "linkedin": "",
   "website": "",
-  "page": "apriori",
-  "bio_stub": true
+  "page": "apriori"
  },
  {
   "name": "Rishi Bhargava",
@@ -1334,7 +1325,7 @@
   "slug": "blast",
   "tile": "",
   "color": "#3a8f6d",
-  "bio": "Blast, founded by Arnav Joshi, is a seed-stage AI-safety and enterprise-AI company.",
+  "bio": "Arnav Joshi is a Co-Founder of Blast, an AI-safety startup that helps enterprises deploy safe, reliable, and compliant LLM applications and agents. Joshi founded Blast in 2024 with Daniel Zamoshchin and previously worked on autonomous-driving research at NVIDIA and in macro at Bridgewater Associates. He holds a degree from Stanford University.",
   "linkedin": "",
   "website": "",
   "page": "blast"
@@ -1529,11 +1520,10 @@
   "slug": "farmx",
   "tile": "",
   "color": "#5f3a7a",
-  "bio": "FarmX, founded by Tushar Davé, is a Agriculture Technology company.",
+  "bio": "Tushar Davé is the Chairman and CEO of FarmX, an agriculture-technology company whose platform combines soil sensors, weather data, crop analytics, and automation into an autonomous farming system used by growers in the US, India, and Japan. Davé was previously founding Chairman and CEO of Enlighted, which was acquired by Siemens.",
   "linkedin": "",
   "website": "",
-  "page": "farmx",
-  "bio_stub": true
+  "page": "farmx"
  },
  {
   "name": "Jonathan Shih",
@@ -1939,11 +1929,10 @@
   "slug": "hawala",
   "tile": "",
   "color": "#5f3a7a",
-  "bio": "Hawala, founded by Omar Hamade, is a Fintech company.",
+  "bio": "Omar Hamade is the Founder and CEO of Hawala, a fintech building financial infrastructure that connects the Middle East and North Africa to global markets — offering digital USD and EUR wallets, instant transfers to 200+ countries, and a forthcoming card and interest-free savings product; it raised a $3M round. Hamade previously worked in business development and finance at Genentech. He holds a B.S. from Santa Clara University, was a Schwarzman Scholar at Tsinghua University, and studied at Harvard Business School.",
   "linkedin": "",
   "website": "",
-  "page": "hawala",
-  "bio_stub": true
+  "page": "hawala"
  },
  {
   "name": "Elizabeth Burnstien",
@@ -2156,7 +2145,7 @@
   "slug": "remy-securities",
   "tile": "",
   "color": "#2f5f8f",
-  "bio": "Remy Securities (YC), founded by Kevin Kim, is an early-stage cybersecurity company.",
+  "bio": "Kevin Kim is the Founder and CTO of Remy Security (YC S23), which uses AI to help security teams run design reviews quickly and thoroughly. He co-founded the company with Sten Sjöberg and was previously a software engineer at ExtraHop. He holds a degree in computer science from Rice University.",
   "linkedin": "",
   "website": "",
   "page": "remy-securities"
@@ -2451,11 +2440,10 @@
   "slug": "agence",
   "tile": "",
   "color": "#3a5fb0",
-  "bio": "Agence, founded by Denny Tsai, is a AI company.",
+  "bio": "Denny Tsai is the Founder of Agence, a platform for building and deploying autonomous AI agents — with tool integrations, custom skills, knowledge bases, and multi-channel deployment from one system.",
   "linkedin": "",
   "website": "",
-  "page": "agence",
-  "bio_stub": true
+  "page": "agence"
  },
  {
   "name": "Howard Tsao",
