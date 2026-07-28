@@ -17,3 +17,8 @@ Larissa Tyagi, Varun Sivaram, Brandon Yang, Katie Siegel, Ethan Agarwal, Neeraj 
 - Chris Hailey: now **Co-Founder @ OS3 (YC S26)** (site lists Observee, YC S25) — review
 - Arnav Joshi: LinkedIn (/in/arnav-rcm) = 'Refactoring American healthcare' (Refactor), NOT Blast/AI-safety — POSSIBLE WRONG PERSON or pivot; verify photo+company+linkedin
 - Sri Prakash: headline now **Macrolytical** (Grey Matter/BountyMe are past ventures)
+- Andy Fang (DoorDash): LinkedIn photo lightbox won't open (2 retries) — NO PHOTO pulled
+- Peter Gao (Aquarium/Notion): no LinkedIn profile photo (default avatar) — NO PHOTO
+- Howard Tsao (Muse Games): photo lightbox won't open (2 retries) — NO PHOTO
+- Tanuj Thapliyal (Spot AI): photo lightbox won't open (3 attempts) — NO PHOTO (CEO at Spot AI confirmed)
+- Tushar Dave (FarmX): photo lightbox won't open / download canceled (3 attempts) — NO PHOTO (Chairman & CEO @ FarmX confirmed)
