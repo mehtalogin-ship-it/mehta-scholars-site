@@ -16,3 +16,4 @@ Larissa Tyagi, Varun Sivaram, Brandon Yang, Katie Siegel, Ethan Agarwal, Neeraj 
 - Rajiv Sacheti: correct surname is **Sancheti** (sheet typo) — Co-Founder @ Caddy confirmed
 - Chris Hailey: now **Co-Founder @ OS3 (YC S26)** (site lists Observee, YC S25) — review
 - Arnav Joshi: LinkedIn (/in/arnav-rcm) = 'Refactoring American healthcare' (Refactor), NOT Blast/AI-safety — POSSIBLE WRONG PERSON or pivot; verify photo+company+linkedin
+- Sri Prakash: headline now **Macrolytical** (Grey Matter/BountyMe are past ventures)
