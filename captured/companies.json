@@ -141,11 +141,10 @@
   "slug": "pamastay",
   "tile": "",
   "color": "#b03a3a",
-  "bio": "Pamastay, founded by Ashwini Iyer '15, is a HealthTech/FinTech company.",
+  "bio": "Ashwini Iyer is the Co-Founder and product lead of Pamastay, a healthcare payment-integrity and compliance platform that replaces ad-hoc, spreadsheet-driven investigations with AI-assisted, auditable workflows built for regulatory scrutiny. Iyer previously worked at Verkada and HireVue.",
   "linkedin": "",
   "website": "",
-  "page": "pamastay",
-  "bio_stub": true
+  "page": "pamastay"
  },
  {
   "name": "Larissa Tyagi",
@@ -166,7 +165,7 @@
   "slug": "louiza-labs",
   "tile": "",
   "color": "#6d8f2f",
-  "bio": "Louiza Labs (YC Summer 2025), founded by Larissa Tyagi, is a health-tech company using AI simulation.",
+  "bio": "Larissa Tyagi is the Founder and CEO of Louiza Labs (YC S25), whose physics-driven AI engine simulates human biology to train and test medical devices and robots without real patients or hard-to-access clinical data. Before Louiza, Tyagi was a software engineer at Apple. She holds dual degrees in computer information systems and business from Carnegie Mellon University.",
   "linkedin": "",
   "website": "",
   "page": "louiza-labs"
@@ -190,7 +189,7 @@
   "slug": "bizzy-ai",
   "tile": "",
   "color": "#8f5f2f",
-  "bio": "Bizzy AI (YC S25), founded by Ansh Sheth, builds AI agents that automate sales and go-to-market workflows.",
+  "bio": "Ansh Sheth is a Co-Founder of Bizzy AI (Y Combinator S25), a startup building AI agents that automate sales and go-to-market workflows. Sheth is a member of Harker's Class of 2024.",
   "linkedin": "",
   "website": "",
   "page": "bizzy-ai"
@@ -799,7 +798,7 @@
   "slug": "caddy",
   "tile": "",
   "color": "#b0863a",
-  "bio": "Caddy (YC F25), founded by Rajiv Sacheti, is an early-stage AI productivity company.",
+  "bio": "Rajiv Sacheti is a Co-Founder of Caddy (YC F25), a personal AI for everyday work that lives in your text messages — surfacing important items from your email, calendar, and apps and acting on them when you reply. Before Caddy, Sacheti spent four years at Loom, where he helped lead product and design for Loom's AI suite.",
   "linkedin": "",
   "website": "",
   "page": "caddy"
@@ -945,11 +944,10 @@
   "slug": "lume",
   "tile": "",
   "color": "#3a8f6d",
-  "bio": "Lume, founded by Shantanu Joshi '13, is a FIntech/Healthcare company.",
+  "bio": "Shantanu Joshi is a Co-Founder of Lume (YC S20), a startup that automates data integration and mapping so teams can move and clean data between systems without manual engineering.",
   "linkedin": "",
   "website": "",
-  "page": "lume",
-  "bio_stub": true
+  "page": "lume"
  },
  {
   "name": "Nemo Yang",
@@ -1239,7 +1237,7 @@
   "slug": "kos-ai",
   "tile": "",
   "color": "#4a4f8f",
-  "bio": "Kos.ai, founded by Tanuj Thapliyal, is a finance-AI company.",
+  "bio": "Tanuj Thapliyal is a Co-Founder of Kos.ai, a finance-AI venture. He is best known as the Co-Founder and CEO of Spot AI, the video-intelligence company; earlier he co-founded Mellow Research and was a hardware program engineer at Meraki. He holds an M.S. in electrical engineering from Stanford and an MBA from UCLA.",
   "linkedin": "",
   "website": "",
   "page": "tanuj-thapliyal"
@@ -1433,11 +1431,10 @@
   "slug": "shopsense",
   "tile": "",
   "color": "#3a8f6d",
-  "bio": "Shopsense, founded by Bryan Quinn, is a Retail Media/AdTech company.",
+  "bio": "Bryan Quinn is the Co-Founder and CEO of Shopsense AI, a retail-media and adtech platform that makes TV and video content shoppable, connecting content, consumer intent, and commerce across the open internet. Quinn spent over a decade at Amazon Publisher Services before co-founding Shopsense with Glenn Fishback. He holds an MBA from the University of Notre Dame's Mendoza College of Business.",
   "linkedin": "",
   "website": "",
-  "page": "shopsense",
-  "bio_stub": true
+  "page": "shopsense"
  },
  {
   "name": "Kyle Li",
@@ -1458,7 +1455,7 @@
   "slug": "gait",
   "tile": "",
   "color": "#7a4fb0",
-  "bio": "Gait (YC F24), founded by Kyle Li, builds AI-assisted software-development tooling.",
+  "bio": "Kyle Li is a Co-Founder of Gait (YC F24), an open-source collaboration layer and developer infrastructure for AI coding assistants that helps engineering teams review and understand AI-generated code together. Li previously worked at Stripe and Jane Street.",
   "linkedin": "",
   "website": "",
   "page": "gait",
@@ -2429,7 +2426,7 @@
   "slug": "spot-ai",
   "tile": "",
   "color": "#2f5f8f",
-  "bio": "Spot AI, co-founded by Tanuj Thapliyal, builds an AI-powered video intelligence platform that turns ordinary security cameras into tools for safety, operations, and real-time incident detection.",
+  "bio": "Tanuj Thapliyal is the Co-Founder and CEO of Spot AI, whose video-intelligence platform turns ordinary security cameras into tools for safety, operations, and real-time incident detection. He founded Spot AI in 2018 with two Stanford friends, and previously co-founded Mellow Research and worked as a hardware program engineer at Meraki. He holds an M.S. in electrical engineering from Stanford and an MBA from UCLA.",
   "linkedin": "",
   "website": "",
   "page": "tanuj-thapliyal",
