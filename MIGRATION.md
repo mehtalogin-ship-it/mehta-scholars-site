@@ -111,6 +111,24 @@ parsing the Wix Pro Gallery items (title + description + image `mediaUrl`) from 
   Entrepreneurship), R Wang (Constellation Research, Venture Advisory) — with live bios, LinkedIns,
   photos, and company links (awary.com, doppel.com, constellationr.com). **Company links now 50/56.**
 
+### Update (Jul 2026, pass 9): real company-logo tiles + exact original texture
+- **Extracted the exact topographic contour texture** from the 32 original tiles: computed each
+  tile's white-over-color alpha (base = corner color) and took the per-pixel 20th-percentile across
+  all 32 → a **logo-free** contour map (the baked-in logos wash out). Saved to
+  `assets/tiles/_texture.png` and swapped it into `.co-thumb.ph` (removed the earlier wavy-line SVG).
+- **Real logo tiles:** logos fetched via icon.horse (Clearbit's logo API is dead; its name→domain
+  autocomplete still works). Only reliable domains used (sheet website field + curated known list);
+  transparent marks and white-on-color app-icons whitened; brand color auto-extracted. After a
+  montage review, kept **10 clean new logo tiles** (Cortex, Extend, Commure, Delve, Pine, Loot Crate,
+  Atlantic Money, Danger Devices, Crosswire, Hinoki) → **42 real-logo tiles total** (32 original + 10).
+- **Wordmark fallback:** the other 63 placeholders render as **brand-colored wordmark tiles on the
+  real texture** (matching the original site's wordmark tiles like SUPERORDER/DELFINA). Generic
+  single-letter/circle favicons were culled to wordmarks rather than shown as fake logos.
+- Tooling added this session: Pillow + numpy (local). Tiles are 1284×1194 to match the originals.
+- **Still TODO (real logos):** DoorDash, Cartesia, Windsurf, Nous Research, Parse, etc. only had
+  generic favicons → left as wordmarks; supply clean SVGs to upgrade them. Plus the 23 stub
+  descriptions and the GitHub push (needs `gh`).
+
 ### Update (Jul 2026, pass 8): full roster from master scoreboard (43 → 105 companies)
 Rebuilt the whole Alumni Companies dataset from the owner's master spreadsheet
 (`Mehta Scholar Scoreboard 2025.26.xlsx`, 107 rows). New pipeline: `captured/companies.json`
