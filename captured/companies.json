@@ -42,11 +42,10 @@
   "slug": "inventive",
   "tile": "",
   "color": "#2f8f8f",
-  "bio": "Inventive, founded by Kavita Shah '07, is a Enterprise SaaS company.",
+  "bio": "Kavita Shah is the Co-Founder and Head of Product of Inventive, which embeds a conversational AI analyst into SaaS products so users can explore and act on their data in natural language; the company launched with a $6.5M seed. Shah previously led the apps team at People.ai and began her career on YouTube/Google's monetization team. She holds a B.A. in international relations from Stanford and an MBA from MIT Sloan.",
   "linkedin": "",
   "website": "",
   "page": "inventive",
-  "bio_stub": true,
   "brandcolor": true
  },
  {
@@ -118,11 +117,10 @@
   "slug": "designlab",
   "tile": "",
   "color": "#3a5fb0",
-  "bio": "Designlab, founded by Harish Venkatesan '06, is a EdTech company.",
+  "bio": "Harish Venkatesan is the Co-Founder and CEO of Designlab, an online education platform offering mentor-guided courses in UX/UI and product design. Before Designlab, Venkatesan worked at Venmo and Grubwithus and co-founded TickrTalk while at the University of Pennsylvania. He holds a B.S. in systems engineering from the University of Pennsylvania.",
   "linkedin": "",
   "website": "",
-  "page": "designlab",
-  "bio_stub": true
+  "page": "designlab"
  },
  {
   "name": "Ashwini Iyer",
@@ -240,7 +238,7 @@
   "slug": "hinoki",
   "tile": "assets/tiles/hinoki.png",
   "color": "#7a4fb0",
-  "bio": "Hinoki, co-founded by Johnny Wang, is a Y Combinator–backed cybersecurity startup offering continuous vulnerability scanning and patching in one platform.",
+  "bio": "Johnny Wang is the Co-Founder of Hinoki Security, a Y Combinator–backed cybersecurity startup building a unified platform for continuous vulnerability scanning and patching. Wang studied computer science at Columbia and worked in security at several companies including Google, and previously co-founded Crosswire, an enterprise access-management startup. He also advises Jericho Security.",
   "linkedin": "https://www.linkedin.com/in/johnnyyw/",
   "website": "https://hinoki.security/",
   "page": "johnny-wang"
@@ -264,11 +262,10 @@
   "slug": "sound-of-molecules",
   "tile": "",
   "color": "#8f5f2f",
-  "bio": "Sound of Molecules, founded by Zhou Emily '20, is a Drug Discovery, AI company.",
+  "bio": "Emily Zhou is the Co-Founder and CEO of Sound of Molecules (SoMol), a drug-discovery startup built on 'molecular sonification' — a multi-modal AI approach that encodes molecular structures as sound to help models better identify promising drug candidates. Zhou is a Harker alumna and young researcher whose work on the method has been presented in academic settings.",
   "linkedin": "",
   "website": "",
-  "page": "sound-of-molecules",
-  "bio_stub": true
+  "page": "sound-of-molecules"
  },
  {
   "name": "Andrew Luo",
@@ -754,7 +751,7 @@
   "slug": "latent",
   "tile": "",
   "color": "#4a4f8f",
-  "bio": "Latent (YC W23), founded by Rishabh Jain, is a healthcare-AI company applying large language models to clinical workflows.",
+  "bio": "Rishabh Jain is the Co-Founder and CEO of Latent (Latent Health, YC W23), which builds medical language models that automate healthcare operations such as prior authorization to get patients their medications faster; the company has raised an $80M Series A at roughly a $600M valuation. A repeat founder, Jain previously spent over a decade in healthcare at Omada Health and Two Chairs.",
   "linkedin": "",
   "website": "",
   "page": "latent"
@@ -826,7 +823,7 @@
   "slug": "delve",
   "tile": "assets/tiles/delve.png",
   "color": "#0c0c0c",
-  "bio": "Delve, co-founded by Karun Kaushik, uses AI to automate security-compliance certifications such as SOC 2 and HIPAA for fast-growing companies.",
+  "bio": "Karun Kaushik is the Co-Founder and CEO of Delve, an AI platform that helps fast-growing companies achieve SOC 2 and HIPAA compliance in days rather than months. Kaushik started Delve with co-founder Selin Kocalar after they met as MIT freshmen; both are Forbes '30 Under 30' honorees. The company went through Y Combinator and has raised a Series A.",
   "linkedin": "",
   "website": "",
   "page": "delve",
@@ -1657,7 +1654,7 @@
   "slug": "clad-labs",
   "tile": "",
   "color": "#3a5fb0",
-  "bio": "Clad Labs (YC F25), co-founded by Richard Wang, is an early-stage software / developer-tools company.",
+  "bio": "Richard Wang is the Co-Founder and CEO of Clad Labs (YC F25), maker of Chad, an AI-powered coding IDE that folds quick breaks and mini-games into developer downtime. Before Clad, Wang did machine-learning research on semiconductor-fab data at a startup acquired by Tokyo Electron and worked at MIT Lincoln Laboratory. He holds a degree in computer science from Caltech.",
   "linkedin": "https://www.linkedin.com/in/richard-wang-39554994/",
   "website": "",
   "page": "clad-labs"
@@ -1705,7 +1702,7 @@
   "slug": "convey",
   "tile": "assets/tiles/convey.png",
   "color": "#3a8f6d",
-  "bio": "Convey, founded by Rohan Chopra, is a platform that lets anyone — technical or not — train AI to perform complex tasks.",
+  "bio": "Rohan Chopra is the CEO and Co-Founder of Convey, a platform that lets anyone — technical or not — train AI to perform complex tasks. He was among the first 20 employees at DoorDash and previously a software engineer at LinkedIn. He holds a B.S. in computer science from Stanford University.",
   "linkedin": "https://www.linkedin.com/in/rohanbchopra/",
   "website": "https://convey.dev/",
   "page": "convey"
@@ -1873,7 +1870,7 @@
   "slug": "sidenote",
   "tile": "",
   "color": "#3a7a5f",
-  "bio": "Sidenote (YC S23), co-founded by Jason Lin, is a Chrome extension that turns meeting notes into drafted emails, calendar invites, tickets, and reminders.",
+  "bio": "Jason Lin is a Co-Founder of Sidenote (YC S23), a Chrome extension that turns meeting notes into drafted emails, calendar invites, tickets, and reminders. He also co-founded Mida, which was acquired by the speech-AI company Sanas, where he now works. Lin is a Harker and Stanford computer-science alumnus.",
   "linkedin": "https://www.linkedin.com/in/jason-chen-lin/",
   "website": "https://www.sanas.ai/",
   "page": "jason-lin"
@@ -1897,7 +1894,7 @@
   "slug": "mida",
   "tile": "",
   "color": "#8f2f6d",
-  "bio": "Mida, co-founded by Jason Lin, built information/translation technology and was acquired by Sanas, a real-time speech-AI platform.",
+  "bio": "Jason Lin is a Co-Founder of Mida, an information- and translation-technology startup that was acquired by Sanas, the real-time speech-AI platform where Lin now builds. He earlier co-founded Sidenote (YC S23), a meeting-follow-up automation tool. Lin is a Harker and Stanford computer-science alumnus.",
   "linkedin": "https://www.linkedin.com/in/jason-chen-lin/",
   "website": "https://www.sanas.ai/",
   "page": "jason-lin"
@@ -2114,7 +2111,7 @@
   "slug": "squadz",
   "tile": "assets/tiles/squadz.png",
   "color": "#8f5f2f",
-  "bio": "Squadz, founded by Nikhil Panu, is a sports and social platform that helps people organize and join local pickup games and activities.",
+  "bio": "Nikhil Panu is the Founder and CEO of Squadz, an online marketplace and social platform that connects athletes to pickup games, leagues, and local sports facilities and helps venues fill unused court and field time. A former Division III student-athlete, Panu holds a combined B.S./M.S. in computer science from Johns Hopkins University.",
   "linkedin": "https://www.linkedin.com/in/nikhil-panu/",
   "website": "http://www.squadz.com/",
   "page": "squadz"
@@ -2308,7 +2305,7 @@
   "slug": "commure",
   "tile": "assets/tiles/commure.png",
   "color": "#b0863a",
-  "bio": "Commure, where Andrew Jin is a VP of Engineering, is an AI-native healthcare technology company (merged with Athelas) building clinical and revenue-cycle software for health systems.",
+  "bio": "Andrew Jin is a Vice President of Engineering at Commure, an AI-native healthcare-technology company (formed after its 2023 merger with Athelas) building software to modernize clinical and administrative workflows across health systems. Jin focuses on scaling enterprise deployments and product execution in complex, regulated healthcare environments.",
   "linkedin": "",
   "website": "",
   "page": "commure"
@@ -2407,7 +2404,7 @@
   "slug": "decrypt-biomedicine",
   "tile": "",
   "color": "#6d8f2f",
-  "bio": "Decrypt Biomedicine, founded by Anuj Sharma, is a biotech company advancing novel therapeutics.",
+  "bio": "Anuj Sharma is the Co-Founder and CEO of Decrypt Biomedicine, a biotech developing small-molecule cancer therapeutics that target 'cryptic' binding sites on proteins to unlock hard-to-drug targets. He co-founded the company with Greg Bowman and has since also worked as a research engineer at Google DeepMind. He holds a B.A. and an M.S. from Columbia University.",
   "linkedin": "",
   "website": "",
   "page": "decrypt-biomedicine",
@@ -2532,7 +2529,7 @@
   "slug": "crosswire",
   "tile": "assets/tiles/crosswire.png",
   "color": "#4a4f8f",
-  "bio": "Crosswire, co-founded by Johnny Wang, was an enterprise identity-security startup helping teams manage access at scale.",
+  "bio": "Johnny Wang co-founded Crosswire (2021), an enterprise access-management startup that helped security engineers manage access at scale. He went on to co-found the Y Combinator–backed cybersecurity company Hinoki Security. Wang studied computer science at Columbia and previously worked in security at companies including Google.",
   "linkedin": "https://www.linkedin.com/in/johnnyyw/",
   "website": "https://hinoki.security/",
   "page": "johnny-wang"
