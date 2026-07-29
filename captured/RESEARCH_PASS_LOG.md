@@ -64,3 +64,11 @@ companies in the founder's own profile. Founded-companies-only bios; omit curren
 
 ## Could not resolve (LinkedIn) — left blank
 - Ram Menon (Pokedata), Gobi Dasu (old URL dead), Suraj Pakala / Nicholas Chuang / Vedant Shah (stealth), Ravi Mishra (Potluck, unconfirmed).
+
+## Session 3 — company cross-reference (LinkedIn /details/experience/)
+- **Shantanu Joshi / Lume** ✅ shantanu-joshi/ — experience CONFIRMS Lume, but it's a **banking app for nurses** (earned-wage access), acq. by **Vivian Health 2022** — NOT the data-integration "Lume (YC S20)" our old bio described. FIXED: bio rewritten, moved to **Acquired** bucket, sector→Fintech.
+- **Matthew Huang / Lowkey** ✅ matthewhuang19 — experience CONFIRMS "Co-Founder @ Lowkey.gg (2018–2019)" → Figma. Added.
+- **Ansh Sheth / Bizzy AI** ❌ ansh-sheth-684b8a215 experience = only Stanford ASES/BASES clubs, no Bizzy → WRONG PERSON, left blank.
+- **Kevin Kim / Remy Security** ❌ kykimnyc = a different Kevin Kim (NYC fintech vet, Kasheesh co-founder, career since 1996; no Rice/ExtraHop/Remy) → left blank. Real one still unfound.
+- **Denny Tsai / Agence** ❌ no profile tied to Agence → left blank.
+- LinkedIn free-account "profile search limit" reached mid-session — further cross-referencing throttled.
