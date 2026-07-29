@@ -1167,9 +1167,9 @@
   "page": "future"
  },
  {
-  "name": "Ram Menon",
-  "first": "Ram",
-  "last": "Menon",
+  "name": "Justin Yang",
+  "first": "Justin",
+  "last": "Yang",
   "year": "",
   "title": "Co-Founder",
   "company": "Pokedata",
@@ -1185,8 +1185,8 @@
   "slug": "pokedata",
   "tile": "",
   "color": "#8f5f2f",
-  "bio": "Ram Menon is a Co-Founder of Pokedata, an early-stage consumer data startup.",
-  "linkedin": "",
+  "bio": "Justin Yang is a Co-Founder of Pokedata, an early-stage startup he is currently building in stealth.",
+  "linkedin": "https://www.linkedin.com/in/justin-yang-35a22b120/",
   "website": "",
   "page": "pokedata"
  },
