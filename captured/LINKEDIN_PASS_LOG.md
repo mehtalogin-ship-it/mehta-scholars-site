@@ -26,3 +26,9 @@ Larissa Tyagi, Varun Sivaram, Brandon Yang, Katie Siegel, Ethan Agarwal, Neeraj 
 - Howard Tsao (Muse Games): photo lightbox won't open (2 retries) — NO PHOTO
 - Tanuj Thapliyal (Spot AI): photo lightbox won't open (3 attempts) — NO PHOTO (CEO at Spot AI confirmed)
 - Tushar Dave (FarmX): photo lightbox won't open / download canceled (3 attempts) — NO PHOTO (Chairman & CEO @ FarmX confirmed)
+
+## Session 5 — tiles + photos (autonomous)
+TILES: built white-silhouette logo pipeline (icon.horse + PIL bg-removal + whiten, no card, on tinted topographic bg). Generated 41 logo tiles -> 82/106 companies now have tiles; 24 clean name-only placeholders. Underline-on-hover bug fixed. Nous Research reverted to name-tile (illustrative logo). 5 fetch-fails stay name-tiles: Bizzy, Upward, OS3, Huxe, Agence (SVG/webp icons).
+PHOTOS: pulled 6 YC-verified headshots via YC data-page avatars (name-matched, no wrong-person): Andy Fang, Peter Gao, Kyle Li, Josh Zloof, Kevin Kim, Sona Sulakian(Pincites). Now 77/97 founders have photos.
+STILL NO PHOTO (need LinkedIn when the account's monthly search-limit resets, or manual): Tanuj Thapliyal (Kos.ai), Eugene Huang (Torch-acq OpenAI), Matthew Huang (Lowkey-acq Niantic), Ansh Sheth (Bizzy), Emily Zhou (SoMol), Gobi Dasu, Denny Tsai, Ketul Patel, Christopher Davis, Bryan Quinn, Stephen Hughes, Ray Song, Tushar Davé, Howard Tsao. Stealth (no photo expected): Suraj Pakala, Nicholas Chuang, Vedant Shah, Justin Yang, Ravi Mishra.
+NOTES: YC 'torch'/'lowkey'/'bizzy' slugs are DIFFERENT companies (name-match prevented false photos). LinkedIn browser returns are blocked on query-string (licdn tokens) + profile-search rate limit hit; alternate team pages (Bizzy/Kos) had no labeled headshots.
