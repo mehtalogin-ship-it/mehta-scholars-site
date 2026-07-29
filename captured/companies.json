@@ -91,7 +91,7 @@
   "slug": "glow",
   "tile": "",
   "color": "#008281",
-  "bio": "Amira Valliani is the Founder and CEO of Glow, a podcast- and creator-monetization platform that was acquired by Libsyn in 2021. Before Glow, Valliani served in the Obama White House as a senior advisor and as a speechwriter to Secretary of State Hillary Clinton, and she now leads growth and policy work at the Solana Foundation. She holds an MBA from the Wharton School and an MPA from the Harvard Kennedy School.",
+  "bio": "Amira Valliani is the Founder and CEO of Glow, a podcast- and creator-monetization platform that was acquired by Libsyn in 2021. Before Glow, Valliani served in the Obama White House as a senior advisor and as a speechwriter to Secretary of State Hillary Clinton. She holds an MBA from the Wharton School and an MPA from the Harvard Kennedy School.",
   "linkedin": "https://www.linkedin.com/in/amira-valliani-3622131/",
   "website": "",
   "page": "glow",
@@ -322,9 +322,9 @@
   "company": "Altitude IQ",
   "founded": "",
   "city": "",
-  "sector_raw": "",
-  "sector": "AI",
-  "sector_key": "ai",
+  "sector_raw": "Enterprise AI / Data",
+  "sector": "Enterprise/SaaS",
+  "sector_key": "enterprise",
   "stage_raw": "",
   "stage_group": "Pre-Seed",
   "invest": "",
@@ -332,10 +332,11 @@
   "slug": "altitude-iq",
   "tile": "",
   "color": "#4a4f8f",
-  "bio": "Ketul Patel is the Founder of Altitude IQ, an early-stage venture. He is a member of Harker's Class of 2010.",
-  "linkedin": "",
-  "website": "",
-  "page": "altitude-iq"
+  "bio": "Ketul Patel is the Founder of AltitudeIQ, a startup building autonomous AI agents that deploy and run SAP and other enterprise systems, paired with a data-quality engine that keeps those systems accurate. He is a member of Harker's Class of 2010.",
+  "linkedin": "https://www.linkedin.com/in/ketul-patel-238a5453/",
+  "website": "https://altitudeiq.ai/",
+  "page": "altitude-iq",
+  "bio_stub": false
  },
  {
   "name": "Suraj Pakala",
@@ -383,7 +384,7 @@
   "color": "#5f3a7a",
   "bio": "Arvind Ramgopal is the Founder and CTO of Upward, which helps real-estate and building operators collect, store, and use building-energy data to automate compliance and cut energy costs. Ramgopal previously worked at Palo Alto Networks, Lume Health, IBM iX, and MetricStream, and studied at New York University.",
   "linkedin": "https://www.linkedin.com/in/arvind-ramgopal-45b4307a/",
-  "website": "",
+  "website": "https://www.buildupward.com/",
   "page": "upward"
  },
  {
@@ -405,7 +406,7 @@
   "slug": "backbone",
   "tile": "",
   "color": "#5f3a7a",
-  "bio": "Manan Shah is the Founder and CEO of Backbone. A Harker alumnus and Stanford graduate, Shah is also a founding engineer at Kumo AI, where he works on relational deep learning, and was a national finalist in the Siemens Competition.",
+  "bio": "Manan Shah is the Founder and CEO of Backbone, a clinical AI layer for healthcare payments that automates medical claims and payer workflows. A Harker alumnus and Stanford graduate, Shah was previously a founding engineer at Kumo AI, where he worked on relational deep learning, and was a national finalist in the Siemens Competition.",
   "linkedin": "https://www.linkedin.com/in/mananshah99/",
   "website": "",
   "page": "manan-shah"
@@ -989,7 +990,7 @@
   "color": "#2f6d3a",
   "bio": "Ravi Mishra is a Co-Founder of Potluck Labs, a research studio that explores, prototypes, and ships consumer apps.",
   "linkedin": "",
-  "website": "https://www.potluck.software/",
+  "website": "",
   "page": "potluck-labs"
  },
  {
@@ -1618,10 +1619,11 @@
   "slug": "awg",
   "tile": "",
   "color": "#2f5f8f",
-  "bio": "AWG, founded by Jason Huang, is a chip-design company developing next-generation compound semiconductors (SiC and GaN) for energy-efficient EVs, AI data centers, and robotics.",
+  "bio": "Jason Huang is the Founder and CEO of AWG, a chip-design company developing next-generation compound semiconductors (SiC and GaN) for energy-efficient EVs, AI data centers, and robotics. He holds a degree from San Jose State University.",
   "linkedin": "https://www.linkedin.com/in/jason-huang-4023066/",
   "website": "",
-  "page": "awg"
+  "page": "awg",
+  "bio_stub": false
  },
  {
   "name": "Divyahans Gupta",
@@ -1668,7 +1670,7 @@
   "color": "#3a5fb0",
   "bio": "Richard Wang is the Co-Founder and CEO of Clad Labs (YC F25), maker of Chad, an AI-powered coding IDE that folds quick breaks and mini-games into developer downtime. Before Clad, Wang did machine-learning research on semiconductor-fab data at a startup acquired by Tokyo Electron and worked at MIT Lincoln Laboratory. He holds a degree in computer science from Caltech.",
   "linkedin": "https://www.linkedin.com/in/richard-wang-39554994/",
-  "website": "",
+  "website": "https://www.cladlabs.ai/",
   "page": "clad-labs"
  },
  {
@@ -1956,7 +1958,7 @@
   "color": "#5f3a7a",
   "bio": "Omar Hamade is the Founder and CEO of Hawala, a fintech building financial infrastructure that connects the Middle East and North Africa to global markets — offering digital USD and EUR wallets, instant transfers to 200+ countries, and a forthcoming card and interest-free savings product; it raised a $3M round. Hamade previously worked in business development and finance at Genentech. He holds a B.S. from Santa Clara University, was a Schwarzman Scholar at Tsinghua University, and studied at Harvard Business School.",
   "linkedin": "https://www.linkedin.com/in/omarhamade/",
-  "website": "",
+  "website": "https://usehawala.com/",
   "page": "hawala"
  },
  {
@@ -2074,10 +2076,11 @@
   "slug": "loot-crate",
   "tile": "assets/tiles/loot-crate.png",
   "color": "#7a4fb0",
-  "bio": "Loot Crate, co-founded by Christopher Davis, was a subscription-box service delivering curated pop-culture, gaming, and geek merchandise to fans.",
-  "linkedin": "",
+  "bio": "Christopher Davis is a Co-Founder of Loot Crate, a subscription-box service that delivered curated pop-culture, gaming, and geek merchandise to fans. Davis co-founded Loot Crate in 2012 and helped grow it into one of the fastest-growing private companies in the United States. He holds a degree from Claremont McKenna College.",
+  "linkedin": "https://www.linkedin.com/in/chrisdavis1/",
   "website": "https://www.lootcrate.com/",
-  "page": "loot-crate"
+  "page": "loot-crate",
+  "bio_stub": false
  },
  {
   "name": "Colt McNealy",
@@ -2417,7 +2420,7 @@
   "color": "#6d8f2f",
   "bio": "Anuj Sharma is the Co-Founder and CEO of Decrypt Biomedicine, a biotech developing small-molecule cancer therapeutics that target 'cryptic' binding sites on proteins to unlock hard-to-drug targets. He co-founded the company with Greg Bowman and has since also worked as a research engineer at Google DeepMind. He holds a B.A. and an M.S. from Columbia University.",
   "linkedin": "https://www.linkedin.com/in/anujsharma4529/",
-  "website": "",
+  "website": "https://decrypt.bio/",
   "page": "decrypt-biomedicine",
   "brandcolor": true
  },
