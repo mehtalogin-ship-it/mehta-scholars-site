@@ -72,3 +72,12 @@ companies in the founder's own profile. Founded-companies-only bios; omit curren
 - **Kevin Kim / Remy Security** ❌ kykimnyc = a different Kevin Kim (NYC fintech vet, Kasheesh co-founder, career since 1996; no Rice/ExtraHop/Remy) → left blank. Real one still unfound.
 - **Denny Tsai / Agence** ❌ no profile tied to Agence → left blank.
 - LinkedIn free-account "profile search limit" reached mid-session — further cross-referencing throttled.
+
+## Session 4 — owner-provided links + resolved flags
+RESOLVED: Decrypt -> autoimmune (bio updated). Loot Crate/Chris Davis = Harker '03 (confirmed). Gait NOT acquired.
+LinkedIns added (owner-provided): Kyle Li (kyleli626), Ansh Sheth (684b8a215)+usebizzy.com, Kevin Kim (minhwan)+startremy.com [Remy inactive], Ray Song (raynotraymond)+apr.io, Gobi Dasu (gobi-dasu-21518947, both LD Talent+Hailcube), Suraj Pakala (surajpakala), Nicholas Chuang (nicholas-chuang-29b8758b), Vedant Shah (vedant-shah-b55518110). Matthew Huang done prior.
+Websites added: Bizzy usebizzy.com, Remy startremy.com, aPriori apr.io, Agora agoraintel.com, Pamastay pamastay.com, Sudden Coffee suddencoffee.com, Huxe huxe.com (wound down), Aquarium aquariumlearning.com, Glassfrog glassfrog.ai.
+Bios researched/rewritten: Brandon Yang/Cartesia (Stanford SSMs, Snorkel, Google Brain), Alex Lan/Agora (enterprise-AI intelligence platform, sector->enterprise).
+RENAME: "Imaging Startup" -> **Glassfrog** (contactless under-mattress vitals sensor; glassfrog.ai; sector Health). Old page removed, sitemap fixed.
+STAGE moves to Acquired: Aquarium (joined Notion 2024), Glow (Libsyn 2021). [Shantanu/Lume done session 3.]
+STILL OPEN: Denny Tsai/Agence (n/a). Pokedata/Ram Menon — owner unsure if founder is Justin Yang (justin-yang-35a22b120, shows stealth); left as-is/minimal, no LinkedIn. Ravi Kapur = Instagram only. AWG (Jason Huang) still no website. Quant no website (n/a).
