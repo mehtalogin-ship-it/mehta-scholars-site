@@ -31,3 +31,36 @@ companies in the founder's own profile. Founded-companies-only bios; omit curren
 ## Could not resolve (left as-is)
 - **Ram Menon / Pokedata**: only Ram Menon found is Avaamo's founder (different person). No LinkedIn, no company info. Bio stays minimal.
 - **Suraj Pakala / Nicholas Chuang / Vedant Shah (Stealth)**: stealth by definition; no public company info. (Still to attempt: find their personal LinkedIn.)
+
+---
+# Session 2 (continued research) — summary
+
+## Applied (confident) — websites
+- Hawala usehawala.com · Upward buildupward.com · Clad Labs cladlabs.ai · AltitudeIQ altitudeiq.ai
+- Caddy caddy.app · OS3 os3robotics.com · Ephemeral ephemeral.now · Theora theorahq.com
+- Pincites pincites.com · Observee observee.ai · Decrypt decrypt.bio (⚠ see flag)
+
+## Applied (confident) — LinkedIns
+- Ketul Patel (AltitudeIQ) · Christopher Davis (Loot Crate) · Emily Zhou (SoMol, emilyrzhou)
+- Bryan Quinn (Shopsense, bryanquinn) · Sona Sulakian (Pincites, sonasulakian)
+- Eugene Huang (Torch, elhonline) · Josh Zloof (Sudden Coffee) · Stephen Hughes (Huxe)
+
+## Applied — bio rewrites
+- AltitudeIQ, Loot Crate, AWG, Backbone (+product), Theora (pivot: now "analyst-grade AI for biopharma"),
+  Refactor (broadened per YC: AI agents operating legacy software across healthcare/retail/logistics), Glow (policy trim).
+- Torch already correctly in Acquired bucket (OpenAI acq. Jan 2026) — just added Eugene's LinkedIn.
+
+## 🚩 FLAGS (session 2)
+- **Refactor** — earlier "RCM-only" framing was too narrow; updated to YC's broader description. Reconfirm wording if you like.
+- **Kyle Li / Gait** — LinkedIn NOT confirmed (generic "Kyle L."); also a source tags Gait "MicroAcquired" — worth checking if Gait was acquired.
+- **Kevin Kim / Remy Security** — LinkedIn NOT confirmed (many same-name). Note: a separate YC "Remy" (medical-insurance) exists; ours is Remy *Security*.
+- **Ray Song / aPriori** — no LinkedIn found (crypto founder, low presence). Company is healthy: raised $20M (total ~$30M), Pantera/HashKey.
+- **Matthew Huang / Lowkey** — LinkedIn NOT confirmed (collides with Matt Huang of Paradigm etc.). He went Lowkey→Figma.
+- **Ansh Sheth / Bizzy AI** — candidate ansh-sheth-684b8a215 headlines "CS @ Stanford," Bizzy not shown → NOT added.
+- **Shantanu Joshi / Lume** — candidate too generic ("engineer & company builder") → NOT added.
+- **Denny Tsai / Agence** — multiple Denny Tsais, none clearly tied to Agence → NOT added.
+- **Ravi Kapur / Diya TV** — public media figure, no clean LinkedIn found (bio + site already strong).
+- **Alex Lan / Agora** — his LinkedIn confirmed; Harker doc lists him as a **"2023 Mitra Scholar"** (note the Mitra vs Mehta naming — FYI, not acted on). No Agora website found; bio still thin.
+
+## Could not resolve (LinkedIn) — left blank
+- Ram Menon (Pokedata), Gobi Dasu (old URL dead), Suraj Pakala / Nicholas Chuang / Vedant Shah (stealth), Ravi Mishra (Potluck, unconfirmed).

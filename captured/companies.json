@@ -164,9 +164,9 @@
   "slug": "theora",
   "tile": "",
   "color": "#6d8f2f",
-  "bio": "Larissa Tyagi is the Co-Founder and CEO of Theora (formerly Louiza Labs, YC S25), whose physics-driven AI engine simulates human biology to train and test medical technology without real patients or hard-to-access clinical data. Before Theora, Tyagi was a software engineer at Apple. She holds dual degrees in computer information systems and business from Carnegie Mellon University.",
+  "bio": "Larissa Tyagi is the Co-Founder and CEO of Theora (formerly Louiza Labs, YC S25), which builds analyst-grade AI for biopharma — datasets and high-fidelity training environments, including de-identified EHR/PACS data, that teach AI agents how real-world medicine is practiced. Tyagi previously worked as a software engineer at Apple and holds dual degrees in computer/information systems and business from Carnegie Mellon University.",
   "linkedin": "https://www.linkedin.com/in/larissatyagi100/",
-  "website": "",
+  "website": "https://www.theorahq.com/",
   "page": "theora"
  },
  {
@@ -213,8 +213,8 @@
   "tile": "",
   "color": "#6d8f2f",
   "bio": "Pincites, co-founded by Mariam & Sona Sulakian, built AI that helps legal teams review and negotiate contracts faster. It was acquired by Filevine in January 2026.",
-  "linkedin": "",
-  "website": "",
+  "linkedin": "https://www.linkedin.com/in/sonasulakian/",
+  "website": "https://www.pincites.com/",
   "page": "pincites"
  },
  {
@@ -261,7 +261,7 @@
   "tile": "",
   "color": "#8f5f2f",
   "bio": "Emily Zhou is the Co-Founder and CEO of Sound of Molecules (SoMol), a drug-discovery startup built on 'molecular sonification' — a multi-modal AI approach that encodes molecular structures as sound to help models better identify promising drug candidates. Zhou is a Harker alumna and young researcher whose work on the method has been presented in academic settings.",
-  "linkedin": "",
+  "linkedin": "https://www.linkedin.com/in/emilyrzhou/",
   "website": "",
   "page": "sound-of-molecules"
  },
@@ -795,7 +795,7 @@
   "color": "#b0863a",
   "bio": "Rajiv Sancheti is a Co-Founder of Caddy (YC F25), a personal AI for everyday work that lives in your text messages — surfacing important items from your email, calendar, and apps and acting on them when you reply. Before Caddy, Sancheti spent four years at Loom, where he helped lead product and design for Loom's AI suite.",
   "linkedin": "https://www.linkedin.com/in/rajivsancheti/",
-  "website": "",
+  "website": "https://caddy.app/",
   "page": "caddy"
  },
  {
@@ -916,7 +916,7 @@
   "tile": "",
   "color": "#7a4fb0",
   "bio": "Eugene Huang is a Co-Founder of Torch, a health-tech startup that unified a person's scattered medical records — from hospitals, labs, and wearables — into one AI-readable system; OpenAI acquired Torch in 2026 to strengthen ChatGPT's health capabilities. Huang and his co-founder previously worked together at the primary-care startup Forward Health.",
-  "linkedin": "",
+  "linkedin": "https://www.linkedin.com/in/elhonline/",
   "website": "",
   "page": "torch"
  },
@@ -1014,7 +1014,7 @@
   "color": "#7a2f4f",
   "bio": "Chris Hailey is a Co-Founder of OS3 (YC S26), a robotics company building semi-humanoid robots for real physical labor — pairing in-house hardware with AI models, with early deployments in hospitality. He previously co-founded Observee, which built integration infrastructure for vertical-AI companies: a single API and marketplace of 1,000+ Model Context Protocol (MCP) integrations for AI agents. Before founding these companies, Hailey worked as a software engineer at Coinbase. He holds a computer science degree from USC.",
   "linkedin": "https://www.linkedin.com/in/chrishailey8/",
-  "website": "",
+  "website": "https://www.observee.ai/",
   "page": "chris-hailey",
   "brandcolor": true
  },
@@ -1039,7 +1039,7 @@
   "color": "#2f5f8f",
   "bio": "Chris Hailey is a Co-Founder of OS3 (YC S26), a robotics company building semi-humanoid robots for real physical labor — pairing in-house hardware with AI models, with early deployments in hospitality. He previously co-founded Observee, which built integration infrastructure for vertical-AI companies: a single API and marketplace of 1,000+ Model Context Protocol (MCP) integrations for AI agents. Before founding these companies, Hailey worked as a software engineer at Coinbase. He holds a computer science degree from USC.",
   "linkedin": "https://www.linkedin.com/in/chrishailey8/",
-  "website": "",
+  "website": "https://os3robotics.com/",
   "page": "chris-hailey",
   "brandcolor": true
  },
@@ -1351,7 +1351,7 @@
   "slug": "refactor",
   "tile": "",
   "color": "#3a8f6d",
-  "bio": "Arnav Joshi is a Co-Founder of Refactor, a healthcare startup rebuilding revenue cycle management (RCM) for American healthcare providers. Joshi previously worked on autonomous-driving research at NVIDIA and in macro at Bridgewater Associates. He holds a degree from Stanford University.",
+  "bio": "Arnav Joshi is a Co-Founder of Refactor (YC), a startup deploying secure, reliable AI agents that operate legacy software — calling, clicking, and navigating systems — for large organizations across healthcare and other regulated industries. Joshi previously worked on autonomous-driving research at NVIDIA and in macro at Bridgewater Associates. He studied computer science (BS/MS) at Stanford University.",
   "linkedin": "https://www.linkedin.com/in/arnav-rcm/",
   "website": "",
   "page": "refactor"
@@ -1400,7 +1400,7 @@
   "tile": "",
   "color": "#a04a2f",
   "bio": "Huxe, co-founded by Stephen Hughes (ex-Google NotebookLM), was an audio-AI app that turned a user's email, calendar, and interests into daily podcast-style briefings. It raised $4.6M before winding down in 2026.",
-  "linkedin": "",
+  "linkedin": "https://www.linkedin.com/in/stephen-hughes-44bb3497/",
   "website": "",
   "page": "huxe"
  },
@@ -1449,7 +1449,7 @@
   "tile": "",
   "color": "#3a8f6d",
   "bio": "Bryan Quinn is the Co-Founder and CEO of Shopsense AI, a retail-media and adtech platform that makes TV and video content shoppable, connecting content, consumer intent, and commerce across the open internet. Quinn spent over a decade at Amazon Publisher Services before co-founding Shopsense with Glenn Fishback. He holds an MBA from the University of Notre Dame's Mendoza College of Business.",
-  "linkedin": "",
+  "linkedin": "https://www.linkedin.com/in/bryanquinn/",
   "website": "https://www.shopsense.ai/",
   "page": "shopsense"
  },
@@ -1524,7 +1524,7 @@
   "color": "#2f8f8f",
   "bio": "Drew Goldstein is the Co-Founder of Ephemeral Technologies, a company founded to accelerate end-to-end drug development and delivery. Ephemeral is developing an integrated AI, software, and robotics platform by working backwards from high-value problems identified by an initial cohort of pharma companies, biotech startups, governmental organizations, and contract research organizations (CROs). Before Ephemeral, Goldstein built and ran Palantir’s healthcare business, which grew from 0 to $300M+ ARR.",
   "linkedin": "https://www.linkedin.com/in/goldsteindrew/",
-  "website": "",
+  "website": "https://ephemeral.now/",
   "page": "ephemeral-technologies"
  },
  {
@@ -2150,7 +2150,7 @@
   "tile": "",
   "color": "#8f5f2f",
   "bio": "Josh Zloof is the Co-Founder and CEO of Sudden Coffee, a specialty instant-coffee brand (Y Combinator W17) that shipped high-end single-serve coffee. Before Sudden Coffee, Zloof was a consultant at McKinsey, a product owner at Groupon, and held operations roles at Apple and Walmart.",
-  "linkedin": "",
+  "linkedin": "https://www.linkedin.com/in/joshua-zloof-9b09648/",
   "website": "",
   "page": "sudden-coffee"
  },
