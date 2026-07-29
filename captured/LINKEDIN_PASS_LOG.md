@@ -2,8 +2,12 @@
 
 ## Status changes caught
 - Larissa Tyagi: Louiza Labs -> **Theora** (renamed) — FIXED on site/bio
-- Neeraj Baid: Atlantic Money acquired; now **Director of Product at Deel** — noted in bio
-- Harish Venkatesan: now **Product at FLORA** (was Designlab founder/CEO) — company still Designlab on site; note current role
+- Neeraj Baid: Atlantic Money acquired; now Dir. of Product at Deel — RESOLVED: per bio policy, dropped current-job clause, keep acquisition (a win)
+- Harish Venkatesan: now Product at FLORA — RESOLVED: per bio policy (founded-companies only), bio already covers just Designlab; no change needed
+- Sri Prakash: Macrolytical current job — RESOLVED: per bio policy, bio covers only founded ventures (Grey Matter acquired, BountyME); no change
+- Chris Hailey: Observee (never gained traction) -> now co-founder **OS3 (YC S26)** — FIXED: OS3 appended to bio, title set
+- Rajiv Sacheti -> **Sancheti** (typo) — FIXED name+bio+photo_map key
+- Arnav Joshi: Blast -> **Refactor** (healthcare/RCM) pivot, right person confirmed — FIXED: company/slug/page/sector/linkedin/bio updated; blast.html removed. NOTE: Refactor bio is high-level (grounded in confirmed RCM/healthcare + retained past jobs); deeper Refactor research still open.
 
 ## Photos done (batch: Kavita Shah, Deeya Viradia, Amira Valliani, Harish Venkatesan, Ashwini Iyer)
 
