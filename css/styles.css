@@ -153,7 +153,9 @@ section { padding: 84px 0; }
 .invest { display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 26px; }
 .invest-card { background: #fff; border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; display: flex; flex-direction: column; transition: 0.18s; }
 .invest-card:hover { box-shadow: var(--shadow-green); transform: translateY(-4px); }
-.invest-top { background: linear-gradient(160deg, var(--green-dark), var(--green-deep)); color: #fff; padding: 26px 26px 22px; }
+.invest-top { background: linear-gradient(160deg, var(--green-dark), var(--green-deep)); color: #fff; padding: 22px 26px; display: flex; align-items: center; gap: 15px; }
+.invest-avatar { width: 58px; height: 58px; border-radius: 50%; overflow: hidden; flex: 0 0 auto; background: rgba(255,255,255,0.16); color: #fff; display: grid; place-items: center; font-family: var(--font-head); font-size: 1.05rem; }
+.invest-avatar img { width: 100%; height: 100%; object-fit: cover; }
 .invest-top .founder-name { font-size: 0.92rem; opacity: 0.85; font-family: var(--font-head); }
 .invest-top .co { font-family: var(--font-head); font-size: 1.7rem; margin-top: 4px; }
 .invest-body { padding: 24px 26px; display: flex; flex-direction: column; gap: 18px; flex: 1; }
