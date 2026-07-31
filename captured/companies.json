@@ -622,11 +622,11 @@
   "invest": "",
   "investors": "",
   "slug": "letterbook",
-  "tile": "assets/tiles/letterbook.png",
+  "tile": "",
   "color": "#4c6971",
   "bio": "Dawson Chen is the Co-Founder and CEO of Letterbook (YC S23), an AI-native customer-support platform whose agent connects to a company's inbox and database to draft replies to every ticket for human approval. Chen previously co-founded the AI assistant Martin, which grew to ~100,000 users. He studied computer science and economics at Yale University.",
   "linkedin": "https://www.linkedin.com/in/dawson-chen-martin/",
-  "website": "https://trymartin.com/",
+  "website": "https://letterbook.ai/",
   "page": "dawson-chen",
   "brandcolor": true
  },
@@ -2543,11 +2543,11 @@
   "invest": "",
   "investors": "",
   "slug": "crosswire",
-  "tile": "assets/tiles/crosswire.png",
+  "tile": "",
   "color": "#4a4f8f",
   "bio": "Johnny Wang co-founded Crosswire (2021), an enterprise access-management startup that helped security engineers manage access at scale. He went on to co-found the Y Combinator–backed cybersecurity company Hinoki Security. Wang studied computer science at Columbia and previously worked in security at companies including Google.",
   "linkedin": "https://www.linkedin.com/in/johnnyyw/",
-  "website": "https://hinoki.security/",
+  "website": "https://crosswire.io/",
   "page": "johnny-wang"
  },
  {
