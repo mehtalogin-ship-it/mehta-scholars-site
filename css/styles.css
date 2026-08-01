@@ -304,3 +304,7 @@ section { padding: 84px 0; }
 .fact { display: flex; gap: 12px; font-size: 0.95rem; }
 .fact-l { flex: 0 0 92px; color: var(--muted); font-family: var(--font-head); }
 .fact-v { color: var(--ink); }
+
+/* clickable scholar photo -> LinkedIn */
+.scholar-link { display: inline-block; cursor: pointer; text-decoration: none; }
+.scholar-link:hover { text-decoration: none; }
