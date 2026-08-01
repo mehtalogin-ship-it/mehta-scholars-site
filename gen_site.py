@@ -1,0 +1,332 @@
+# -*- coding: utf-8 -*-
+import json, re, os
+
+ROOT=os.path.dirname(os.path.abspath(__file__))
+CAP=ROOT+'/captured/'
+founders=json.load(open(CAP+'founders.json'))
+companies=json.load(open(CAP+'companies.json'))
+com=json.load(open(CAP+'committee.json'))
+committee=com['members']; sections=com['sections']
+try: PHOTOS=json.load(open(CAP+'photo_map.json'))
+except Exception: PHOTOS={}
+
+CATLABEL={'ai':'AI and Smart Tech','health':'Health Tech & Life Sciences','fintech':'Fintech'}
+
+def initials(name):
+    p=[x for x in re.split(r'\s+',name.strip()) if x]
+    if not p: return '?'
+    return (p[0][0]+(p[-1][0] if len(p)>1 else '')).upper()
+
+def slug(s):
+    s=re.sub(r"[^a-z0-9]+","-",s.lower()).strip('-')
+    return s or 'company'
+
+def esc(t): return (t or '').replace('&','&amp;').replace('<','&lt;').replace('>','&gt;')
+
+FONTS='<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Questrial&family=Playfair+Display:wght@500;600&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">'
+
+SEAL='''<svg class="seal" viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="48" fill="#0a582a"/><circle cx="50" cy="50" r="40" fill="none" stroke="#d9c67a" stroke-width="2"/><text x="50" y="46" text-anchor="middle" fill="#fff" font-family="Questrial, sans-serif" font-size="15">THE</text><text x="50" y="62" text-anchor="middle" fill="#d9c67a" font-family="Questrial, sans-serif" font-size="15">MEHTA</text><text x="50" y="82" text-anchor="middle" fill="#fff" font-family="Questrial, sans-serif" font-size="7" letter-spacing="1">ENDOWMENT</text></svg>'''
+
+def nav(active, p=''):
+    def cls(k): return ' class="active"' if k==active else ''
+    return f'''  <header class="site-header">
+    <nav class="nav">
+      <a class="brand" href="{p}index.html">{SEAL}<span class="brand-name">Harker Venture<br>Investment Initiative</span></a>
+      <button class="nav-toggle" aria-label="Menu">&#9776;</button>
+      <ul class="nav-links">
+        <li><a href="{p}index.html"{cls('home')}>Home</a></li>
+        <li><a href="{p}about.html"{cls('about')}>About</a></li>
+        <li class="has-drop"><a href="{p}alumni-companies.html"{cls('alumni')}>Alumni Companies</a>
+          <ul class="drop">
+            <li><a href="{p}alumni-companies.html#ai">AI</a></li>
+            <li><a href="{p}alumni-companies.html#health">Health &amp; Bio</a></li>
+            <li><a href="{p}alumni-companies.html#fintech">Fintech</a></li>
+            <li><a href="{p}alumni-companies.html#security">Security</a></li>
+            <li><a href="{p}alumni-companies.html#enterprise">Enterprise</a></li>
+            <li><a href="{p}alumni-companies.html#commerce">Commerce</a></li>
+          </ul></li>
+        <li><a href="{p}our-investments.html"{cls('invest')}>Our Investments</a></li>
+        <li><a href="{p}committee-list.html"{cls('committee')}>Committee List</a></li>
+        <li><a href="{p}updates.html"{cls('updates')}>Updates</a></li>
+        <li><a class="nav-cta" href="mailto:harkermehtascholars@gmail.com">Contact Us!</a></li>
+      </ul>
+    </nav>
+  </header>'''
+
+def footer(p=''):
+    return f'''  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div><span class="brand-name">Harker Venture Investment Initiative</span>
+          <p style="margin-top:14px;max-width:38ch">Mehta Scholars serve as analysts for The Harker Venture Pool, investing in and supporting Harker alumni founders.</p></div>
+        <div><h4>Explore</h4><ul class="footer-links">
+          <li><a href="{p}index.html">Home</a></li><li><a href="{p}about.html">About</a></li>
+          <li><a href="{p}alumni-companies.html">Alumni Companies</a></li><li><a href="{p}our-investments.html">Our Investments</a></li>
+          <li><a href="{p}committee-list.html">Committee List</a></li><li><a href="{p}updates.html">Updates</a></li></ul></div>
+        <div><h4>Get in touch</h4><ul class="footer-links">
+          <li><a href="mailto:MehtaScholars@harker.org">MehtaScholars@harker.org</a></li>
+          <li><a href="mailto:harkermehtascholars@gmail.com">harkermehtascholars@gmail.com</a></li>
+          <li style="color:var(--muted)">500 Saratoga Ave,<br>San Jose, CA 95129</li></ul></div>
+      </div>
+      <div class="footer-bottom"><span>&copy; 2026 The Harker Venture Investment Initiative &middot; Mehta Scholars</span><span>The Harker School</span></div>
+    </div>
+  </footer>
+  <script src="{p}js/main.js?v=4"></script>
+</body>
+</html>'''
+
+def head(title, desc, p=''):
+    return f'''<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{esc(title)}</title>
+  <meta name="description" content="{esc(desc)}">
+  {FONTS}
+  <link rel="stylesheet" href="{p}css/styles.css?v=10">
+</head>
+<body>
+'''
+
+def inner_photo(name, p=''):
+    """Return <img> if a real photo exists, else initials text."""
+    ph=PHOTOS.get(name)
+    if ph: return f'<img src="{p}{ph}" alt="{esc(name)}" loading="lazy">'
+    return initials(name)
+
+def avatar(name, cls='avatar', p=''):
+    return f'<div class="{cls}">{inner_photo(name, p)}</div>'
+
+# ============ HOME ============
+home=head('Home | Mehta Scholars','The Harker Venture Investment Initiative — Mehta Scholars invest in and support Harker alumni founders and their companies.')
+home+=nav('home')
+home+='''
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="wrap">
+      <h1>The Harker Venture Investment Initiative</h1>
+      <p>Student analysts investing in — and championing — the next generation of Harker alumni founders.</p>
+      <p style="margin-top:26px"><a class="btn" href="our-investments.html">See our investments</a> &nbsp; <a class="btn ghost" href="about.html">Meet the scholars</a></p>
+    </div>
+  </section>
+  <section>
+    <div class="wrap">
+      <div class="section-head"><p class="eyebrow">What We Do</p><h2>A launchpad for founders and investors</h2>
+        <p>Mehta Scholars connect Harker's alumni founders with mentorship, capital, and a strategic ecosystem built to help them win.</p></div>
+      <div class="grid grid-3">
+        <div class="card"><div class="ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20v-6M6 20v-4M18 20v-9"/><circle cx="12" cy="8" r="3"/></svg></div><div class="kicker">Exceptional Mentorship</div><h3>Industry Insights</h3><p>Gain valuable industry insights and guidance from experienced mentors within Harker's network. Access a wealth of knowledge from experienced founders and professionals.</p></div>
+        <div class="card"><div class="ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/></svg></div><div class="kicker">Strategic Partnerships</div><h3>Forge Connections</h3><p>Forge strategic partnerships with forward-thinking individuals and organizations. Collaborate on innovative projects and ventures to drive mutual success.</p></div>
+        <div class="card"><div class="ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v10M9 10h4a2 2 0 0 1 0 4H9"/></svg></div><div class="kicker">Access to Funding</div><h3>Fuel Your Growth</h3><p>Unlock access to potential funding sources through our extensive network. Leverage our connections to fuel the growth and development of your ventures.</p></div>
+      </div>
+    </div>
+  </section>
+  <section class="section-green"><div class="wrap"><div class="pills"><span class="pill">Innovative</span><span class="pill">Forward-Looking</span><span class="pill">Collaborative</span><span class="pill">Impactful</span></div></div></section>
+  <section class="cta-band section-tint"><div class="wrap"><p class="eyebrow">Join Our Network</p><h2>Explore collaboration, mentorship &amp; investment</h2>
+    <p>The Harker Venture Investment Initiative offers a unique opportunity to connect with a diverse network of entrepreneurs, industry experts, and investors. Join us to explore potential collaborations, mentorship, and investment opportunities.</p>
+    <a class="btn" href="mailto:harkermehtascholars@gmail.com">Join Now</a></div></section>
+'''
+home+=footer()
+open(ROOT+'/index.html','w').write(home)
+
+# ============ ABOUT ============
+STEPS=[('Promotional profile created and posted on the website',0),('In-depth report created',0),
+ ('Report presented to a member of the Venture Advisory Committee',0),('Mehta Scholar talks with the founder','x3'),
+ ('Finalized report presented to members of the Venture Investment Committee',0),('Report approved',0),
+ ('Result 1: Mehta Scholar makes investment into the company','r'),('Result 2: Founder works with the Entrepreneurship Advisory Committee','r')]
+flow=''
+for i,(txt,flag) in enumerate(STEPS):
+    rescls=' result' if flag=='r' else ''
+    flow+=f'<div class="flow-box{rescls}">{esc(txt)}</div>'
+    if i<len(STEPS)-1:
+        flow+= '<div class="flow-note">x3</div>' if flag=='x3' else '<div class="flow-arrow">&rarr;</div>'
+TEAM=[('Class of 2025',['Andy Chung','Saahira Dayal','Sophie Degoricija','Ian Gerstner','Yifan Li','Tiana Salvi']),
+      ('Class of 2026',['Tanvi Sivakumar','Leana Zhou']),
+      ('Class of 2027',['Akash Dubey','Bazigh Tahirzad','David Kelly','Ronica Khattri','Amy Tong'])]
+try: SCHOLAR_LI=json.load(open(CAP+'scholar_linkedin.json'))
+except Exception: SCHOLAR_LI={}
+teamhtml=''
+for cls,ppl in TEAM:
+    teamhtml+=f'<div class="class-block"><h3>{cls}</h3><div class="people">'
+    for n in ppl:
+        av=avatar(n); li=SCHOLAR_LI.get(n)
+        if li: av=f'<a href="{li}" target="_blank" rel="noopener" class="scholar-link" aria-label="{esc(n)} on LinkedIn">{av}</a>'
+        teamhtml+=f'<div class="person">{av}<div class="name">{n}</div></div>'
+    teamhtml+='</div></div>'
+about=head('About | Mehta Scholars','Meet the Mehta Scholar team and learn how our analysts research and invest in Harker alumni founders.')
+about+=nav('about')
+about+=f'''
+  <section class="page-hero"><div class="wrap"><h1>The Mehta Scholar Team</h1><p>Student analysts for The Harker Venture Pool.</p></div></section>
+  <section><div class="wrap" style="max-width:900px">
+    <p style="font-size:1.15rem">Mehta Scholars serve as analysts for The Harker Venture Pool. This real-world, hands-on experience provides a unique opportunity to our advanced-level Business &amp; Entrepreneurship students who take Honors Corporate Finance &amp; Honors Venture Capital in their 11th-grade year. Top performers are then selected to be Mehta Scholars during their 12th-grade year.</p>
+    <p style="font-size:1.15rem">Mehta Scholars identify, research, promote, and support alumni founders and their companies as they look to invest in their companies from the Harker Venture Pool. They also connect alumni founders with other VCs, Angel Investors, Entrepreneurs, and other Business and Technology Professionals in the Harker Strategic Ecosystem as needed.</p>
+  </div></section>
+  <section class="section-tint"><div class="wrap"><div class="section-head"><p class="eyebrow">Our Process</p><h2>From profile to investment</h2></div>
+    <div class="flow">{flow}</div></div></section>
+  <section><div class="wrap"><div class="section-head"><p class="eyebrow">Our Team</p><h2>Meet the scholars</h2></div>{teamhtml}</div></section>
+'''
+about+=footer()
+open(ROOT+'/about.html','w').write(about)
+
+# ============ ALUMNI COMPANIES ============
+STAGE_ORDER=["Acquired / IPO'd",'Pre-Seed','Seed','Series A and Later']
+SECTORS=[('all','All'),('ai','AI'),('health','Health &amp; Bio'),('fintech','Fintech'),('security','Security'),
+ ('enterprise','Enterprise/SaaS'),('commerce','Commerce/Consumer'),('energy','Energy/Climate'),('media','Media/Gaming'),('hardware','Hardware/Deep-Tech')]
+alumni=head('Alumni Companies | Mehta Scholars','Companies founded by Harker alumni across AI, health &amp; bio, fintech, security, enterprise, commerce, energy, media, and deep tech.')
+alumni+=nav('alumni')
+alumni+='''
+  <section class="page-hero serif"><div class="wrap"><h1>Harker fosters the best.</h1><p>The companies founded by Harker alumni — the ventures our Mehta Scholars research, back, and champion.</p></div></section>
+  <section class="co-section"><div class="wrap">
+    <div class="filters">'''
+alumni+=''.join(f'<button class="filter-btn{" active" if k=="all" else ""}" data-filter="{k}" id="{k}">{lbl}</button>' for k,lbl in SECTORS)
+alumni+='</div>'
+for stage in STAGE_ORDER:
+    grp=[f for f in companies if f.get('stage_group')==stage]
+    if not grp: continue
+    alumni+=f'<div data-stage-group><h2 class="stage-label">{esc(stage)}</h2><div class="co-grid">'
+    for f in grp:
+        if f.get('tile'):
+            thumb=f'<div class="co-thumb"><img src="{f["tile"]}?v=10" alt="{esc(f["company"])}" loading="lazy"></div>'
+        else:
+            thumb=f'<div class="co-thumb ph" style="--tc:{f.get("color","#2f6d3a")}"><span>{esc(f["company"])}</span></div>'
+        alumni+=f'<a class="co-tile" data-sector="{f["sector_key"]}" href="companies/{f["page"]}.html">{thumb}<div class="co-name">{esc(f["name"])} {esc(f.get("year",""))}</div></a>'
+    alumni+='</div></div>'
+alumni+='</div></section>'
+alumni+=footer()
+open(ROOT+'/alumni-companies.html','w').write(alumni)
+
+# ============ COMPANY / FOUNDER DETAIL PAGES ============
+os.makedirs(ROOT+'/companies',exist_ok=True)
+pages={}
+for f in companies: pages.setdefault(f['page'],[]).append(f)
+def fact(label,val): return f'<div class="fact"><span class="fact-l">{label}</span><span class="fact-v">{esc(val)}</span></div>' if val else ''
+for pgslug,cos in pages.items():
+    f0=cos[0]
+    li=f0.get('linkedin',''); links=''
+    if li: links+=f'<a class="btn outline" href="{li}" target="_blank" rel="noopener">Founder&#39;s LinkedIn &#8599;</a>'
+    multi=len(cos)>1
+    for c in cos:
+        if c.get('website'):
+            lbl=(f'{esc(c["company"])} website' if multi else 'Visit Website')
+            links+=f'<a class="btn outline" href="{c["website"]}" target="_blank" rel="noopener">{lbl} &#8599;</a>'
+    bio=f0.get('bio','') or 'Full profile coming soon — our Mehta Scholars are researching this founder and their companies.'
+    conames=' &middot; '.join(c['company'] for c in cos)
+    doc=head(f"{f0['name']} | Mehta Scholars", f"{f0['name']} — {', '.join(c['company'] for c in cos)}.", p='../')
+    doc+=nav('alumni', p='../')
+    doc+=f'''
+  <section class="company-hero" style="--pg:{f0.get('color','#0a582a')}"><div class="wrap"><div class="company-card">
+    <div class="photo">{inner_photo(f0['name'], '../')}</div>
+    <div>
+      <div class="founder-name">{esc(f0['name'])} {esc(f0.get('year',''))}</div>
+      <div class="co-name">{conames}</div>
+      <div class="bio">{esc(bio)}</div>
+      {('<div class="company-links">'+links+'</div>') if links else ''}
+    </div>
+  </div></div></section>
+'''
+    doc+='  <section style="padding:40px 0"><div class="wrap" style="text-align:center"><a class="btn" href="../alumni-companies.html">&larr; Back to Alumni Companies</a></div></section>\n'
+    doc+=footer(p='../')
+    open(f'{ROOT}/companies/{pgslug}.html','w').write(doc)
+
+# ============ OUR INVESTMENTS ============
+INV=[('Namrata Anand','\'10','Diffuse Bio','Health Tech & Life Sciences','Diffuse Bio is a biotechnology company specializing in generative AI for protein design. Their mission is to create AI systems that engineer novel, useful proteins with exceptional precision.'),
+('Barrett Glasauer','\'09','Rejigg','Fintech','Rejigg connects quality small business owners with vetted buyers, minimizing fees, eliminating brokers, and streamlining the acquisition process.'),
+('Surhbi Sarna','\'03','Collate','Health Tech & Life Sciences','Collate uses AI to create and streamline accurate documentation for diagnostic, medical device, and drug development companies, thereby reducing time to market and expediting the creation of life-saving innovations.'),
+('Aumesh Mishra','\'16','Tivara','Health Tech & Life Sciences','Tivara is an AI company that automates insurance approval (prior authorization) for healthcare clinics, helping doctors deliver care to patients faster.'),
+('Anita Modi','\'04','Peer AI','Health Tech & Life Sciences','Peer AI is an agentic AI platform that provides support for regulatory documentation for life sciences and biotech companies with strong security and compliance.'),
+('Drew Goldstein','\'13','Ephemeral Technologies','Health Tech & Life Sciences','Ephemeral Technologies works to accelerate end-to-end drug development and delivery using an integrated AI, software, and robotics platform.'),
+('Daanish Jamal','\'12','Dolomite Therapeutics','Health Tech & Life Sciences','Dolomite Therapeutics works to develop biologic degraders that induce durable remission in patients with autoimmune kidney disease.')]
+inv=head('Our Investments | Mehta Scholars',"Harker's Mehta Scholars put $25k SAFEs into Harker alumni startups. See a selection of our past investments.")
+inv+=nav('invest')
+inv+='''
+  <section class="page-hero"><div class="wrap"><h1>Our Investments</h1><p>Harker's Mehta Scholars put $25k SAFEs into Harker alumni startups. We review reports with the Venture Advisory Committee and the Venture Investment Committee. Here are a few of our past investments.</p></div></section>
+  <section><div class="wrap"><div class="invest">'''
+for nm,yr,co,tag,desc in INV:
+    sl=slug(co)
+    logo=f'<div class="invest-logo"><img src="assets/invest-logos/{sl}.png?v=2" alt="{esc(co)} logo" loading="lazy"></div>' if os.path.exists(f'{ROOT}/assets/invest-logos/{sl}.png') else ''
+    inv+=f'''<div class="invest-card">
+      <div class="invest-top">
+        <div class="invest-co-block">{logo}<div class="co">{esc(co)}</div></div>
+        <div class="invest-founder">{esc(nm)} {esc(yr)}</div>
+      </div>
+      <div class="invest-body">
+        <div class="invest-headshot">{inner_photo(nm)}</div>
+        <span class="tag">{esc(tag)}</span>
+        <p>{esc(desc)}</p>
+        <a class="btn small" href="companies/{sl}.html">More on {esc(co)}</a>
+      </div></div>'''
+inv+='</div></div></section>'
+inv+=footer()
+open(ROOT+'/our-investments.html','w').write(inv)
+
+# ============ COMMITTEE ============
+ORDER=['Venture Investment Committee','Venture Advisory Committee','Entrepreneurship Advisory Committee']
+comm=head('Committee List | Mehta Scholars','The Venture Investment, Venture Advisory, and Entrepreneurship Advisory Committees supporting the Mehta Scholars.')
+comm+=nav('committee')
+comm+='''
+  <section class="page-hero serif"><div class="wrap"><h1>Harker connects you with the best.</h1><p>The committees of experienced investors and founders who guide, review, and support our work.</p></div></section>'''
+def linklabel(u): return 'Instagram' if 'instagram.com' in (u or '') else 'LinkedIn'
+cdata=[]; idx=0; tint=False
+for grp in ORDER:
+    mem=[m for m in committee if m['committee']==grp]
+    if not mem: continue
+    seccls=' section-tint' if tint else ''; tint=not tint
+    comm+=f'<section class="{seccls.strip()}"><div class="wrap"><div class="section-head"><p class="eyebrow">{grp}</p></div><p class="committee-intro">{esc(sections.get(grp,""))}</p><div class="members-grid">'
+    for m in mem:
+        cdata.append({'name':m['name'],'org':m['org'],'bio':m.get('bio',''),
+          'linkedin':m.get('linkedin',''),'linklabel':linklabel(m.get('linkedin','')),
+          'company':m.get('company_url',''),'photo':PHOTOS.get(m['name'],''),'initials':initials(m['name'])})
+        comm+=f'''<button class="member-tile" data-idx="{idx}"><div class="photo">{inner_photo(m['name'])}</div><div class="m-head"><h3>{esc(m['name'])}</h3><div class="org">{esc(m['org'])}</div><p class="tile-bio">{esc(m.get('bio',''))}</p></div><span class="tile-more">View profile &rarr;</span></button>'''
+        idx+=1
+    comm+='</div></div></section>'
+comm+='''
+  <div class="modal-overlay" id="memberModal" hidden>
+    <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="mName">
+      <button class="modal-close" aria-label="Close">&times;</button>
+      <div class="modal-photo" id="mPhoto"></div>
+      <div class="modal-info">
+        <h3 id="mName"></h3>
+        <div class="org" id="mOrg"></div>
+        <p id="mBio"></p>
+        <div class="modal-links" id="mLinks"></div>
+      </div>
+    </div>
+  </div>
+  <script>
+  window.COMMITTEE=''' + json.dumps(cdata) + ''';
+  (function(){
+    var modal=document.getElementById('memberModal');
+    var mPhoto=document.getElementById('mPhoto'),mName=document.getElementById('mName'),mOrg=document.getElementById('mOrg'),mBio=document.getElementById('mBio'),mLinks=document.getElementById('mLinks');
+    function openModal(i){var d=window.COMMITTEE[i];if(!d)return;
+      mPhoto.innerHTML=d.photo?'<img src="'+d.photo+'" alt="'+d.name+'">':d.initials;
+      mName.textContent=d.name;mOrg.textContent=d.org;mBio.textContent=d.bio||'';
+      var l='';
+      if(d.linkedin)l+='<a class="btn outline" target="_blank" rel="noopener" href="'+d.linkedin+'">'+d.linklabel+' \\u2197</a>';
+      if(d.company)l+='<a class="btn outline" target="_blank" rel="noopener" href="'+d.company+'">Company \\u2197</a>';
+      mLinks.innerHTML=l;modal.hidden=false;document.body.style.overflow='hidden';}
+    function closeModal(){modal.hidden=true;document.body.style.overflow='';}
+    document.addEventListener('click',function(e){
+      var t=e.target.closest('.member-tile');
+      if(t){openModal(+t.getAttribute('data-idx'));return;}
+      if(e.target===modal||e.target.classList.contains('modal-close'))closeModal();
+    });
+    document.addEventListener('keydown',function(e){if(e.key==='Escape'&&!modal.hidden)closeModal();});
+  })();
+  </script>'''
+comm+=footer()
+open(ROOT+'/committee-list.html','w').write(comm)
+
+# ============ UPDATES ============
+upd=head('Updates | Mehta Scholars','News and updates from The Harker Venture Investment Initiative.')
+upd+=nav('updates')
+upd+='''
+  <section class="page-hero"><div class="wrap"><h1>Updates</h1><p>News, milestones, and announcements from the Mehta Scholars.</p></div></section>
+  <section><div class="wrap"><div class="posts">
+    <article class="post"><div class="post-cover"><h2>Mehta Scholars Attend Startup World Cup</h2></div>
+      <div class="post-body"><div class="post-meta"><span>Harker Mehta Scholars</span><span>Apr 26</span><span>1 min read</span></div>
+      <p>On April 17th, our Mehta Scholar team participated in the Startup World Cup Youth Qualifier, organized by Harker and Pegasus Tech Ventures. Our senior Mehta Scholars, Leana Zhou and Tanvi Sivakumar, facilitated the fireside chat with Brandon Yang from Cartesia. Meanwhile, our junior Mehta Scholars engaged in networking opportunities with professionals across various industries, gaining key insights and forming important connections.</p></div></article>
+  </div></div></section>'''
+upd+=footer()
+open(ROOT+'/updates.html','w').write(upd)
+
+print("Generated: index, about, alumni-companies, our-investments, committee-list, updates")
+print("Company pages:", len(founders))
