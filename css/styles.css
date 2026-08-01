@@ -153,12 +153,15 @@ section { padding: 84px 0; }
 .invest { display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 26px; }
 .invest-card { background: #fff; border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; display: flex; flex-direction: column; transition: 0.18s; }
 .invest-card:hover { box-shadow: var(--shadow-green); transform: translateY(-4px); }
-.invest-top { background: linear-gradient(160deg, var(--green-dark), var(--green-deep)); color: #fff; padding: 22px 26px; display: flex; align-items: center; gap: 15px; }
-.invest-avatar { width: 58px; height: 58px; border-radius: 50%; overflow: hidden; flex: 0 0 auto; background: rgba(255,255,255,0.16); color: #fff; display: grid; place-items: center; font-family: var(--font-head); font-size: 1.05rem; }
-.invest-avatar img { width: 100%; height: 100%; object-fit: cover; }
-.invest-top .founder-name { font-size: 0.92rem; opacity: 0.85; font-family: var(--font-head); }
-.invest-top .co { font-family: var(--font-head); font-size: 1.7rem; margin-top: 4px; }
-.invest-body { padding: 24px 26px; display: flex; flex-direction: column; gap: 18px; flex: 1; }
+.invest-top { background: linear-gradient(160deg, var(--green-dark), var(--green-deep)); color: #fff; padding: 18px 22px; display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.invest-co-block { display: flex; align-items: center; gap: 12px; min-width: 0; }
+.invest-logo { flex: 0 0 auto; height: 34px; display: grid; place-items: center; }
+.invest-logo img { height: 34px; width: auto; max-width: 46px; object-fit: contain; }
+.invest-top .co { font-family: var(--font-head); font-size: 1.35rem; line-height: 1.1; }
+.invest-founder { font-family: var(--font-head); font-size: 0.9rem; opacity: 0.9; text-align: right; flex: 0 0 auto; white-space: nowrap; }
+.invest-body { padding: 22px 24px 24px; display: flex; flex-direction: column; gap: 14px; flex: 1; align-items: flex-start; }
+.invest-headshot { width: 92px; height: 92px; border-radius: 50%; overflow: hidden; background: var(--bg-green-tint); display: grid; place-items: center; font-family: var(--font-head); color: var(--green); font-size: 1.5rem; }
+.invest-headshot img { width: 100%; height: 100%; object-fit: cover; }
 .invest-body p { margin: 0; color: var(--muted); flex: 1; }
 .tag { display: inline-block; background: var(--bg-green-tint); color: var(--green-dark); font-family: var(--font-head); font-size: 0.78rem; padding: 4px 12px; border-radius: 30px; align-self: flex-start; }
 
