@@ -309,29 +309,20 @@ section { padding: 84px 0; }
 .scholar-link { display: inline-block; cursor: pointer; text-decoration: none; }
 .scholar-link:hover { text-decoration: none; }
 
-/* ---------- LED video-wall scrollytelling (home) ---------- */
-.led-stage { position: relative; height: 600vh; background: #0a0f0d; }
-.led-pin { position: sticky; top: 0; height: 100vh; overflow: hidden; display: grid; place-items: center; }
-.led-backdrop { position: absolute; inset: 0; background: radial-gradient(120% 90% at 50% 28%, #223028 0%, #0c110f 62%, #060a08 100%); }
-.led-backdrop::before { content:""; position:absolute; inset:0; opacity:.4; background-image: linear-gradient(rgba(255,255,255,.03) 1px, transparent 1px); background-size: 100% 46px; }
-.led-wall { position: relative; width: min(1080px, 90vw); aspect-ratio: 16 / 9; border-radius: 12px; padding: clamp(10px,1.4vw,20px); background: linear-gradient(#0a0d0c,#05100b); box-shadow: 0 0 0 3px #0c1a14, 0 0 0 13px #071b13, 0 40px 90px rgba(0,0,0,.6), 0 0 150px rgba(3,129,18,.30); }
-.led-screen { position: relative; width: 100%; height: 100%; border-radius: 5px; overflow: hidden; background: radial-gradient(140% 120% at 50% 45%, #06231a 0%, #041710 72%); }
-.led-screen::after { content:""; position:absolute; inset:0; pointer-events:none; background-image: radial-gradient(rgba(180,255,210,.10) 1px, transparent 1.5px); background-size: 7px 7px; mix-blend-mode: screen; }
-.led-slide { position: absolute; inset: 0; display: grid; place-items: center; text-align: center; padding: 5% 9%; opacity: 0; transform: translateY(24px) scale(.98); transition: opacity .6s ease, transform .6s ease; }
-.led-slide.is-active { opacity: 1; transform: none; }
-.led-inner { max-width: 58ch; }
-.led-slide .eyebrow { color: #4ade80; }
-.led-slide .kicker { color: #4ade80; font-family: var(--font-head); letter-spacing: .05em; text-transform: uppercase; font-size: .8rem; margin-bottom: 6px; }
-.led-slide h2 { color: #fff; font-size: clamp(1.7rem, 3.7vw, 3rem); margin: 0; text-shadow: 0 0 26px rgba(74,222,128,.35); }
-.led-slide h3 { color: #fff; font-size: clamp(1.4rem, 3vw, 2.2rem); margin: 0; text-shadow: 0 0 20px rgba(74,222,128,.3); }
-.led-slide p { color: #c7ecd3; margin: 14px auto 0; line-height: 1.55; }
-.led-slide .ico { width: 62px; height: 62px; margin: 0 auto 18px; display: grid; place-items: center; color: #6ee7a0; border-radius: 16px; background: rgba(74,222,128,.12); box-shadow: 0 0 34px rgba(74,222,128,.28); }
-.led-slide .ico svg { width: 30px; height: 30px; }
-.led-slide .btn { margin-top: 24px; }
-.led-dots { position: absolute; bottom: 26px; left: 0; right: 0; display: flex; gap: 10px; justify-content: center; z-index: 3; }
-.led-dot { width: 9px; height: 9px; border-radius: 50%; background: rgba(255,255,255,.22); transition: .3s; }
-.led-dot.is-on { background: #4ade80; box-shadow: 0 0 12px #4ade80; transform: scale(1.2); }
-.led-hint { position: absolute; bottom: 52px; left: 0; right: 0; text-align: center; color: rgba(255,255,255,.5); font-size: .72rem; letter-spacing: .12em; text-transform: uppercase; animation: ledbob 1.8s ease-in-out infinite; }
-@keyframes ledbob { 0%,100%{transform:translateY(0)} 50%{transform:translateY(5px)} }
-@media (max-width: 640px){ .led-wall { aspect-ratio: 3 / 4; width: 92vw; } .led-slide { padding: 8% 7%; } }
-@media (prefers-reduced-motion: reduce){ .led-slide { transition: opacity .2s; } }
+/* ---------- Patil video-wall ("what we do") ---------- */
+.patil { background: #fff; }
+.patil-frame { max-width: 1040px; margin: 0 auto; padding: clamp(22px, 4.5vw, 60px); border-radius: 14px; background: url("../assets/tex/patil-wall.jpg") center/cover, #d5c9ad; box-shadow: 0 30px 70px rgba(0,0,0,.18); }
+.patil-screen { position: relative; aspect-ratio: 16 / 7; border: 10px solid #0b0b0b; border-radius: 6px; overflow: hidden; background: radial-gradient(130% 130% at 50% 38%, #0f2c21 0%, #05130d 76%); box-shadow: 0 10px 34px rgba(0,0,0,.45), inset 0 0 70px rgba(0,0,0,.7); display: grid; place-items: center; }
+.patil-screen::after { content:""; position:absolute; inset:0; pointer-events:none; background-image: radial-gradient(rgba(150,255,200,.10) 1px, transparent 1.4px); background-size: 6px 6px; mix-blend-mode: screen; }
+.patil-screen-inner { text-align: center; padding: 5% 8%; max-width: 60ch; }
+.patil-screen-inner .eyebrow { color: #4ade80; }
+.patil-screen-inner h2 { color: #fff; margin: 0; font-size: clamp(1.5rem, 3.3vw, 2.7rem); text-shadow: 0 0 26px rgba(74,222,128,.4); }
+.patil-screen-inner p { color: #cdeed8; margin: 12px auto 0; }
+.patil-cards { max-width: 1040px; margin: 44px auto 0; display: flex; flex-direction: column; gap: 20px; }
+.pcard { display: flex; align-items: flex-start; gap: 22px; background: #fff; border: 1px solid var(--line); border-radius: var(--radius); padding: 28px 30px; transition: transform .18s, box-shadow .18s; }
+.pcard:hover { transform: translateY(-3px); box-shadow: var(--shadow-green); }
+.pcard .ico { flex: 0 0 auto; width: 56px; height: 56px; border-radius: 14px; display: grid; place-items: center; background: var(--bg-green-tint); color: var(--green-dark); }
+.pcard .kicker { font-family: var(--font-head); color: var(--green); font-size: .95rem; margin-bottom: 2px; }
+.pcard h3 { font-size: 1.4rem; margin: 0 0 6px; }
+.pcard p { color: var(--muted); margin: 0; }
+@media (max-width: 620px){ .pcard { flex-direction: column; gap: 14px; } .patil-screen { aspect-ratio: 4/3; } }
