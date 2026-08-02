@@ -71,7 +71,7 @@ def footer(p=''):
       <div class="footer-bottom"><span>&copy; 2026 The Harker Venture Investment Initiative &middot; Mehta Scholars</span><span>The Harker School</span></div>
     </div>
   </footer>
-  <script src="{p}js/main.js?v=7"></script>
+  <script src="{p}js/main.js?v=8"></script>
 </body>
 </html>'''
 
@@ -83,7 +83,7 @@ def head(title, desc, p=''):
   <title>{esc(title)}</title>
   <meta name="description" content="{esc(desc)}">
   {FONTS}
-  <link rel="stylesheet" href="{p}css/styles.css?v=13">
+  <link rel="stylesheet" href="{p}css/styles.css?v=14">
 </head>
 <body>
 '''
@@ -129,22 +129,12 @@ home+='''
           <p>Connect with a diverse network of entrepreneurs, industry experts, and investors to explore collaborations, mentorship, and investment opportunities.</p>
           <a class="btn" href="mailto:harkermehtascholars@gmail.com">Join Now</a>
         </div></div>
-        <div class="ws-slide" data-i="2"><div class="ws-footer">
-          <div class="wsf-grid">
-            <div><span class="brand-name">Harker Venture Investment Initiative</span><p>Mehta Scholars serve as analysts for The Harker Venture Pool, investing in and supporting Harker alumni founders.</p></div>
-            <div><h4>Explore</h4><ul><li><a href="about.html">About</a></li><li><a href="alumni-companies.html">Alumni Companies</a></li><li><a href="our-investments.html">Our Investments</a></li><li><a href="committee-list.html">Committee List</a></li></ul></div>
-            <div><h4>Get in touch</h4><ul><li><a href="mailto:MehtaScholars@harker.org">MehtaScholars@harker.org</a></li><li><a href="mailto:harkermehtascholars@gmail.com">harkermehtascholars@gmail.com</a></li><li>500 Saratoga Ave, San Jose, CA 95129</li></ul></div>
-          </div>
-          <div class="wsf-bottom">&copy; 2026 The Harker Venture Investment Initiative &middot; Mehta Scholars &middot; The Harker School</div>
-        </div></div>
       </div>
-      <div class="wall-dots"><span class="wall-dot is-on"></span><span class="wall-dot"></span><span class="wall-dot"></span></div>
+      <div class="wall-dots"><span class="wall-dot is-on"></span><span class="wall-dot"></span></div>
     </div>
   </section>
-  <script src="js/main.js?v=7"></script>
-</body>
-</html>
 '''
+home+=footer()
 open(ROOT+'/index.html','w').write(home)
 
 # ============ ABOUT ============

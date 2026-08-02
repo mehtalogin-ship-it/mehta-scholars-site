@@ -96,11 +96,11 @@ document.addEventListener('DOMContentLoaded', function () {
   var slides = [].slice.call(stage.querySelectorAll('.ws-slide'));
   var cards = [].slice.call(stage.querySelectorAll('.ws-card'));
   var dots = [].slice.call(stage.querySelectorAll('.wall-dot'));
-  var th = [0.06, 0.22, 0.38];
+  var th = [0.08, 0.26, 0.44];
   function update() {
     var range = stage.offsetHeight - window.innerHeight;
     var p = Math.min(0.9999, Math.max(0, (window.scrollY - stage.offsetTop) / range));
-    var idx = p < 0.58 ? 0 : (p < 0.80 ? 1 : 2);
+    var idx = p < 0.62 ? 0 : 1;
     slides.forEach(function (s, i) { s.classList.toggle('is-active', i === idx); });
     dots.forEach(function (d, i) { d.classList.toggle('is-on', i === idx); });
     cards.forEach(function (c, i) { c.classList.toggle('show', idx > 0 || p >= th[i]); });
