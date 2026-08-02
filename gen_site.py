@@ -83,7 +83,7 @@ def head(title, desc, p=''):
   <title>{esc(title)}</title>
   <meta name="description" content="{esc(desc)}">
   {FONTS}
-  <link rel="stylesheet" href="{p}css/styles.css?v=15">
+  <link rel="stylesheet" href="{p}css/styles.css?v=16">
 </head>
 <body>
 '''
@@ -113,7 +113,6 @@ home+='''
   </section>
   <section class="wall-stage" id="wallStage">
     <div class="wall-pin">
-      <div class="wall-tex"></div>
       <div class="wall-screen">
         <div class="ws-slide is-active" data-i="0">
           <div class="ws-head"><p class="eyebrow">What We Do</p><h2>A launchpad for founders and investors</h2></div>
