@@ -88,3 +88,26 @@ document.addEventListener('DOMContentLoaded', function () {
     if (match) match.click();
   }
 });
+
+/* ---- LED video-wall: scroll-driven slide switching ---- */
+(function () {
+  var stage = document.getElementById('ledStage');
+  if (!stage) return;
+  var slides = [].slice.call(stage.querySelectorAll('.led-slide'));
+  var dots = [].slice.call(stage.querySelectorAll('.led-dot'));
+  var n = slides.length, cur = 0, ticking = false;
+  function set(i) {
+    if (i === cur) return; cur = i;
+    slides.forEach(function (s, k) { s.classList.toggle('is-active', k === i); });
+    dots.forEach(function (d, k) { d.classList.toggle('is-on', k === i); });
+  }
+  function update() {
+    ticking = false;
+    var range = stage.offsetHeight - window.innerHeight;
+    var p = Math.min(0.9999, Math.max(0, (window.scrollY - stage.offsetTop) / range));
+    set(Math.floor(p * n));
+  }
+  window.addEventListener('scroll', function () { if (!ticking) { ticking = true; requestAnimationFrame(update); } }, { passive: true });
+  window.addEventListener('resize', update);
+  update();
+})();

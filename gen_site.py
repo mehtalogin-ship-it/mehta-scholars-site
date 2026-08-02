@@ -71,7 +71,7 @@ def footer(p=''):
       <div class="footer-bottom"><span>&copy; 2026 The Harker Venture Investment Initiative &middot; Mehta Scholars</span><span>The Harker School</span></div>
     </div>
   </footer>
-  <script src="{p}js/main.js?v=4"></script>
+  <script src="{p}js/main.js?v=5"></script>
 </body>
 </html>'''
 
@@ -109,21 +109,46 @@ home+='''
       <p style="margin-top:26px"><a class="btn" href="our-investments.html">See our investments</a> &nbsp; <a class="btn ghost" href="about.html">Meet the scholars</a></p>
     </div>
   </section>
-  <section>
-    <div class="wrap">
-      <div class="section-head"><p class="eyebrow">What We Do</p><h2>A launchpad for founders and investors</h2>
-        <p>Mehta Scholars connect Harker's alumni founders with mentorship, capital, and a strategic ecosystem built to help them win.</p></div>
-      <div class="grid grid-3">
-        <div class="card"><div class="ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20v-6M6 20v-4M18 20v-9"/><circle cx="12" cy="8" r="3"/></svg></div><div class="kicker">Exceptional Mentorship</div><h3>Industry Insights</h3><p>Gain valuable industry insights and guidance from experienced mentors within Harker's network. Access a wealth of knowledge from experienced founders and professionals.</p></div>
-        <div class="card"><div class="ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/></svg></div><div class="kicker">Strategic Partnerships</div><h3>Forge Connections</h3><p>Forge strategic partnerships with forward-thinking individuals and organizations. Collaborate on innovative projects and ventures to drive mutual success.</p></div>
-        <div class="card"><div class="ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v10M9 10h4a2 2 0 0 1 0 4H9"/></svg></div><div class="kicker">Access to Funding</div><h3>Fuel Your Growth</h3><p>Unlock access to potential funding sources through our extensive network. Leverage our connections to fuel the growth and development of your ventures.</p></div>
+  <section class="led-stage" id="ledStage">
+    <div class="led-pin">
+      <div class="led-backdrop"></div>
+      <div class="led-wall">
+        <div class="led-screen">
+          <div class="led-slide is-active" data-i="0"><div class="led-inner">
+            <p class="eyebrow">What We Do</p>
+            <h2>A launchpad for founders and investors</h2>
+            <p>Mehta Scholars connect Harker's alumni founders with mentorship, capital, and a strategic ecosystem built to help them win.</p>
+          </div></div>
+          <div class="led-slide" data-i="1"><div class="led-inner">
+            <div class="ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20v-6M6 20v-4M18 20v-9"/><circle cx="12" cy="8" r="3"/></svg></div>
+            <p class="kicker">Exceptional Mentorship</p>
+            <h3>Industry Insights</h3>
+            <p>Gain valuable industry insights and guidance from experienced mentors within Harker's network — a wealth of knowledge from founders and professionals.</p>
+          </div></div>
+          <div class="led-slide" data-i="2"><div class="led-inner">
+            <div class="ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/></svg></div>
+            <p class="kicker">Strategic Partnerships</p>
+            <h3>Forge Connections</h3>
+            <p>Forge strategic partnerships with forward-thinking individuals and organizations. Collaborate on innovative projects and ventures to drive mutual success.</p>
+          </div></div>
+          <div class="led-slide" data-i="3"><div class="led-inner">
+            <div class="ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v10M9 10h4a2 2 0 0 1 0 4H9"/></svg></div>
+            <p class="kicker">Access to Funding</p>
+            <h3>Fuel Your Growth</h3>
+            <p>Unlock access to potential funding sources through our extensive network. Leverage our connections to fuel the growth of your ventures.</p>
+          </div></div>
+          <div class="led-slide" data-i="4"><div class="led-inner">
+            <p class="eyebrow">Join Our Network</p>
+            <h2>Explore collaboration, mentorship &amp; investment</h2>
+            <p>Connect with a diverse network of entrepreneurs, industry experts, and investors to explore collaborations, mentorship, and investment opportunities.</p>
+            <a class="btn" href="mailto:harkermehtascholars@gmail.com">Join Now</a>
+          </div></div>
+        </div>
       </div>
+      <div class="led-dots"><span class="led-dot is-on"></span><span class="led-dot"></span><span class="led-dot"></span><span class="led-dot"></span><span class="led-dot"></span></div>
+      <div class="led-hint">Scroll to explore</div>
     </div>
   </section>
-  <section class="section-green"><div class="wrap"><div class="pills"><span class="pill">Innovative</span><span class="pill">Forward-Looking</span><span class="pill">Collaborative</span><span class="pill">Impactful</span></div></div></section>
-  <section class="cta-band section-tint"><div class="wrap"><p class="eyebrow">Join Our Network</p><h2>Explore collaboration, mentorship &amp; investment</h2>
-    <p>The Harker Venture Investment Initiative offers a unique opportunity to connect with a diverse network of entrepreneurs, industry experts, and investors. Join us to explore potential collaborations, mentorship, and investment opportunities.</p>
-    <a class="btn" href="mailto:harkermehtascholars@gmail.com">Join Now</a></div></section>
 '''
 home+=footer()
 open(ROOT+'/index.html','w').write(home)
