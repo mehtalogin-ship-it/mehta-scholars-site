@@ -139,10 +139,25 @@ document.addEventListener('DOMContentLoaded', function () {
 (function () {
   var stage = document.getElementById('wallStage');
   if (!stage) return;
+  var pin = stage.querySelector('.wall-pin');
+  var screen = stage.querySelector('.wall-screen');
   var slides = [].slice.call(stage.querySelectorAll('.ws-slide'));
   var cards = [].slice.call(stage.querySelectorAll('.ws-card'));
   var dots = [].slice.call(stage.querySelectorAll('.wall-dot'));
   var th = [0.08, 0.26, 0.44];
+  // Black-screen rectangle inside the backdrop frame (assets/intro/f_140.jpg, 1280x720)
+  var FW = 1280, FH = 720, RX0 = 206, RY0 = 132, RX1 = 1075, RY1 = 623;
+  function place() {
+    if (!pin || !screen) return;
+    var pw = pin.clientWidth, ph = pin.clientHeight;
+    var scale, offX, offY;
+    if (pw / ph > FW / FH) { scale = pw / FW; offX = 0; offY = (ph - FH * scale) / 2; }
+    else { scale = ph / FH; offY = 0; offX = (pw - FW * scale) / 2; }
+    screen.style.left = (offX + RX0 * scale) + 'px';
+    screen.style.top = (offY + RY0 * scale) + 'px';
+    screen.style.width = ((RX1 - RX0) * scale) + 'px';
+    screen.style.height = ((RY1 - RY0) * scale) + 'px';
+  }
   function update() {
     var range = stage.offsetHeight - window.innerHeight;
     var p = Math.min(0.9999, Math.max(0, (window.scrollY - stage.offsetTop) / range));
@@ -150,8 +165,10 @@ document.addEventListener('DOMContentLoaded', function () {
     slides.forEach(function (s, i) { s.classList.toggle('is-active', i === idx); });
     dots.forEach(function (d, i) { d.classList.toggle('is-on', i === idx); });
     cards.forEach(function (c, i) { c.classList.toggle('show', idx > 0 || p >= th[i]); });
+    if (screen) screen.style.opacity = Math.min(1, p / 0.05); // power on
   }
   window.addEventListener('scroll', update, { passive: true });
-  window.addEventListener('resize', update);
+  window.addEventListener('resize', function () { place(); update(); });
+  place();
   update();
 })();
