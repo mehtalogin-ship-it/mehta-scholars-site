@@ -71,7 +71,7 @@ def footer(p=''):
       <div class="footer-bottom"><span>&copy; 2026 The Harker Venture Investment Initiative &middot; Mehta Scholars</span><span>The Harker School</span></div>
     </div>
   </footer>
-  <script src="{p}js/main.js?v=8"></script>
+  <script src="{p}js/main.js?v=9"></script>
 </body>
 </html>'''
 
@@ -83,7 +83,7 @@ def head(title, desc, p=''):
   <title>{esc(title)}</title>
   <meta name="description" content="{esc(desc)}">
   {FONTS}
-  <link rel="stylesheet" href="{p}css/styles.css?v=16">
+  <link rel="stylesheet" href="{p}css/styles.css?v=18">
 </head>
 <body>
 '''
@@ -101,14 +101,19 @@ def avatar(name, cls='avatar', p=''):
 home=head('Home | Mehta Scholars','The Harker Venture Investment Initiative — Mehta Scholars invest in and support Harker alumni founders and their companies.')
 home+=nav('home')
 home+='''
-  <section class="hero-patil">
-    <div class="hero-photo"></div>
-    <div class="wrap">
-      <div class="hero-box">
-        <h1>The Harker Venture Investment Initiative</h1>
-        <p>Student analysts investing in — and championing — the next generation of Harker alumni founders.</p>
-        <p class="hero-cta"><a class="btn" href="our-investments.html">See our investments</a> <a class="btn ghost" href="about.html">Meet the scholars</a></p>
+  <section class="intro-stage" id="introStage" data-frames="140">
+    <div class="intro-pin">
+      <canvas id="introCanvas" class="intro-canvas" width="1280" height="720"></canvas>
+      <div class="intro-overlay">
+        <div class="wrap">
+          <div class="hero-box">
+            <h1>The Harker Venture Investment Initiative</h1>
+            <p>Student analysts investing in — and championing — the next generation of Harker alumni founders.</p>
+            <p class="hero-cta"><a class="btn" href="our-investments.html">See our investments</a> <a class="btn ghost" href="about.html">Meet the scholars</a></p>
+          </div>
+        </div>
       </div>
+      <div class="intro-cue" aria-hidden="true">Scroll to step inside</div>
     </div>
   </section>
   <section class="wall-stage" id="wallStage">

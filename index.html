@@ -5,7 +5,7 @@
   <title>Home | Mehta Scholars</title>
   <meta name="description" content="The Harker Venture Investment Initiative — Mehta Scholars invest in and support Harker alumni founders and their companies.">
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Questrial&family=Playfair+Display:wght@500;600&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css?v=16">
+  <link rel="stylesheet" href="css/styles.css?v=18">
 </head>
 <body>
   <header class="site-header">
@@ -31,14 +31,19 @@
       </ul>
     </nav>
   </header>
-  <section class="hero-patil">
-    <div class="hero-photo"></div>
-    <div class="wrap">
-      <div class="hero-box">
-        <h1>The Harker Venture Investment Initiative</h1>
-        <p>Student analysts investing in — and championing — the next generation of Harker alumni founders.</p>
-        <p class="hero-cta"><a class="btn" href="our-investments.html">See our investments</a> <a class="btn ghost" href="about.html">Meet the scholars</a></p>
+  <section class="intro-stage" id="introStage" data-frames="140">
+    <div class="intro-pin">
+      <canvas id="introCanvas" class="intro-canvas" width="1280" height="720"></canvas>
+      <div class="intro-overlay">
+        <div class="wrap">
+          <div class="hero-box">
+            <h1>The Harker Venture Investment Initiative</h1>
+            <p>Student analysts investing in — and championing — the next generation of Harker alumni founders.</p>
+            <p class="hero-cta"><a class="btn" href="our-investments.html">See our investments</a> <a class="btn ghost" href="about.html">Meet the scholars</a></p>
+          </div>
+        </div>
       </div>
+      <div class="intro-cue" aria-hidden="true">Scroll to step inside</div>
     </div>
   </section>
   <section class="wall-stage" id="wallStage">
@@ -79,6 +84,6 @@
       <div class="footer-bottom"><span>&copy; 2026 The Harker Venture Investment Initiative &middot; Mehta Scholars</span><span>The Harker School</span></div>
     </div>
   </footer>
-  <script src="js/main.js?v=8"></script>
+  <script src="js/main.js?v=9"></script>
 </body>
 </html>

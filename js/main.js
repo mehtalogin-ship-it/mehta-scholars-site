@@ -89,6 +89,52 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 });
 
+/* ---- Cinematic intro: scroll-scrubbed frame sequence ---- */
+(function () {
+  var stage = document.getElementById('introStage');
+  var canvas = document.getElementById('introCanvas');
+  if (!stage || !canvas) return;
+  var ctx = canvas.getContext('2d');
+  var N = parseInt(stage.getAttribute('data-frames'), 10) || 140;
+  var base = 'assets/intro/';
+  var imgs = new Array(N);
+  var current = -1;
+  var overlay = stage.querySelector('.intro-overlay');
+  var cue = stage.querySelector('.intro-cue');
+  function pad(n) { return ('000' + n).slice(-3); }
+  function ok(im) { return im && im.complete && im.naturalWidth > 0; }
+  function pick(i) {
+    if (ok(imgs[i])) return i;
+    for (var d = 1; d < N; d++) {
+      if (i - d >= 0 && ok(imgs[i - d])) return i - d;
+      if (i + d < N && ok(imgs[i + d])) return i + d;
+    }
+    return -1;
+  }
+  function draw(i) {
+    if (ok(imgs[i])) { ctx.drawImage(imgs[i], 0, 0, canvas.width, canvas.height); current = i; }
+  }
+  function update() {
+    var range = stage.offsetHeight - window.innerHeight;
+    var p = Math.min(1, Math.max(0, (window.scrollY - stage.offsetTop) / range));
+    var frame = pick(Math.round(p * (N - 1)));
+    if (frame !== -1 && frame !== current) draw(frame);
+    if (overlay) overlay.style.opacity = Math.max(0, 1 - p / 0.22);
+    if (cue) cue.style.opacity = Math.max(0, 0.85 * (1 - p / 0.12));
+  }
+  for (var i = 0; i < N; i++) {
+    (function (i) {
+      var im = new Image();
+      im.onload = function () { if (current === -1) draw(pick(0)); else if (i === current) draw(i); };
+      im.src = base + 'f_' + pad(i + 1) + '.jpg';
+      imgs[i] = im;
+    })(i);
+  }
+  window.addEventListener('scroll', update, { passive: true });
+  window.addEventListener('resize', update);
+  update();
+})();
+
 /* ---- Full-page Patil video wall: scroll-driven slides + card reveal ---- */
 (function () {
   var stage = document.getElementById('wallStage');
