@@ -83,7 +83,7 @@ def head(title, desc, p=''):
   <title>{esc(title)}</title>
   <meta name="description" content="{esc(desc)}">
   {FONTS}
-  <link rel="stylesheet" href="{p}css/styles.css?v=14">
+  <link rel="stylesheet" href="{p}css/styles.css?v=15">
 </head>
 <body>
 '''
