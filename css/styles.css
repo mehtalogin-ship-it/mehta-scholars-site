@@ -19,6 +19,7 @@
   --radius: 14px;
   --shadow: 0 10px 30px rgba(10, 48, 24, 0.08);
   --shadow-green: 0 16px 40px -8px rgba(3, 110, 25, 0.5);
+  --header-h: 74px;
   --font-head: "Questrial", "Century Gothic", sans-serif;
   --font-serif: "Playfair Display", Georgia, "Times New Roman", serif;
   --font-body: "Montserrat", Arial, Helvetica, sans-serif;
@@ -320,12 +321,12 @@ section { padding: 84px 0; }
 
 /* ---------- Full-page Patil video wall (scrollytelling) ---------- */
 .wall-stage { position: relative; height: 460vh; }
-.wall-pin { position: sticky; top: 0; height: 100vh; overflow: hidden; }
+.wall-pin { position: sticky; top: var(--header-h); height: calc(100vh - var(--header-h)); overflow: hidden; }
 .wall-tex { position:absolute; inset:0; background: url("../assets/tex/travertine.jpg") center/cover; }
 .wall-screen { position:absolute; inset: clamp(24px,5vh,64px) clamp(24px,5vw,88px); background:#fff; border: 12px solid #0c0c0c; border-radius: 8px; box-shadow: 0 30px 80px rgba(0,0,0,.5); overflow: hidden; }
 .ws-slide { position:absolute; inset:0; opacity:0; transition: opacity .5s ease; overflow:hidden; padding: clamp(20px,4vh,44px) clamp(20px,5vw,64px); }
 .ws-slide.is-active { opacity:1; }
-.ws-slide[data-i="0"] { display:flex; flex-direction:column; }
+.ws-slide[data-i="0"] { display:flex; flex-direction:column; justify-content:center; }
 .ws-head { text-align:center; flex:0 0 auto; margin-bottom: clamp(14px,3vh,30px); }
 .ws-head h2 { font-size: clamp(1.6rem,3.3vw,2.6rem); margin:0; }
 .ws-cards { display:flex; flex-direction:column; gap: clamp(12px,2vh,20px); max-width: 860px; width:100%; margin:0 auto; }

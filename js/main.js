@@ -96,17 +96,16 @@ document.addEventListener('DOMContentLoaded', function () {
   var slides = [].slice.call(stage.querySelectorAll('.ws-slide'));
   var cards = [].slice.call(stage.querySelectorAll('.ws-card'));
   var dots = [].slice.call(stage.querySelectorAll('.wall-dot'));
-  var th = [0.06, 0.20, 0.34], ticking = false;
+  var th = [0.06, 0.22, 0.38];
   function update() {
-    ticking = false;
     var range = stage.offsetHeight - window.innerHeight;
     var p = Math.min(0.9999, Math.max(0, (window.scrollY - stage.offsetTop) / range));
-    var idx = p < 0.55 ? 0 : (p < 0.8 ? 1 : 2);
+    var idx = p < 0.58 ? 0 : (p < 0.80 ? 1 : 2);
     slides.forEach(function (s, i) { s.classList.toggle('is-active', i === idx); });
     dots.forEach(function (d, i) { d.classList.toggle('is-on', i === idx); });
     cards.forEach(function (c, i) { c.classList.toggle('show', idx > 0 || p >= th[i]); });
   }
-  window.addEventListener('scroll', function () { if (!ticking) { ticking = true; requestAnimationFrame(update); } }, { passive: true });
+  window.addEventListener('scroll', update, { passive: true });
   window.addEventListener('resize', update);
   update();
 })();

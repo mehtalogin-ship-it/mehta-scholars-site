@@ -71,7 +71,7 @@ def footer(p=''):
       <div class="footer-bottom"><span>&copy; 2026 The Harker Venture Investment Initiative &middot; Mehta Scholars</span><span>The Harker School</span></div>
     </div>
   </footer>
-  <script src="{p}js/main.js?v=6"></script>
+  <script src="{p}js/main.js?v=7"></script>
 </body>
 </html>'''
 
@@ -83,7 +83,7 @@ def head(title, desc, p=''):
   <title>{esc(title)}</title>
   <meta name="description" content="{esc(desc)}">
   {FONTS}
-  <link rel="stylesheet" href="{p}css/styles.css?v=12">
+  <link rel="stylesheet" href="{p}css/styles.css?v=13">
 </head>
 <body>
 '''
@@ -141,6 +141,9 @@ home+='''
       <div class="wall-dots"><span class="wall-dot is-on"></span><span class="wall-dot"></span><span class="wall-dot"></span></div>
     </div>
   </section>
+  <script src="js/main.js?v=7"></script>
+</body>
+</html>
 '''
 open(ROOT+'/index.html','w').write(home)
 
