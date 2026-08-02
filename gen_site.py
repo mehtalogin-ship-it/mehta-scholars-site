@@ -71,7 +71,7 @@ def footer(p=''):
       <div class="footer-bottom"><span>&copy; 2026 The Harker Venture Investment Initiative &middot; Mehta Scholars</span><span>The Harker School</span></div>
     </div>
   </footer>
-  <script src="{p}js/main.js?v=5"></script>
+  <script src="{p}js/main.js?v=6"></script>
 </body>
 </html>'''
 
@@ -83,7 +83,7 @@ def head(title, desc, p=''):
   <title>{esc(title)}</title>
   <meta name="description" content="{esc(desc)}">
   {FONTS}
-  <link rel="stylesheet" href="{p}css/styles.css?v=11">
+  <link rel="stylesheet" href="{p}css/styles.css?v=12">
 </head>
 <body>
 '''
@@ -101,44 +101,47 @@ def avatar(name, cls='avatar', p=''):
 home=head('Home | Mehta Scholars','The Harker Venture Investment Initiative — Mehta Scholars invest in and support Harker alumni founders and their companies.')
 home+=nav('home')
 home+='''
-  <section class="hero">
-    <div class="hero-bg"></div>
+  <section class="hero-patil">
+    <div class="hero-photo"></div>
     <div class="wrap">
-      <h1>The Harker Venture Investment Initiative</h1>
-      <p>Student analysts investing in — and championing — the next generation of Harker alumni founders.</p>
-      <p style="margin-top:26px"><a class="btn" href="our-investments.html">See our investments</a> &nbsp; <a class="btn ghost" href="about.html">Meet the scholars</a></p>
+      <div class="hero-box">
+        <h1>The Harker Venture Investment Initiative</h1>
+        <p>Student analysts investing in — and championing — the next generation of Harker alumni founders.</p>
+        <p class="hero-cta"><a class="btn" href="our-investments.html">See our investments</a> <a class="btn ghost" href="about.html">Meet the scholars</a></p>
+      </div>
     </div>
   </section>
-  <section class="patil">
-    <div class="wrap">
-      <div class="patil-frame">
-        <div class="patil-screen"><div class="patil-screen-inner">
-          <p class="eyebrow">What We Do</p>
-          <h2>A launchpad for founders and investors</h2>
-          <p>Mehta Scholars connect Harker's alumni founders with mentorship, capital, and a strategic ecosystem built to help them win.</p>
+  <section class="wall-stage" id="wallStage">
+    <div class="wall-pin">
+      <div class="wall-tex"></div>
+      <div class="wall-screen">
+        <div class="ws-slide is-active" data-i="0">
+          <div class="ws-head"><p class="eyebrow">What We Do</p><h2>A launchpad for founders and investors</h2></div>
+          <div class="ws-cards">
+            <div class="ws-card" data-c="0"><div class="ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20v-6M6 20v-4M18 20v-9"/><circle cx="12" cy="8" r="3"/></svg></div><div><p class="kicker">Exceptional Mentorship</p><h3>Industry Insights</h3><p>Industry insights and guidance from experienced mentors within Harker's network.</p></div></div>
+            <div class="ws-card" data-c="1"><div class="ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/></svg></div><div><p class="kicker">Strategic Partnerships</p><h3>Forge Connections</h3><p>Partnerships with forward-thinking people and organizations to drive mutual success.</p></div></div>
+            <div class="ws-card" data-c="2"><div class="ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v10M9 10h4a2 2 0 0 1 0 4H9"/></svg></div><div><p class="kicker">Access to Funding</p><h3>Fuel Your Growth</h3><p>Access to funding sources through our extensive network to fuel your growth.</p></div></div>
+          </div>
+        </div>
+        <div class="ws-slide" data-i="1"><div class="ws-inner">
+          <p class="eyebrow">Join Our Network</p>
+          <h2>Explore collaboration, mentorship &amp; investment</h2>
+          <p>Connect with a diverse network of entrepreneurs, industry experts, and investors to explore collaborations, mentorship, and investment opportunities.</p>
+          <a class="btn" href="mailto:harkermehtascholars@gmail.com">Join Now</a>
+        </div></div>
+        <div class="ws-slide" data-i="2"><div class="ws-footer">
+          <div class="wsf-grid">
+            <div><span class="brand-name">Harker Venture Investment Initiative</span><p>Mehta Scholars serve as analysts for The Harker Venture Pool, investing in and supporting Harker alumni founders.</p></div>
+            <div><h4>Explore</h4><ul><li><a href="about.html">About</a></li><li><a href="alumni-companies.html">Alumni Companies</a></li><li><a href="our-investments.html">Our Investments</a></li><li><a href="committee-list.html">Committee List</a></li></ul></div>
+            <div><h4>Get in touch</h4><ul><li><a href="mailto:MehtaScholars@harker.org">MehtaScholars@harker.org</a></li><li><a href="mailto:harkermehtascholars@gmail.com">harkermehtascholars@gmail.com</a></li><li>500 Saratoga Ave, San Jose, CA 95129</li></ul></div>
+          </div>
+          <div class="wsf-bottom">&copy; 2026 The Harker Venture Investment Initiative &middot; Mehta Scholars &middot; The Harker School</div>
         </div></div>
       </div>
-      <div class="patil-cards">
-        <div class="pcard">
-          <div class="ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20v-6M6 20v-4M18 20v-9"/><circle cx="12" cy="8" r="3"/></svg></div>
-          <div><p class="kicker">Exceptional Mentorship</p><h3>Industry Insights</h3><p>Gain valuable industry insights and guidance from experienced mentors within Harker's network — a wealth of knowledge from founders and professionals.</p></div>
-        </div>
-        <div class="pcard">
-          <div class="ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/></svg></div>
-          <div><p class="kicker">Strategic Partnerships</p><h3>Forge Connections</h3><p>Forge strategic partnerships with forward-thinking individuals and organizations. Collaborate on innovative projects and ventures to drive mutual success.</p></div>
-        </div>
-        <div class="pcard">
-          <div class="ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v10M9 10h4a2 2 0 0 1 0 4H9"/></svg></div>
-          <div><p class="kicker">Access to Funding</p><h3>Fuel Your Growth</h3><p>Unlock access to potential funding sources through our extensive network. Leverage our connections to fuel the growth of your ventures.</p></div>
-        </div>
-      </div>
+      <div class="wall-dots"><span class="wall-dot is-on"></span><span class="wall-dot"></span><span class="wall-dot"></span></div>
     </div>
   </section>
-  <section class="cta-band section-tint"><div class="wrap"><p class="eyebrow">Join Our Network</p><h2>Explore collaboration, mentorship &amp; investment</h2>
-    <p>Connect with a diverse network of entrepreneurs, industry experts, and investors to explore collaborations, mentorship, and investment opportunities.</p>
-    <a class="btn" href="mailto:harkermehtascholars@gmail.com">Join Now</a></div></section>
 '''
-home+=footer()
 open(ROOT+'/index.html','w').write(home)
 
 # ============ ABOUT ============

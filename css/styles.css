@@ -309,20 +309,48 @@ section { padding: 84px 0; }
 .scholar-link { display: inline-block; cursor: pointer; text-decoration: none; }
 .scholar-link:hover { text-decoration: none; }
 
-/* ---------- Patil video-wall ("what we do") ---------- */
-.patil { background: #fff; }
-.patil-frame { max-width: 1040px; margin: 0 auto; padding: clamp(22px, 4.5vw, 60px); border-radius: 14px; background: url("../assets/tex/patil-wall.jpg") center/cover, #d5c9ad; box-shadow: 0 30px 70px rgba(0,0,0,.18); }
-.patil-screen { position: relative; aspect-ratio: 16 / 7; border: 10px solid #0b0b0b; border-radius: 6px; overflow: hidden; background: radial-gradient(130% 130% at 50% 38%, #0f2c21 0%, #05130d 76%); box-shadow: 0 10px 34px rgba(0,0,0,.45), inset 0 0 70px rgba(0,0,0,.7); display: grid; place-items: center; }
-.patil-screen::after { content:""; position:absolute; inset:0; pointer-events:none; background-image: radial-gradient(rgba(150,255,200,.10) 1px, transparent 1.4px); background-size: 6px 6px; mix-blend-mode: screen; }
-.patil-screen-inner { text-align: center; padding: 5% 8%; max-width: 60ch; }
-.patil-screen-inner .eyebrow { color: #4ade80; }
-.patil-screen-inner h2 { color: #fff; margin: 0; font-size: clamp(1.5rem, 3.3vw, 2.7rem); text-shadow: 0 0 26px rgba(74,222,128,.4); }
-.patil-screen-inner p { color: #cdeed8; margin: 12px auto 0; }
-.patil-cards { max-width: 1040px; margin: 44px auto 0; display: flex; flex-direction: column; gap: 20px; }
-.pcard { display: flex; align-items: flex-start; gap: 22px; background: #fff; border: 1px solid var(--line); border-radius: var(--radius); padding: 28px 30px; transition: transform .18s, box-shadow .18s; }
-.pcard:hover { transform: translateY(-3px); box-shadow: var(--shadow-green); }
-.pcard .ico { flex: 0 0 auto; width: 56px; height: 56px; border-radius: 14px; display: grid; place-items: center; background: var(--bg-green-tint); color: var(--green-dark); }
-.pcard .kicker { font-family: var(--font-head); color: var(--green); font-size: .95rem; margin-bottom: 2px; }
-.pcard h3 { font-size: 1.4rem; margin: 0 0 6px; }
-.pcard p { color: var(--muted); margin: 0; }
-@media (max-width: 620px){ .pcard { flex-direction: column; gap: 14px; } .patil-screen { aspect-ratio: 4/3; } }
+/* ---------- Hero (Patil exterior + green box) ---------- */
+.hero-patil { position: relative; min-height: 90vh; display: flex; align-items: center; overflow: hidden; }
+.hero-photo { position: absolute; inset: 0; background: url("../assets/hero-patil.jpg") center/cover no-repeat; }
+.hero-photo::after { content:""; position:absolute; inset:0; background: linear-gradient(90deg, rgba(4,20,10,.45), rgba(4,20,10,.10) 62%); }
+.hero-box { position: relative; z-index: 2; max-width: 620px; background: linear-gradient(150deg, var(--green-dark), var(--green-deep)); color:#fff; padding: clamp(28px,4.5vw,54px); border-radius: 18px; box-shadow: 0 30px 70px rgba(0,0,0,.4); }
+.hero-box h1 { color:#fff; margin:0 0 14px; font-size: clamp(2rem,4.6vw,3.6rem); text-transform: uppercase; line-height: 1.08; }
+.hero-box p { color: rgba(255,255,255,.92); font-size: 1.12rem; margin:0; }
+.hero-box .hero-cta { margin-top: 24px; display:flex; gap:14px; flex-wrap:wrap; }
+
+/* ---------- Full-page Patil video wall (scrollytelling) ---------- */
+.wall-stage { position: relative; height: 460vh; }
+.wall-pin { position: sticky; top: 0; height: 100vh; overflow: hidden; }
+.wall-tex { position:absolute; inset:0; background: url("../assets/tex/travertine.jpg") center/cover; }
+.wall-screen { position:absolute; inset: clamp(24px,5vh,64px) clamp(24px,5vw,88px); background:#fff; border: 12px solid #0c0c0c; border-radius: 8px; box-shadow: 0 30px 80px rgba(0,0,0,.5); overflow: hidden; }
+.ws-slide { position:absolute; inset:0; opacity:0; transition: opacity .5s ease; overflow:hidden; padding: clamp(20px,4vh,44px) clamp(20px,5vw,64px); }
+.ws-slide.is-active { opacity:1; }
+.ws-slide[data-i="0"] { display:flex; flex-direction:column; }
+.ws-head { text-align:center; flex:0 0 auto; margin-bottom: clamp(14px,3vh,30px); }
+.ws-head h2 { font-size: clamp(1.6rem,3.3vw,2.6rem); margin:0; }
+.ws-cards { display:flex; flex-direction:column; gap: clamp(12px,2vh,20px); max-width: 860px; width:100%; margin:0 auto; }
+.ws-card { display:flex; gap:20px; align-items:center; background: var(--bg-green-tint); border:1px solid var(--line); border-radius: 12px; padding: clamp(14px,2.2vh,22px) 26px; opacity:0; transform: translateY(22px); transition: opacity .5s, transform .5s; }
+.ws-card.show { opacity:1; transform:none; }
+.ws-card .ico { flex:0 0 auto; width:52px; height:52px; border-radius:12px; display:grid; place-items:center; background:#fff; color: var(--green-dark); box-shadow: var(--shadow); }
+.ws-card .kicker { font-family:var(--font-head); color:var(--green); font-size:.9rem; margin:0 0 2px; }
+.ws-card h3 { font-size:1.3rem; margin:0 0 3px; }
+.ws-card p { color: var(--muted); margin:0; }
+.ws-slide[data-i="1"], .ws-slide[data-i="2"] { display:grid; place-items:center; text-align:center; }
+.ws-inner { max-width: 60ch; }
+.ws-inner h2 { font-size: clamp(1.8rem,3.6vw,2.8rem); }
+.ws-inner p { color: var(--muted); margin: 14px auto 0; }
+.ws-inner .btn { margin-top: 22px; }
+.ws-footer { width:100%; max-width: 1000px; }
+.wsf-grid { display:grid; grid-template-columns: 1.4fr 1fr 1fr; gap: 40px; text-align:left; }
+.wsf-grid .brand-name { font-family:var(--font-head); color: var(--green-dark); text-transform:uppercase; font-size:1rem; }
+.wsf-grid p { color: var(--muted); margin-top:12px; font-size:.95rem; }
+.wsf-grid h4 { color: var(--ink); margin:0 0 12px; }
+.wsf-grid ul { list-style:none; margin:0; padding:0; }
+.wsf-grid li { margin-bottom:8px; color: var(--muted); font-size:.95rem; }
+.wsf-grid a { color: var(--muted); }
+.wsf-grid a:hover { color: var(--green); }
+.wsf-bottom { margin-top: 30px; padding-top:18px; border-top:1px solid var(--line); color: var(--muted); font-size:.85rem; text-align:center; }
+.wall-dots { position:absolute; bottom: 20px; left:0; right:0; display:flex; gap:10px; justify-content:center; z-index:5; }
+.wall-dot { width:9px; height:9px; border-radius:50%; background: rgba(0,0,0,.28); transition:.3s; }
+.wall-dot.is-on { background: var(--green); box-shadow:0 0 10px var(--green); transform:scale(1.2); }
+@media (max-width: 720px){ .wsf-grid { grid-template-columns:1fr; gap:20px; } .ws-card { flex-direction:column; text-align:center; align-items:center; gap:10px; } }

@@ -89,23 +89,22 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 });
 
-/* ---- LED video-wall: scroll-driven slide switching ---- */
+/* ---- Full-page Patil video wall: scroll-driven slides + card reveal ---- */
 (function () {
-  var stage = document.getElementById('ledStage');
+  var stage = document.getElementById('wallStage');
   if (!stage) return;
-  var slides = [].slice.call(stage.querySelectorAll('.led-slide'));
-  var dots = [].slice.call(stage.querySelectorAll('.led-dot'));
-  var n = slides.length, cur = 0, ticking = false;
-  function set(i) {
-    if (i === cur) return; cur = i;
-    slides.forEach(function (s, k) { s.classList.toggle('is-active', k === i); });
-    dots.forEach(function (d, k) { d.classList.toggle('is-on', k === i); });
-  }
+  var slides = [].slice.call(stage.querySelectorAll('.ws-slide'));
+  var cards = [].slice.call(stage.querySelectorAll('.ws-card'));
+  var dots = [].slice.call(stage.querySelectorAll('.wall-dot'));
+  var th = [0.06, 0.20, 0.34], ticking = false;
   function update() {
     ticking = false;
     var range = stage.offsetHeight - window.innerHeight;
     var p = Math.min(0.9999, Math.max(0, (window.scrollY - stage.offsetTop) / range));
-    set(Math.floor(p * n));
+    var idx = p < 0.55 ? 0 : (p < 0.8 ? 1 : 2);
+    slides.forEach(function (s, i) { s.classList.toggle('is-active', i === idx); });
+    dots.forEach(function (d, i) { d.classList.toggle('is-on', i === idx); });
+    cards.forEach(function (c, i) { c.classList.toggle('show', idx > 0 || p >= th[i]); });
   }
   window.addEventListener('scroll', function () { if (!ticking) { ticking = true; requestAnimationFrame(update); } }, { passive: true });
   window.addEventListener('resize', update);
