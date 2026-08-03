@@ -83,7 +83,7 @@ def head(title, desc, p=''):
   <title>{esc(title)}</title>
   <meta name="description" content="{esc(desc)}">
   {FONTS}
-  <link rel="stylesheet" href="{p}css/styles.css?v=25">
+  <link rel="stylesheet" href="{p}css/styles.css?v=27">
 </head>
 <body>
 '''
@@ -139,16 +139,42 @@ home+=footer()
 open(ROOT+'/index.html','w').write(home)
 
 # ============ ABOUT ============
-STEPS=[('Promotional profile created and posted on the website',0),('In-depth report created',0),
- ('Report presented to a member of the Venture Advisory Committee',0),('Mehta Scholar talks with the founder','x3'),
- ('Finalized report presented to members of the Venture Investment Committee',0),('Report approved',0),
- ('Result 1: Mehta Scholar makes investment into the company','r'),('Result 2: Founder works with the Entrepreneurship Advisory Committee','r')]
-flow=''
-for i,(txt,flag) in enumerate(STEPS):
-    rescls=' result' if flag=='r' else ''
-    flow+=f'<div class="flow-box{rescls}">{esc(txt)}</div>'
-    if i<len(STEPS)-1:
-        flow+= '<div class="flow-note">x3</div>' if flag=='x3' else '<div class="flow-arrow">&rarr;</div>'
+PROC_STEPS=[
+  ('Profile created','A promotional profile is created and the founder &amp; company are added to the website.',''),
+  ('Preliminary report','A preliminary report is put together on the company.',''),
+  ('Founder meeting','A Mehta Scholar meets with the founder to discuss the company.',''),
+  ('In-depth report','A full, in-depth report on the company is written.',''),
+  ('Advisory Committee review','The report is presented to member(s) of the Venture Advisory Committee.','Refined back &amp; forth ~3&times; until polished'),
+  ('Report approved','The polished report is approved.',''),
+  ('Investment Committee','The finalized report is presented to the Venture Investment Committee.',''),
+]
+_steps=''
+for i,(h,b,badge) in enumerate(PROC_STEPS):
+    bd=f'<span class="proc-badge">{badge}</span>' if badge else ''
+    _steps+=f'<li><span class="proc-num">{i+1}</span><div class="proc-card"><h4>{h}</h4><p>{b}{bd}</p></div></li>'
+PROC=f'''<div class="process">
+      <ol class="proc-line">{_steps}</ol>
+      <div class="proc-flow-arrow" aria-hidden="true">&darr;</div>
+      <div class="proc-fork">The Venture Investment Committee decides</div>
+      <div class="proc-flow-arrow" aria-hidden="true">&darr;</div>
+      <div class="proc-results">
+        <div class="proc-result approve">
+          <span class="proc-tag ok">Result 1 &middot; Approved</span>
+          <p>The committee approves the investment.</p>
+          <div class="proc-out fund"><strong>$25K SAFE</strong> toward the next round</div>
+        </div>
+        <div class="proc-result deny">
+          <span class="proc-tag no">Result 2 &middot; Not approved</span>
+          <p>The committee does not approve the investment.</p>
+          <div class="proc-sub">
+            <div class="proc-out fund">Scholars still believe strongly &rarr; <strong>$10K SAFE</strong> toward the next round</div>
+            <div class="proc-out none">Otherwise &rarr; no investment</div>
+          </div>
+        </div>
+      </div>
+      <div class="proc-flow-arrow" aria-hidden="true">&darr;</div>
+      <div class="proc-final">In every case, the founder works with committee members &mdash; especially the Entrepreneurship Advisory Committee.</div>
+    </div>'''
 TEAM=[('Class of 2025',['Andy Chung','Saahira Dayal','Sophie Degoricija','Ian Gerstner','Yifan Li','Tiana Salvi']),
       ('Class of 2026',['Tanvi Sivakumar','Leana Zhou']),
       ('Class of 2027',['Akash Dubey','Bazigh Tahirzad','David Kelly','Ronica Khattri','Amy Tong'])]
@@ -171,7 +197,7 @@ about+=f'''
     <p style="font-size:1.15rem">Mehta Scholars identify, research, promote, and support alumni founders and their companies as they look to invest in their companies from the Harker Venture Pool. They also connect alumni founders with other VCs, Angel Investors, Entrepreneurs, and other Business and Technology Professionals in the Harker Strategic Ecosystem as needed.</p>
   </div></section>
   <section class="section-tint"><div class="wrap"><div class="section-head"><p class="eyebrow">Our Process</p><h2>From profile to investment</h2></div>
-    <div class="flow">{flow}</div></div></section>
+    {PROC}</div></section>
   <section><div class="wrap"><div class="section-head"><p class="eyebrow">Our Team</p><h2>Meet the scholars</h2></div>{teamhtml}</div></section>
 '''
 about+=footer()
