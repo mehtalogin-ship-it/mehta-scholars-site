@@ -175,3 +175,27 @@ document.addEventListener('DOMContentLoaded', function () {
   place();
   update();
 })();
+
+/* ---- About: scroll-built process flowchart (spine fills, nodes light, cards rise) ---- */
+(function () {
+  var sec = document.getElementById('procDiagram');
+  if (!sec) return;
+  var fill = sec.querySelector('.proc-fill');
+  var track = sec.querySelector('.proc-track');
+  var items = [].slice.call(sec.querySelectorAll('.proc-item'));
+  sec.classList.add('armed');
+  function build() {
+    var line = window.innerHeight * 0.74; // reveal line: items light as they cross it
+    items.forEach(function (it) {
+      var dot = it.querySelector('.proc-dot');
+      it.classList.toggle('in', dot.getBoundingClientRect().top < line);
+    });
+    if (fill && track) {
+      var tr = track.getBoundingClientRect();
+      fill.style.height = Math.max(0, Math.min(tr.height, line - tr.top)) + 'px';
+    }
+  }
+  window.addEventListener('scroll', build, { passive: true });
+  window.addEventListener('resize', build);
+  build();
+})();

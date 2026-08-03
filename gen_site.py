@@ -71,7 +71,7 @@ def footer(p=''):
       <div class="footer-bottom"><span>&copy; 2026 The Harker Venture Investment Initiative &middot; Mehta Scholars</span><span>The Harker School</span></div>
     </div>
   </footer>
-  <script src="{p}js/main.js?v=16"></script>
+  <script src="{p}js/main.js?v=17"></script>
 </body>
 </html>'''
 
@@ -83,7 +83,7 @@ def head(title, desc, p=''):
   <title>{esc(title)}</title>
   <meta name="description" content="{esc(desc)}">
   {FONTS}
-  <link rel="stylesheet" href="{p}css/styles.css?v=27">
+  <link rel="stylesheet" href="{p}css/styles.css?v=28">
 </head>
 <body>
 '''
@@ -139,6 +139,11 @@ home+=footer()
 open(ROOT+'/index.html','w').write(home)
 
 # ============ ABOUT ============
+# --- Our Process: animated, scroll-built vertical flowchart ---
+_ICO_DIAMOND='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M12 3l9 9-9 9-9-9z"/></svg>'
+_ICO_CHECK='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>'
+_ICO_BRANCH='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 4v6a3 3 0 0 0 3 3h8"/><path d="M15 9l4 4-4 4"/></svg>'
+_ICO_FLAG='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 22V4"/><path d="M5 4h12l-2.2 4L17 12H5"/></svg>'
 PROC_STEPS=[
   ('Profile created','A promotional profile is created and the founder &amp; company are added to the website.',''),
   ('Preliminary report','A preliminary report is put together on the company.',''),
@@ -148,32 +153,18 @@ PROC_STEPS=[
   ('Report approved','The polished report is approved.',''),
   ('Investment Committee','The finalized report is presented to the Venture Investment Committee.',''),
 ]
-_steps=''
+_items=[]
 for i,(h,b,badge) in enumerate(PROC_STEPS):
     bd=f'<span class="proc-badge">{badge}</span>' if badge else ''
-    _steps+=f'<li><span class="proc-num">{i+1}</span><div class="proc-card"><h4>{h}</h4><p>{b}{bd}</p></div></li>'
-PROC=f'''<div class="process">
-      <ol class="proc-line">{_steps}</ol>
-      <div class="proc-flow-arrow" aria-hidden="true">&darr;</div>
-      <div class="proc-fork">The Venture Investment Committee decides</div>
-      <div class="proc-flow-arrow" aria-hidden="true">&darr;</div>
-      <div class="proc-results">
-        <div class="proc-result approve">
-          <span class="proc-tag ok">Result 1 &middot; Approved</span>
-          <p>The committee approves the investment.</p>
-          <div class="proc-out fund"><strong>$25K SAFE</strong> toward the next round</div>
-        </div>
-        <div class="proc-result deny">
-          <span class="proc-tag no">Result 2 &middot; Not approved</span>
-          <p>The committee does not approve the investment.</p>
-          <div class="proc-sub">
-            <div class="proc-out fund">Scholars still believe strongly &rarr; <strong>$10K SAFE</strong> toward the next round</div>
-            <div class="proc-out none">Otherwise &rarr; no investment</div>
-          </div>
-        </div>
-      </div>
-      <div class="proc-flow-arrow" aria-hidden="true">&darr;</div>
-      <div class="proc-final">In every case, the founder works with committee members &mdash; especially the Entrepreneurship Advisory Committee.</div>
+    _items.append(f'<span class="proc-dot num">{i+1}</span><div class="proc-card"><h4>{h}</h4><p>{b}{bd}</p></div>')
+_items.append(f'<span class="proc-dot dec">{_ICO_DIAMOND}</span><div class="proc-card dec"><h4>Investment Committee decides</h4><p>The Venture Investment Committee reviews the finalized report and decides whether to invest &mdash; with two possible results.</p></div>')
+_items.append(f'<span class="proc-dot ok">{_ICO_CHECK}</span><div class="proc-card"><span class="proc-tag ok">Result 1 &middot; Approved</span><p>The committee approves the investment.</p><div class="proc-out fund"><strong>$25K SAFE</strong> toward the next round</div></div>')
+_items.append(f'<span class="proc-dot no">{_ICO_BRANCH}</span><div class="proc-card"><span class="proc-tag no">Result 2 &middot; Not approved</span><p>The committee does not approve the investment.</p><div class="proc-sub"><div class="proc-out fund">Scholars still believe strongly &rarr; <strong>$10K SAFE</strong> toward the next round</div><div class="proc-out none">Otherwise &rarr; no investment</div></div></div>')
+_items.append(f'<span class="proc-dot fin">{_ICO_FLAG}</span><div class="proc-card final"><h4>Founder works with the committee</h4><p>In every case, the founder works with committee members &mdash; especially the Entrepreneurship Advisory Committee.</p></div>')
+_lis=''.join(f'<li class="proc-item" data-k="{k}">{c}</li>' for k,c in enumerate(_items))
+PROC=f'''<div class="process" id="procDiagram">
+      <span class="proc-track" aria-hidden="true"><span class="proc-fill"></span></span>
+      <ul class="proc-list">{_lis}</ul>
     </div>'''
 TEAM=[('Class of 2025',['Andy Chung','Saahira Dayal','Sophie Degoricija','Ian Gerstner','Yifan Li','Tiana Salvi']),
       ('Class of 2026',['Tanvi Sivakumar','Leana Zhou']),
