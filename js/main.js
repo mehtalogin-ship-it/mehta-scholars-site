@@ -176,26 +176,69 @@ document.addEventListener('DOMContentLoaded', function () {
   update();
 })();
 
-/* ---- About: scroll-built process flowchart (spine fills, nodes light, cards rise) ---- */
+/* ---- About: scroll-built process flowchart (connectors draw, nodes light,
+        a 3x refinement loop draws out then is reabsorbed, and the tail splits & merges) ---- */
 (function () {
-  var sec = document.getElementById('procDiagram');
-  if (!sec) return;
-  var fill = sec.querySelector('.proc-fill');
-  var track = sec.querySelector('.proc-track');
-  var items = [].slice.call(sec.querySelectorAll('.proc-item'));
-  sec.classList.add('armed');
-  function build() {
-    var line = window.innerHeight * 0.74; // reveal line: items light as they cross it
-    items.forEach(function (it) {
-      var dot = it.querySelector('.proc-dot');
-      it.classList.toggle('in', dot.getBoundingClientRect().top < line);
+  var proc = document.getElementById('procDiagram');
+  if (!proc) return;
+  var steps = [].slice.call(proc.querySelectorAll('.pf-step'));
+  var segs = [].slice.call(proc.querySelectorAll('.pf-seg'));
+  var results = document.getElementById('pfResults');
+  var split = document.getElementById('pfSplit');
+  var merge = document.getElementById('pfMerge');
+  var review = document.getElementById('pfReview');
+  var loop = review ? review.querySelector('.pf-loop') : null;
+  var loopFill = loop ? loop.querySelector('.pf-loopwire > i') : null;
+  proc.classList.add('armed');
+  function clamp(x) { return Math.max(0, Math.min(1, x)); }
+  function geom() {
+    // align the split/merge fork bars + branch drops to the two result-box centres
+    if (!results || !split || !merge) return;
+    var bx = results.querySelectorAll('.pf-box');
+    if (bx.length < 2) return;
+    var rr = results.getBoundingClientRect();
+    var b1 = bx[0].getBoundingClientRect(), b2 = bx[1].getBoundingClientRect();
+    var lc = (b1.left + b1.width / 2) - rr.left;
+    var rc = (b2.left + b2.width / 2) - rr.left;
+    var mid = rr.width / 2;
+    [split, merge].forEach(function (c) {
+      var dL = c.querySelector('.downL, .upL'), dR = c.querySelector('.downR, .upR');
+      var bL = c.querySelector('.barL, .mbarL'), bR = c.querySelector('.barR, .mbarR');
+      if (dL) dL.style.left = (lc - 1.5) + 'px';
+      if (dR) dR.style.left = (rc - 1.5) + 'px';
+      if (bL) { bL.style.left = lc + 'px'; bL.style.width = (mid - lc) + 'px'; }
+      if (bR) { bR.style.left = mid + 'px'; bR.style.width = (rc - mid) + 'px'; }
     });
-    if (fill && track) {
-      var tr = track.getBoundingClientRect();
-      fill.style.height = Math.max(0, Math.min(tr.height, line - tr.top)) + 'px';
+  }
+  function build() {
+    var line = window.innerHeight * 0.72;
+    steps.forEach(function (s) {
+      var m = s.querySelector('.pf-medal') || s;
+      s.classList.toggle('pf-lit', m.getBoundingClientRect().top < line);
+    });
+    segs.forEach(function (sg) {
+      var fi = sg.querySelector('i'); if (!fi) return;
+      var r = sg.getBoundingClientRect();
+      if (sg.classList.contains('horiz')) fi.style.transform = 'scaleX(' + clamp((line - r.top) / 26) + ')';
+      else fi.style.transform = 'scaleY(' + clamp((line - r.top) / r.height) + ')';
+    });
+    // the 3x refinement loop: draw out to the right, hold, then get reabsorbed
+    if (loop && loopFill && review) {
+      var box = review.querySelector('.pf-box').getBoundingClientRect();
+      var d = line - (box.top + box.height / 2); // px the reveal line is past the review box's centre
+      var w = 0, drawn = false;
+      if (d < 0) { w = 0; }
+      else if (d < 70) { w = d / 70; drawn = d > 14; }
+      else if (d < 175) { w = 1; drawn = true; }
+      else if (d < 255) { w = 1 - (d - 175) / 80; drawn = false; }  // absorb
+      else { w = 0; }
+      loopFill.style.transform = 'scaleX(' + w + ')';
+      loop.classList.toggle('draw', drawn);
     }
   }
-  window.addEventListener('scroll', build, { passive: true });
-  window.addEventListener('resize', build);
+  geom();
   build();
+  window.addEventListener('scroll', build, { passive: true });
+  window.addEventListener('resize', function () { geom(); build(); });
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(function () { geom(); build(); });
 })();

@@ -71,7 +71,7 @@ def footer(p=''):
       <div class="footer-bottom"><span>&copy; 2026 The Harker Venture Investment Initiative &middot; Mehta Scholars</span><span>The Harker School</span></div>
     </div>
   </footer>
-  <script src="{p}js/main.js?v=17"></script>
+  <script src="{p}js/main.js?v=19"></script>
 </body>
 </html>'''
 
@@ -83,7 +83,7 @@ def head(title, desc, p=''):
   <title>{esc(title)}</title>
   <meta name="description" content="{esc(desc)}">
   {FONTS}
-  <link rel="stylesheet" href="{p}css/styles.css?v=28">
+  <link rel="stylesheet" href="{p}css/styles.css?v=31">
 </head>
 <body>
 '''
@@ -139,32 +139,49 @@ home+=footer()
 open(ROOT+'/index.html','w').write(home)
 
 # ============ ABOUT ============
-# --- Our Process: animated, scroll-built vertical flowchart ---
+# --- Our Process: animated, scroll-built flowchart (loop + split/merge) ---
 _ICO_DIAMOND='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M12 3l9 9-9 9-9-9z"/></svg>'
 _ICO_CHECK='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>'
 _ICO_BRANCH='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 4v6a3 3 0 0 0 3 3h8"/><path d="M15 9l4 4-4 4"/></svg>'
 _ICO_FLAG='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 22V4"/><path d="M5 4h12l-2.2 4L17 12H5"/></svg>'
-PROC_STEPS=[
-  ('Profile created','A promotional profile is created and the founder &amp; company are added to the website.',''),
-  ('Preliminary report','A preliminary report is put together on the company.',''),
-  ('Founder meeting','A Mehta Scholar meets with the founder to discuss the company.',''),
-  ('In-depth report','A full, in-depth report on the company is written.',''),
-  ('Advisory Committee review','The report is presented to member(s) of the Venture Advisory Committee.','Refined back &amp; forth ~3&times; until polished'),
-  ('Report approved','The polished report is approved.',''),
-  ('Investment Committee','The finalized report is presented to the Venture Investment Committee.',''),
-]
-_items=[]
-for i,(h,b,badge) in enumerate(PROC_STEPS):
-    bd=f'<span class="proc-badge">{badge}</span>' if badge else ''
-    _items.append(f'<span class="proc-dot num">{i+1}</span><div class="proc-card"><h4>{h}</h4><p>{b}{bd}</p></div>')
-_items.append(f'<span class="proc-dot dec">{_ICO_DIAMOND}</span><div class="proc-card dec"><h4>Investment Committee decides</h4><p>The Venture Investment Committee reviews the finalized report and decides whether to invest &mdash; with two possible results.</p></div>')
-_items.append(f'<span class="proc-dot ok">{_ICO_CHECK}</span><div class="proc-card"><span class="proc-tag ok">Result 1 &middot; Approved</span><p>The committee approves the investment.</p><div class="proc-out fund"><strong>$25K SAFE</strong> toward the next round</div></div>')
-_items.append(f'<span class="proc-dot no">{_ICO_BRANCH}</span><div class="proc-card"><span class="proc-tag no">Result 2 &middot; Not approved</span><p>The committee does not approve the investment.</p><div class="proc-sub"><div class="proc-out fund">Scholars still believe strongly &rarr; <strong>$10K SAFE</strong> toward the next round</div><div class="proc-out none">Otherwise &rarr; no investment</div></div></div>')
-_items.append(f'<span class="proc-dot fin">{_ICO_FLAG}</span><div class="proc-card final"><h4>Founder works with the committee</h4><p>In every case, the founder works with committee members &mdash; especially the Entrepreneurship Advisory Committee.</p></div>')
-_lis=''.join(f'<li class="proc-item" data-k="{k}">{c}</li>' for k,c in enumerate(_items))
+_ICO_LOOP='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9a6 6 0 0 1 10-4l3 3"/><path d="M16 3v5h-5"/><path d="M21 15a6 6 0 0 1-10 4l-3-3"/><path d="M8 21v-5h5"/></svg>'
+def _vseg():
+    return '<div class="pf-seg vert"><i></i></div>'
+def _step(medal_cls, medal_inner, box_cls, inner, extra=''):
+    return f'<div class="pf-step {extra}"><span class="pf-medal {medal_cls}">{medal_inner}</span><div class="pf-box {box_cls}">{inner}</div></div>'
+# the refinement loop that hangs off the Advisory-review step
+_LOOP=(f'<div class="pf-loop" aria-hidden="true"><span class="pf-loopwire"><i></i><span class="pf-3x">3&times;</span></span>'
+       f'<div class="pf-loopnode"><span class="pf-medal loop">{_ICO_LOOP}</span><div class="pf-loopcard"><strong>Report refined</strong><span>&amp; presented again</span></div></div></div>')
+_review=(f'<div class="pf-step has-loop" id="pfReview"><span class="pf-medal num">5</span>'
+         f'<div class="pf-box"><h4>Advisory Committee review</h4><p>The report is presented to member(s) of the Venture Advisory Committee for feedback.</p>'
+         f'<span class="proc-badge pf-loopfb">Refined &amp; re-presented ~3&times;</span>{_LOOP}</div>'
+         f'</div>')
+_parts=[]
+_parts.append(_step('num','1','','<h4>Profile created</h4><p>A promotional profile is created and the founder &amp; company are added to the website.</p>'))
+_parts.append(_vseg())
+_parts.append(_step('num','2','','<h4>Preliminary report</h4><p>A preliminary report is put together on the company.</p>'))
+_parts.append(_vseg())
+_parts.append(_step('num','3','','<h4>Founder meeting</h4><p>A Mehta Scholar meets with the founder to discuss the company.</p>'))
+_parts.append(_vseg())
+_parts.append(_step('num','4','','<h4>In-depth report</h4><p>A full, in-depth report on the company is written.</p>'))
+_parts.append(_vseg())
+_parts.append(_review)
+_parts.append(_vseg())
+_parts.append(_step('num','6','','<h4>Report approved</h4><p>Once refined, the polished report is approved.</p>'))
+_parts.append(_vseg())
+_parts.append(_step('dec',_ICO_DIAMOND,'dec','<h4>Investment Committee decides</h4><p>The Venture Investment Committee reviews the finalized report and decides whether to invest.</p>'))
+# split
+_parts.append('<div class="pf-split" id="pfSplit"><span class="pf-seg vert stem"><i></i></span><span class="pf-seg horiz barL"><i></i></span><span class="pf-seg horiz barR"><i></i></span><span class="pf-seg vert downL"><i></i></span><span class="pf-seg vert downR"><i></i></span></div>')
+# results (two branches)
+_r1=f'<div class="pf-step res"><span class="pf-medal ok">{_ICO_CHECK}</span><div class="pf-box"><span class="proc-tag ok">Result 1 &middot; Approved</span><p>The committee approves the investment.</p><div class="proc-out fund"><strong>$25K SAFE</strong> toward the next round</div></div></div>'
+_r2=f'<div class="pf-step res"><span class="pf-medal no">{_ICO_BRANCH}</span><div class="pf-box"><span class="proc-tag no">Result 2 &middot; Not approved</span><p>The committee does not approve the investment.</p><div class="proc-sub"><div class="proc-out fund">Scholars still believe strongly &rarr; <strong>$10K SAFE</strong> toward the next round</div><div class="proc-out none">Otherwise &rarr; no investment</div></div></div></div>'
+_parts.append(f'<div class="pf-results" id="pfResults">{_r1}{_r2}</div>')
+# merge
+_parts.append('<div class="pf-merge" id="pfMerge"><span class="pf-seg vert upL"><i></i></span><span class="pf-seg vert upR"><i></i></span><span class="pf-seg horiz mbarL"><i></i></span><span class="pf-seg horiz mbarR"><i></i></span><span class="pf-seg vert mstem"><i></i></span></div>')
+# final
+_parts.append(_step('fin',_ICO_FLAG,'final','<h4>Founder works with the committee</h4><p>In every case, the founder works with committee members &mdash; especially the Entrepreneurship Advisory Committee.</p>'))
 PROC=f'''<div class="process" id="procDiagram">
-      <span class="proc-track" aria-hidden="true"><span class="proc-fill"></span></span>
-      <ul class="proc-list">{_lis}</ul>
+      <div class="pf">{''.join(_parts)}</div>
     </div>'''
 TEAM=[('Class of 2025',['Andy Chung','Saahira Dayal','Sophie Degoricija','Ian Gerstner','Yifan Li','Tiana Salvi']),
       ('Class of 2026',['Tanvi Sivakumar','Leana Zhou']),
