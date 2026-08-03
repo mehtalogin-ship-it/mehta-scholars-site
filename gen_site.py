@@ -71,7 +71,7 @@ def footer(p=''):
       <div class="footer-bottom"><span>&copy; 2026 The Harker Venture Investment Initiative &middot; Mehta Scholars</span><span>The Harker School</span></div>
     </div>
   </footer>
-  <script src="{p}js/main.js?v=10"></script>
+  <script src="{p}js/main.js?v=11"></script>
 </body>
 </html>'''
 
@@ -83,7 +83,7 @@ def head(title, desc, p=''):
   <title>{esc(title)}</title>
   <meta name="description" content="{esc(desc)}">
   {FONTS}
-  <link rel="stylesheet" href="{p}css/styles.css?v=21">
+  <link rel="stylesheet" href="{p}css/styles.css?v=22">
 </head>
 <body>
 '''
@@ -101,23 +101,9 @@ def avatar(name, cls='avatar', p=''):
 home=head('Home | Mehta Scholars','The Harker Venture Investment Initiative — Mehta Scholars invest in and support Harker alumni founders and their companies.')
 home+=nav('home')
 home+='''
-  <section class="intro-stage" id="introStage" data-frames="140">
+  <section class="intro-stage" id="introStage" data-frames="140" data-video-end="0.34">
     <div class="intro-pin">
       <canvas id="introCanvas" class="intro-canvas" width="1280" height="720"></canvas>
-      <div class="intro-overlay">
-        <div class="wrap">
-          <div class="hero-box">
-            <h1>The Harker Venture Investment Initiative</h1>
-            <p>Student analysts investing in — and championing — the next generation of Harker alumni founders.</p>
-            <p class="hero-cta"><a class="btn" href="our-investments.html">See our investments</a> <a class="btn ghost" href="about.html">Meet the scholars</a></p>
-          </div>
-        </div>
-      </div>
-      <div class="intro-cue" aria-hidden="true">Scroll to step inside</div>
-    </div>
-  </section>
-  <section class="wall-stage" id="wallStage">
-    <div class="wall-pin">
       <div class="wall-screen">
         <div class="ws-slide is-active" data-i="0">
           <div class="ws-head"><p class="eyebrow">What We Do</p><h2>A launchpad for founders and investors</h2></div>
@@ -135,6 +121,16 @@ home+='''
         </div></div>
       </div>
       <div class="wall-dots"><span class="wall-dot is-on"></span><span class="wall-dot"></span></div>
+      <div class="intro-overlay">
+        <div class="wrap">
+          <div class="hero-box">
+            <h1>The Harker Venture Investment Initiative</h1>
+            <p>Student analysts investing in — and championing — the next generation of Harker alumni founders.</p>
+            <p class="hero-cta"><a class="btn" href="our-investments.html">See our investments</a> <a class="btn ghost" href="about.html">Meet the scholars</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="intro-cue" aria-hidden="true">Scroll to step inside</div>
     </div>
   </section>
 '''

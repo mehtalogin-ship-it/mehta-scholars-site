@@ -312,7 +312,7 @@ section { padding: 84px 0; }
 
 /* ---------- Hero (Patil exterior + green box) ---------- */
 /* Cinematic intro: scroll-scrubbed frame sequence (exterior -> through glass -> screen) */
-.intro-stage { position: relative; height: 200vh; padding: 0; background: #0b0b0b; }
+.intro-stage { position: relative; height: 400vh; padding: 0; background: #cfbca6 url("../assets/tex/travertine.webp?v=3") repeat; background-size: 800px; }
 .intro-pin { position: sticky; top: var(--header-h); height: calc(100vh - var(--header-h)); overflow: hidden; background:#0b0b0b url("../assets/intro/poster.jpg") center/cover no-repeat; }
 .intro-canvas { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block; }
 .intro-overlay { position: absolute; inset: 0; display: flex; align-items: center; z-index: 2; pointer-events: none; will-change: opacity; }
