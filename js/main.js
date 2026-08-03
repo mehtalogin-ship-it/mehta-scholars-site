@@ -160,7 +160,7 @@ document.addEventListener('DOMContentLoaded', function () {
     (function (i) {
       var im = new Image();
       im.onload = function () { if (current === -1) draw(pick(0)); else if (i === current) draw(i); };
-      im.src = base + 'f_' + pad(i + 1) + '.jpg';
+      im.src = base + 'f_' + pad(i + 1) + '.jpg?v=2';
       imgs[i] = im;
     })(i);
   }

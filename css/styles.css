@@ -329,7 +329,7 @@ section { padding: 84px 0; }
 
 /* ---------- Full-page Patil video wall (scrollytelling) ---------- */
 .wall-stage { position: relative; height: 300vh; background: #cfbca6 url("../assets/tex/travertine.webp?v=3") repeat; background-size: 800px; }
-.wall-pin { position: sticky; top: var(--header-h); height: calc(100vh - var(--header-h)); overflow: hidden; background: #0b0b0b url("../assets/intro/f_140.jpg?v=1") center/cover no-repeat; }
+.wall-pin { position: sticky; top: var(--header-h); height: calc(100vh - var(--header-h)); overflow: hidden; background: #0b0b0b url("../assets/intro/f_140.jpg?v=2") center/cover no-repeat; }
 /* The LED screen is positioned by JS to overlay the black screen in the backdrop frame; it powers on (opacity) as the wall becomes active. */
 .wall-screen { position:absolute; inset:auto; background:#fff; border:0; border-radius:2px; box-shadow:none; overflow: hidden; opacity: 0; transition: opacity .5s ease; }
 .ws-slide { position:absolute; inset:0; opacity:0; transition: opacity .5s ease; overflow:hidden; padding: clamp(20px,4vh,44px) clamp(20px,5vw,64px); }
