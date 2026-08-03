@@ -71,7 +71,7 @@ def footer(p=''):
       <div class="footer-bottom"><span>&copy; 2026 The Harker Venture Investment Initiative &middot; Mehta Scholars</span><span>The Harker School</span></div>
     </div>
   </footer>
-  <script src="{p}js/main.js?v=19"></script>
+  <script src="{p}js/main.js?v=20"></script>
 </body>
 </html>'''
 
@@ -83,7 +83,7 @@ def head(title, desc, p=''):
   <title>{esc(title)}</title>
   <meta name="description" content="{esc(desc)}">
   {FONTS}
-  <link rel="stylesheet" href="{p}css/styles.css?v=31">
+  <link rel="stylesheet" href="{p}css/styles.css?v=32">
 </head>
 <body>
 '''
@@ -170,14 +170,21 @@ _parts.append(_vseg())
 _parts.append(_step('num','6','','<h4>Report approved</h4><p>Once refined, the polished report is approved.</p>'))
 _parts.append(_vseg())
 _parts.append(_step('dec',_ICO_DIAMOND,'dec','<h4>Investment Committee decides</h4><p>The Venture Investment Committee reviews the finalized report and decides whether to invest.</p>'))
-# split
+# split: decision -> Result 1 / Result 2
 _parts.append('<div class="pf-split" id="pfSplit"><span class="pf-seg vert stem"><i></i></span><span class="pf-seg horiz barL"><i></i></span><span class="pf-seg horiz barR"><i></i></span><span class="pf-seg vert downL"><i></i></span><span class="pf-seg vert downR"><i></i></span></div>')
-# results (two branches)
-_r1=f'<div class="pf-step res"><span class="pf-medal ok">{_ICO_CHECK}</span><div class="pf-box"><span class="proc-tag ok">Result 1 &middot; Approved</span><p>The committee approves the investment.</p><div class="proc-out fund"><strong>$25K SAFE</strong> toward the next round</div></div></div>'
-_r2=f'<div class="pf-step res"><span class="pf-medal no">{_ICO_BRANCH}</span><div class="pf-box"><span class="proc-tag no">Result 2 &middot; Not approved</span><p>The committee does not approve the investment.</p><div class="proc-sub"><div class="proc-out fund">Scholars still believe strongly &rarr; <strong>$10K SAFE</strong> toward the next round</div><div class="proc-out none">Otherwise &rarr; no investment</div></div></div></div>'
-_parts.append(f'<div class="pf-results" id="pfResults">{_r1}{_r2}</div>')
-# merge
-_parts.append('<div class="pf-merge" id="pfMerge"><span class="pf-seg vert upL"><i></i></span><span class="pf-seg vert upR"><i></i></span><span class="pf-seg horiz mbarL"><i></i></span><span class="pf-seg horiz mbarR"><i></i></span><span class="pf-seg vert mstem"><i></i></span></div>')
+# tier 1 : Result 1 (left) | Result 2 (spans right two columns)
+_r1=f'<div class="pf-step res r1"><span class="pf-medal ok">{_ICO_CHECK}</span><div class="pf-box"><span class="proc-tag ok">Result 1 &middot; Approved</span><p>The committee approves the investment.</p></div></div>'
+_r2=f'<div class="pf-step res r2"><span class="pf-medal no">{_ICO_BRANCH}</span><div class="pf-box"><span class="proc-tag no">Result 2 &middot; Not approved</span><p>The committee does not approve the investment &mdash; what happens next depends on the scholars&rsquo; conviction.</p></div></div>'
+_parts.append(f'<div class="pf-tier1" id="pfTier1">{_r1}{_r2}</div>')
+# sub : Result 1 continues straight down; Result 2 forks into two
+_parts.append('<div class="pf-sub" id="pfSub"><span class="pf-seg vert r1down"><i></i></span><span class="pf-seg vert r2stem"><i></i></span><span class="pf-seg horiz subbarL"><i></i></span><span class="pf-seg horiz subbarR"><i></i></span><span class="pf-seg vert subdownL"><i></i></span><span class="pf-seg vert subdownR"><i></i></span></div>')
+# tier 2 : three terminal outcomes
+_t1='<div class="pf-step term"><div class="pf-box term fund"><strong>$25K SAFE</strong><span>toward the next round</span></div></div>'
+_t2='<div class="pf-step term"><div class="pf-box term fund"><strong>$10K SAFE</strong><span>scholars still believe strongly</span></div></div>'
+_t3='<div class="pf-step term"><div class="pf-box term none"><strong>No investment</strong><span>the round is passed on</span></div></div>'
+_parts.append(f'<div class="pf-tier2" id="pfTier2">{_t1}{_t2}{_t3}</div>')
+# merge : all three outcomes -> final
+_parts.append('<div class="pf-merge3" id="pfMerge3"><span class="pf-seg vert up1"><i></i></span><span class="pf-seg vert up2"><i></i></span><span class="pf-seg vert up3"><i></i></span><span class="pf-seg horiz m3barL"><i></i></span><span class="pf-seg horiz m3barR"><i></i></span><span class="pf-seg vert m3stem"><i></i></span></div>')
 # final
 _parts.append(_step('fin',_ICO_FLAG,'final','<h4>Founder works with the committee</h4><p>In every case, the founder works with committee members &mdash; especially the Entrepreneurship Advisory Committee.</p>'))
 PROC=f'''<div class="process" id="procDiagram">

@@ -183,32 +183,48 @@ document.addEventListener('DOMContentLoaded', function () {
   if (!proc) return;
   var steps = [].slice.call(proc.querySelectorAll('.pf-step'));
   var segs = [].slice.call(proc.querySelectorAll('.pf-seg'));
-  var results = document.getElementById('pfResults');
+  var tier1 = document.getElementById('pfTier1');
+  var tier2 = document.getElementById('pfTier2');
   var split = document.getElementById('pfSplit');
-  var merge = document.getElementById('pfMerge');
+  var sub = document.getElementById('pfSub');
+  var merge3 = document.getElementById('pfMerge3');
   var review = document.getElementById('pfReview');
   var loop = review ? review.querySelector('.pf-loop') : null;
   var loopFill = loop ? loop.querySelector('.pf-loopwire > i') : null;
   proc.classList.add('armed');
   function clamp(x) { return Math.max(0, Math.min(1, x)); }
+  function setX(el, left, width) { if (!el) return; el.style.left = left + 'px'; if (width != null) el.style.width = width + 'px'; }
   function geom() {
-    // align the split/merge fork bars + branch drops to the two result-box centres
-    if (!results || !split || !merge) return;
-    var bx = results.querySelectorAll('.pf-box');
-    if (bx.length < 2) return;
-    var rr = results.getBoundingClientRect();
-    var b1 = bx[0].getBoundingClientRect(), b2 = bx[1].getBoundingClientRect();
-    var lc = (b1.left + b1.width / 2) - rr.left;
-    var rc = (b2.left + b2.width / 2) - rr.left;
-    var mid = rr.width / 2;
-    [split, merge].forEach(function (c) {
-      var dL = c.querySelector('.downL, .upL'), dR = c.querySelector('.downR, .upR');
-      var bL = c.querySelector('.barL, .mbarL'), bR = c.querySelector('.barR, .mbarR');
-      if (dL) dL.style.left = (lc - 1.5) + 'px';
-      if (dR) dR.style.left = (rc - 1.5) + 'px';
-      if (bL) { bL.style.left = lc + 'px'; bL.style.width = (mid - lc) + 'px'; }
-      if (bR) { bR.style.left = mid + 'px'; bR.style.width = (rc - mid) + 'px'; }
-    });
+    // position every fork/merge bar + branch drop against measured box centres
+    if (!tier1 || !tier2 || !split || !sub || !merge3) return;
+    var t1r = tier1.getBoundingClientRect();
+    var r1b = tier1.querySelector('.r1 .pf-box'), r2b = tier1.querySelector('.r2 .pf-box');
+    if (!r1b || !r2b) return;
+    var cx = function (el, ref) { var b = el.getBoundingClientRect(); return (b.left + b.width / 2) - ref.left; };
+    var r1c = cx(r1b, t1r), r2c = cx(r2b, t1r);
+    var terms = tier2.querySelectorAll('.pf-box');
+    if (terms.length < 3) return;
+    var t2r = tier2.getBoundingClientRect();
+    var a = cx(terms[0], t2r), b = cx(terms[1], t2r), c = cx(terms[2], t2r); // $25K, $10K, no-inv centres
+    var mid = t1r.width / 2;
+    // split: decision(50%) -> R1 (r1c) + R2 (r2c)
+    setX(split.querySelector('.downL'), r1c - 1.5);
+    setX(split.querySelector('.downR'), r2c - 1.5);
+    setX(split.querySelector('.barL'), r1c, mid - r1c);
+    setX(split.querySelector('.barR'), mid, r2c - mid);
+    // sub: R1 straight down to $25K (r1c==a); R2 (r2c) forks to $10K (b) + no-inv (c)
+    setX(sub.querySelector('.r1down'), r1c - 1.5);
+    setX(sub.querySelector('.r2stem'), r2c - 1.5);
+    setX(sub.querySelector('.subdownL'), b - 1.5);
+    setX(sub.querySelector('.subdownR'), c - 1.5);
+    setX(sub.querySelector('.subbarL'), b, r2c - b);
+    setX(sub.querySelector('.subbarR'), r2c, c - r2c);
+    // merge: $25K(a) + $10K(b) + no-inv(c) -> final (50%)
+    setX(merge3.querySelector('.up1'), a - 1.5);
+    setX(merge3.querySelector('.up2'), b - 1.5);
+    setX(merge3.querySelector('.up3'), c - 1.5);
+    setX(merge3.querySelector('.m3barL'), a, mid - a);
+    setX(merge3.querySelector('.m3barR'), mid, c - mid);
   }
   function build() {
     var line = window.innerHeight * 0.72;

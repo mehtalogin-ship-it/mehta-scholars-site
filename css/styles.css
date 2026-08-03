@@ -134,20 +134,33 @@ section { padding: 84px 0; }
 .pf-seg.horiz > i { transform: scaleX(0); }
 .pf-seg.horiz { height: 3px; background: var(--line); border-radius: 3px; }
 /* split + merge live in a positioned band; JS sets bar/branch geometry */
-.pf-split, .pf-merge { position: relative; width: 100%; max-width: 720px; height: 46px; }
-.pf-split .pf-seg, .pf-merge .pf-seg { position: absolute; margin: 0; }
-.pf-split .stem, .pf-merge .mstem { left: 50%; margin-left: -1.5px; top: 0; height: 22px; }
-.pf-split .barL, .pf-split .barR, .pf-merge .mbarL, .pf-merge .mbarR { top: 21px; }
-.pf-split .downL, .pf-split .downR { top: 22px; height: 24px; }
-.pf-merge .upL, .pf-merge .upR { top: 0; height: 24px; }
-.pf-merge .mbarL, .pf-merge .mbarR { top: 22px; }
-.pf-merge .mstem { top: 24px; height: 22px; }
-.pf-split .barL > i, .pf-merge .mbarL > i { transform-origin: right; }
-.pf-split .barR > i, .pf-merge .mbarR > i { transform-origin: left; }
-/* results row */
-.pf-results { display: flex; gap: 40px; width: 100%; max-width: 720px; align-items: flex-start; }
-.pf-results .pf-step { flex: 1; }
-.pf-results .pf-box { max-width: none; }
+/* connector bands (split -> tier1 -> sub -> tier2 -> merge) */
+.pf-split, .pf-sub, .pf-merge3 { position: relative; width: 100%; max-width: 820px; height: 46px; }
+.pf-split .pf-seg, .pf-sub .pf-seg, .pf-merge3 .pf-seg { position: absolute; margin: 0; }
+.pf-split .stem { left: 50%; margin-left: -1.5px; top: 0; height: 23px; }
+.pf-split .barL, .pf-split .barR { top: 22px; }
+.pf-split .downL, .pf-split .downR { top: 23px; height: 23px; }
+.pf-sub .r1down { top: 0; height: 46px; }
+.pf-sub .r2stem { top: 0; height: 23px; }
+.pf-sub .subbarL, .pf-sub .subbarR { top: 22px; }
+.pf-sub .subdownL, .pf-sub .subdownR { top: 23px; height: 23px; }
+.pf-merge3 .up1, .pf-merge3 .up2, .pf-merge3 .up3 { top: 0; height: 24px; }
+.pf-merge3 .m3barL, .pf-merge3 .m3barR { top: 23px; }
+.pf-merge3 .m3stem { left: 50%; margin-left: -1.5px; top: 24px; height: 22px; }
+.pf-split .barL > i, .pf-sub .subbarL > i, .pf-merge3 .m3barL > i { transform-origin: right; }
+.pf-split .barR > i, .pf-sub .subbarR > i, .pf-merge3 .m3barR > i { transform-origin: left; }
+/* outcome tiers */
+.pf-tier1, .pf-tier2 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 26px; width: 100%; max-width: 820px; align-items: stretch; }
+.pf-tier1 .r1 { grid-column: 1; }
+.pf-tier1 .r2 { grid-column: 2 / 4; }
+.pf-tier1 .pf-step, .pf-tier2 .pf-step { display: block; width: 100%; }
+.pf-tier1 .pf-box, .pf-tier2 .pf-box { max-width: none; height: 100%; }
+.pf-box.term { text-align: center; padding: 15px 16px; }
+.pf-box.term strong { display: block; font-family: var(--font-head); font-weight: 400; font-size: 1.08rem; color: var(--green-deep); }
+.pf-box.term span { font-size: 0.8rem; color: var(--muted); }
+.pf-box.term.fund { background: var(--bg-green-tint); border-color: #d6e6da; }
+.pf-box.term.none { background: #f5f2ea; border-color: #e8e2d4; }
+.pf-box.term.none strong { color: var(--muted); }
 /* refinement loop (hangs to the right of the review step) */
 .pf-loop { position: absolute; left: calc(100% + 12px); top: 50%; transform: translateY(-50%); display: flex; align-items: center; width: 210px; pointer-events: none; }
 .pf-loopwire { position: relative; flex: 1; min-width: 64px; height: 3px; background: var(--line); border-radius: 3px; }
@@ -171,7 +184,7 @@ section { padding: 84px 0; }
 .proc-out.fund { background: var(--bg-green-tint); color: var(--green-deep); border: 1px solid #d6e6da; }
 .proc-out.none { background: #f5f2ea; color: var(--muted); border: 1px solid #e8e2d4; }
 @media (max-width: 960px){ .pf-loop { display: none; } .pf-loopfb { display: inline-block; } }
-@media (max-width: 620px){ .pf-results { flex-direction: column; gap: 0; } .pf-results .pf-step { width: 100%; } .pf-merge, .pf-split { max-width: 500px; } }
+@media (max-width: 640px){ .pf-tier1, .pf-tier2 { grid-template-columns: 1fr; gap: 30px; } .pf-tier1 .r1, .pf-tier1 .r2 { grid-column: 1; } .pf-sub, .pf-merge3, .pf-split { height: 30px; } .pf-sub .pf-seg.horiz, .pf-merge3 .pf-seg.horiz, .pf-split .pf-seg.horiz, .pf-sub .subdownL, .pf-sub .subdownR, .pf-merge3 .up1, .pf-merge3 .up3, .pf-split .downL, .pf-split .downR { display: none; } .pf-split .stem, .pf-sub .r1down, .pf-sub .r2stem, .pf-merge3 .m3stem, .pf-merge3 .up2 { left: 50% !important; margin-left: -1.5px; height: 30px !important; } }
 @media (prefers-reduced-motion: reduce){ .process.armed .pf-box, .pf-medal { opacity: 1 !important; transform: none !important; } .pf-seg > i { transform: none !important; } }
 
 /* ---------- Team ---------- */
