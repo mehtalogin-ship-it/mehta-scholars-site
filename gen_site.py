@@ -31,7 +31,7 @@ def nav(active, p=''):
     def cls(k): return ' class="active"' if k==active else ''
     return f'''  <header class="site-header">
     <nav class="nav">
-      <a class="brand" href="{p}index.html">{SEAL}<span class="brand-name">Harker Venture<br>Investment Initiative</span></a>
+      <a class="brand" href="{p}index.html"><img class="brand-logo" src="{p}assets/logo.png?v=1" alt="The Mehta Endowment seal" width="52" height="45"><span class="brand-name">Harker Venture<br>Investment Initiative</span></a>
       <button class="nav-toggle" aria-label="Menu">&#9776;</button>
       <ul class="nav-links">
         <li><a href="{p}index.html"{cls('home')}>Home</a></li>
@@ -57,7 +57,7 @@ def footer(p=''):
     return f'''  <footer class="site-footer">
     <div class="wrap">
       <div class="footer-grid">
-        <div><span class="brand-name">Harker Venture Investment Initiative</span>
+        <div><img class="footer-logo" src="{p}assets/logo.png?v=1" alt="The Mehta Endowment" width="118" height="101"><span class="brand-name">Harker Venture Investment Initiative</span>
           <p style="margin-top:14px;max-width:38ch">Mehta Scholars serve as analysts for The Harker Venture Pool, investing in and supporting Harker alumni founders.</p></div>
         <div><h4>Explore</h4><ul class="footer-links">
           <li><a href="{p}index.html">Home</a></li><li><a href="{p}about.html">About</a></li>
@@ -83,7 +83,9 @@ def head(title, desc, p=''):
   <title>{esc(title)}</title>
   <meta name="description" content="{esc(desc)}">
   {FONTS}
-  <link rel="stylesheet" href="{p}css/styles.css?v=32">
+  <link rel="icon" type="image/png" href="{p}assets/favicon.png?v=1">
+  <link rel="apple-touch-icon" href="{p}assets/favicon.png?v=1">
+  <link rel="stylesheet" href="{p}css/styles.css?v=33">
 </head>
 <body>
 '''

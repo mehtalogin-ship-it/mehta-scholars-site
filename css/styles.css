@@ -49,6 +49,8 @@ img { max-width: 100%; display: block; }
 .brand { display: flex; align-items: center; gap: 12px; padding: 10px 0; text-decoration: none; }
 .brand:hover { text-decoration: none; }
 .seal { width: 46px; height: 46px; flex: 0 0 auto; }
+.brand-logo { height: 46px; width: auto; flex: 0 0 auto; display: block; }
+.footer-logo { width: 116px; height: auto; display: block; margin-bottom: 16px; }
 .brand-name { font-family: var(--font-head); font-size: 1.02rem; letter-spacing: 0.04em; line-height: 1.1; color: var(--green-dark); text-transform: uppercase; max-width: 260px; }
 .nav-links { display: flex; align-items: stretch; gap: 4px; list-style: none; margin: 0; padding: 0; }
 .nav-links > li { display: flex; align-items: center; position: relative; }
