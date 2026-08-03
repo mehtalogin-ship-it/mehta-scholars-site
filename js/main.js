@@ -107,6 +107,7 @@ document.addEventListener('DOMContentLoaded', function () {
   var overlay = stage.querySelector('.intro-overlay');
   var cue = stage.querySelector('.intro-cue');
   var screen = stage.querySelector('.wall-screen');
+  var texhd = stage.querySelector('.wall-tex-hd');
   var slides = [].slice.call(stage.querySelectorAll('.ws-slide'));
   var cards = [].slice.call(stage.querySelectorAll('.ws-card'));
   var dotsWrap = stage.querySelector('.wall-dots');
@@ -146,9 +147,10 @@ document.addEventListener('DOMContentLoaded', function () {
     if (frame !== -1 && frame !== current) draw(frame);
     if (overlay) overlay.style.opacity = Math.max(0, 1 - vp / 0.5);
     if (cue) cue.style.opacity = Math.max(0, 0.85 * (1 - vp / 0.3));
-    // Phase B — LED screen powers on + slides
+    // Phase B — crisp travertine settles first, then the LED screen powers on
     var q = Math.min(0.9999, Math.max(0, (p - FV) / (1 - FV)));
-    var on = Math.min(1, q / 0.05);
+    if (texhd) texhd.style.opacity = Math.min(1, q / 0.05);      // sharp backdrop fades in first
+    var on = Math.min(1, Math.max(0, (q - 0.05) / 0.05));         // then the screen powers on
     if (screen) screen.style.opacity = on;
     if (dotsWrap) dotsWrap.style.opacity = on;
     var idx = q < 0.62 ? 0 : 1;
