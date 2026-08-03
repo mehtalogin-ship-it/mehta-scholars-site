@@ -31,7 +31,7 @@ def nav(active, p=''):
     def cls(k): return ' class="active"' if k==active else ''
     return f'''  <header class="site-header">
     <nav class="nav">
-      <a class="brand" href="{p}index.html"><img class="brand-logo" src="{p}assets/logo.png?v=1" alt="The Mehta Endowment seal" width="52" height="45"><span class="brand-name">Harker Venture<br>Investment Initiative</span></a>
+      <a class="brand" href="{p}index.html"><img class="brand-logo" src="{p}assets/logo.png?v=1" alt="The Mehta Endowment seal" width="70" height="60"><span class="brand-name">Harker Venture<br>Investment Initiative</span></a>
       <button class="nav-toggle" aria-label="Menu">&#9776;</button>
       <ul class="nav-links">
         <li><a href="{p}index.html"{cls('home')}>Home</a></li>
@@ -85,7 +85,7 @@ def head(title, desc, p=''):
   {FONTS}
   <link rel="icon" type="image/png" href="{p}assets/favicon.png?v=1">
   <link rel="apple-touch-icon" href="{p}assets/favicon.png?v=1">
-  <link rel="stylesheet" href="{p}css/styles.css?v=33">
+  <link rel="stylesheet" href="{p}css/styles.css?v=34">
 </head>
 <body>
 '''

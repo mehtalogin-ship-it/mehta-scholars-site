@@ -46,10 +46,10 @@ img { max-width: 100%; display: block; }
 /* ---------- Header / Nav ---------- */
 .site-header { position: sticky; top: 0; z-index: 100; background: rgba(255,255,255,0.96); backdrop-filter: saturate(180%) blur(8px); border-bottom: 1px solid var(--line); }
 .nav { display: flex; align-items: stretch; justify-content: space-between; gap: 20px; max-width: 1320px; margin: 0 auto; padding: 0 24px; min-height: 74px; }
-.brand { display: flex; align-items: center; gap: 12px; padding: 10px 0; text-decoration: none; }
+.brand { display: flex; align-items: center; gap: 12px; padding: 6px 0; text-decoration: none; }
 .brand:hover { text-decoration: none; }
 .seal { width: 46px; height: 46px; flex: 0 0 auto; }
-.brand-logo { height: 46px; width: auto; flex: 0 0 auto; display: block; }
+.brand-logo { height: 60px; width: auto; flex: 0 0 auto; display: block; }
 .footer-logo { width: 116px; height: auto; display: block; margin-bottom: 16px; }
 .brand-name { font-family: var(--font-head); font-size: 1.02rem; letter-spacing: 0.04em; line-height: 1.1; color: var(--green-dark); text-transform: uppercase; max-width: 260px; }
 .nav-links { display: flex; align-items: stretch; gap: 4px; list-style: none; margin: 0; padding: 0; }
@@ -62,7 +62,7 @@ img { max-width: 100%; display: block; }
 .has-drop:hover .drop, .has-drop:focus-within .drop { opacity: 1; visibility: visible; transform: translateY(0); }
 .drop a { height: auto; padding: 9px 12px; border-radius: 7px; font-size: 0.92rem; }
 .drop a:hover { background: var(--bg-green-tint); }
-.nav-cta { display: inline-flex; align-items: center; background: var(--green-dark); color: #fff !important; padding: 0 22px; font-family: var(--font-head); letter-spacing: 0.02em; transition: background 0.2s; }
+.nav-cta { display: inline-flex; align-items: center; align-self: stretch; background: var(--green-dark); color: #fff !important; padding: 0 22px; font-family: var(--font-head); letter-spacing: 0.02em; transition: background 0.2s; }
 .nav-cta:hover { background: var(--green-deep); text-decoration: none; }
 .nav-toggle { display: none; background: none; border: 0; font-size: 1.6rem; color: var(--green-dark); cursor: pointer; align-items: center; }
 
