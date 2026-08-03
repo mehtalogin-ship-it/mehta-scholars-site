@@ -147,12 +147,14 @@ document.addEventListener('DOMContentLoaded', function () {
     if (frame !== -1 && frame !== current) draw(frame);
     if (overlay) overlay.style.opacity = Math.max(0, 1 - vp / 0.5);
     if (cue) cue.style.opacity = Math.max(0, 0.85 * (1 - vp / 0.3));
-    // Phase B — crisp travertine settles first, then the LED screen powers on
+    // Phase B — the LED screen powers on FIRST (right over the black screen in the
+    // video frame, so a screen is always present), THEN the crisp travertine wall
+    // fills in around it. Never covers the screen area with bare wall.
     var q = Math.min(0.9999, Math.max(0, (p - FV) / (1 - FV)));
-    if (texhd) texhd.style.opacity = Math.min(1, q / 0.05);      // sharp backdrop fades in first
-    var on = Math.min(1, Math.max(0, (q - 0.05) / 0.05));         // then the screen powers on
+    var on = Math.min(1, q / 0.04);
     if (screen) screen.style.opacity = on;
     if (dotsWrap) dotsWrap.style.opacity = on;
+    if (texhd) texhd.style.opacity = Math.min(1, Math.max(0, (q - 0.04) / 0.05)); // wall fills in after the screen is on
     var idx = q < 0.62 ? 0 : 1;
     slides.forEach(function (s, i) { s.classList.toggle('is-active', i === idx); });
     dots.forEach(function (d, i) { d.classList.toggle('is-on', i === idx); });
